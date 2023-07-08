@@ -1,0 +1,419 @@
+[2023-05-21 17:48:04.108] [info] Retrieval method_name GridIndex, dataset_name yelp-150d, topk 100
+[2023-05-21 17:48:04.108] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-05-21 17:48:04.108] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-05-21 17:48:07.291] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-05-21 17:48:07.291] [info] input parameter: stop_time 36000s
+[2023-05-21 17:48:07.342] [info] GridIndex min_codeword 41, codeword 64
+[2023-05-21 17:48:12.664] [info] finish preprocess and save the index
+[2023-05-21 18:19:24.188] [info] queryID 55, userID 1000000, query_ip_cost 13803196, query_appr_ip_cost 1599808675, time_used 1862.90s
+[2023-05-21 18:22:19.431] [info] queryID 55, userID 2000000, query_ip_cost 13804621, query_appr_ip_cost 1737786541, time_used 2038.15s
+[2023-05-21 18:22:27.489] [info] finish queryID 55, current_total_retrieval_time 2054.82s, single_query_retrieval_time 2054.81s, prune_ratio 1.00, ip_cost 13804645, appr_ip_cost 1742182916
+[2023-05-21 18:44:54.175] [info] queryID 980, userID 1000000, query_ip_cost 17091449, query_appr_ip_cost 2859104030, time_used 3392.89s
+[2023-05-21 18:45:25.761] [info] queryID 143, userID 1000000, query_ip_cost 13888451, query_appr_ip_cost 2880865303, time_used 3424.48s
+[2023-05-21 18:50:51.183] [info] queryID 600, userID 1000000, query_ip_cost 18592770, query_appr_ip_cost 3146140017, time_used 3749.90s
+[2023-05-21 18:52:34.897] [info] queryID 460, userID 1000000, query_ip_cost 11986323, query_appr_ip_cost 3301168862, time_used 3853.61s
+[2023-05-21 18:53:53.278] [info] queryID 860, userID 1000000, query_ip_cost 16135980, query_appr_ip_cost 3359122528, time_used 3931.99s
+[2023-05-21 18:53:54.425] [info] queryID 940, userID 1000000, query_ip_cost 15742146, query_appr_ip_cost 3326724837, time_used 3933.14s
+[2023-05-21 18:54:20.979] [info] queryID 980, userID 2000000, query_ip_cost 17099363, query_appr_ip_cost 3313379735, time_used 3959.70s
+[2023-05-21 18:54:28.817] [info] queryID 143, userID 2000000, query_ip_cost 13892064, query_appr_ip_cost 3313419279, time_used 3967.53s
+[2023-05-21 18:55:23.727] [info] finish queryID 143, current_total_retrieval_time 4031.06s, single_query_retrieval_time 4031.04s, prune_ratio 1.00, ip_cost 13892125, appr_ip_cost 3354428773
+[2023-05-21 18:55:30.444] [info] finish queryID 980, current_total_retrieval_time 4037.78s, single_query_retrieval_time 4037.78s, prune_ratio 1.00, ip_cost 17099625, appr_ip_cost 3366645844
+[2023-05-21 18:58:00.490] [info] queryID 286, userID 1000000, query_ip_cost 11724806, query_appr_ip_cost 3602321972, time_used 4179.21s
+[2023-05-21 18:58:36.502] [info] queryID 88, userID 1000000, query_ip_cost 17192066, query_appr_ip_cost 3630397080, time_used 4215.22s
+[2023-05-21 18:58:53.635] [info] queryID 970, userID 1000000, query_ip_cost 16414886, query_appr_ip_cost 3559510647, time_used 4232.35s
+[2023-05-21 18:58:59.719] [info] queryID 341, userID 1000000, query_ip_cost 18804242, query_appr_ip_cost 3564065137, time_used 4238.44s
+[2023-05-21 18:59:27.557] [info] queryID 710, userID 1000000, query_ip_cost 16458315, query_appr_ip_cost 3646555406, time_used 4266.27s
+[2023-05-21 19:00:59.850] [info] queryID 790, userID 1000000, query_ip_cost 17603200, query_appr_ip_cost 3734443470, time_used 4358.57s
+[2023-05-21 19:01:03.739] [info] queryID 550, userID 1000000, query_ip_cost 13314005, query_appr_ip_cost 3703763048, time_used 4362.46s
+[2023-05-21 19:02:03.497] [info] queryID 600, userID 2000000, query_ip_cost 18605435, query_appr_ip_cost 3680554255, time_used 4422.21s
+[2023-05-21 19:02:34.365] [info] queryID 860, userID 2000000, query_ip_cost 16164259, query_appr_ip_cost 3781152908, time_used 4453.08s
+[2023-05-21 19:03:14.342] [info] finish queryID 600, current_total_retrieval_time 4501.68s, single_query_retrieval_time 4501.67s, prune_ratio 1.00, ip_cost 18605435, appr_ip_cost 3734221999
+[2023-05-21 19:03:27.937] [info] finish queryID 860, current_total_retrieval_time 4515.27s, single_query_retrieval_time 4515.25s, prune_ratio 1.00, ip_cost 16164682, appr_ip_cost 3823440848
+[2023-05-21 19:05:23.028] [info] queryID 88, userID 2000000, query_ip_cost 17212588, query_appr_ip_cost 3954842058, time_used 4621.74s
+[2023-05-21 19:06:07.942] [info] finish queryID 88, current_total_retrieval_time 4675.28s, single_query_retrieval_time 4675.27s, prune_ratio 1.00, ip_cost 17212588, appr_ip_cost 3989031368
+[2023-05-21 19:09:14.467] [info] queryID 740, userID 1000000, query_ip_cost 9635687, query_appr_ip_cost 4124768780, time_used 4853.18s
+[2023-05-21 19:09:19.975] [info] queryID 341, userID 2000000, query_ip_cost 18842539, query_appr_ip_cost 4059689469, time_used 4858.69s
+[2023-05-21 19:09:46.400] [info] queryID 710, userID 2000000, query_ip_cost 16487679, query_appr_ip_cost 4150533434, time_used 4885.12s
+[2023-05-21 19:10:26.346] [info] finish queryID 341, current_total_retrieval_time 4933.68s, single_query_retrieval_time 4933.68s, prune_ratio 1.00, ip_cost 18844615, appr_ip_cost 4110945236
+[2023-05-21 19:10:54.313] [info] finish queryID 710, current_total_retrieval_time 4961.65s, single_query_retrieval_time 4961.65s, prune_ratio 1.00, ip_cost 16488435, appr_ip_cost 4204985956
+[2023-05-21 19:12:41.491] [info] queryID 970, userID 2000000, query_ip_cost 16425743, query_appr_ip_cost 4227725849, time_used 5060.21s
+[2023-05-21 19:12:42.919] [info] queryID 940, userID 2000000, query_ip_cost 15758306, query_appr_ip_cost 4255707688, time_used 5061.64s
+[2023-05-21 19:13:44.081] [info] queryID 440, userID 1000000, query_ip_cost 19589011, query_appr_ip_cost 4395502515, time_used 5122.80s
+[2023-05-21 19:14:28.347] [info] finish queryID 970, current_total_retrieval_time 5175.68s, single_query_retrieval_time 5175.68s, prune_ratio 1.00, ip_cost 16426084, appr_ip_cost 4311097341
+[2023-05-21 19:15:13.924] [info] finish queryID 940, current_total_retrieval_time 5221.26s, single_query_retrieval_time 5221.26s, prune_ratio 1.00, ip_cost 15758686, appr_ip_cost 4384830336
+[2023-05-21 19:15:33.856] [info] queryID 132, userID 1000000, query_ip_cost 12265654, query_appr_ip_cost 4474216737, time_used 5232.57s
+[2023-05-21 19:15:55.301] [info] queryID 460, userID 2000000, query_ip_cost 11994055, query_appr_ip_cost 4484703362, time_used 5254.02s
+[2023-05-21 19:16:58.536] [info] queryID 790, userID 2000000, query_ip_cost 17630741, query_appr_ip_cost 4528553461, time_used 5317.25s
+[2023-05-21 19:17:47.657] [info] queryID 286, userID 2000000, query_ip_cost 11728158, query_appr_ip_cost 4597391965, time_used 5366.37s
+[2023-05-21 19:18:53.748] [info] finish queryID 790, current_total_retrieval_time 5441.08s, single_query_retrieval_time 5441.06s, prune_ratio 1.00, ip_cost 17630891, appr_ip_cost 4620881138
+[2023-05-21 19:19:19.098] [info] finish queryID 460, current_total_retrieval_time 5466.43s, single_query_retrieval_time 5466.43s, prune_ratio 1.00, ip_cost 11994271, appr_ip_cost 4661618026
+[2023-05-21 19:20:24.436] [info] finish queryID 286, current_total_retrieval_time 5531.77s, single_query_retrieval_time 5531.75s, prune_ratio 1.00, ip_cost 11728197, appr_ip_cost 4724797394
+[2023-05-21 19:21:35.259] [info] queryID 550, userID 2000000, query_ip_cost 13318768, query_appr_ip_cost 4713537258, time_used 5593.98s
+[2023-05-21 19:22:19.842] [info] queryID 110, userID 1000000, query_ip_cost 19007894, query_appr_ip_cost 4779258847, time_used 5638.56s
+[2023-05-21 19:24:26.010] [info] finish queryID 550, current_total_retrieval_time 5773.35s, single_query_retrieval_time 5773.34s, prune_ratio 1.00, ip_cost 13318768, appr_ip_cost 4851779262
+[2023-05-21 19:27:09.579] [info] queryID 870, userID 1000000, query_ip_cost 19626495, query_appr_ip_cost 5003001410, time_used 5928.30s
+[2023-05-21 19:29:00.403] [info] queryID 440, userID 2000000, query_ip_cost 19625257, query_appr_ip_cost 5144370282, time_used 6039.12s
+[2023-05-21 19:30:57.743] [info] finish queryID 440, current_total_retrieval_time 6165.08s, single_query_retrieval_time 6165.06s, prune_ratio 1.00, ip_cost 19625985, appr_ip_cost 5237622763
+[2023-05-21 19:32:29.647] [info] queryID 620, userID 1000000, query_ip_cost 17778036, query_appr_ip_cost 5212118538, time_used 6248.36s
+[2023-05-21 19:33:35.690] [info] queryID 850, userID 1000000, query_ip_cost 24136989, query_appr_ip_cost 5222075213, time_used 6314.41s
+[2023-05-21 19:35:42.844] [info] queryID 220, userID 1000000, query_ip_cost 21248336, query_appr_ip_cost 5421471096, time_used 6441.56s
+[2023-05-21 19:35:44.851] [info] queryID 630, userID 1000000, query_ip_cost 12590653, query_appr_ip_cost 5439395631, time_used 6443.57s
+[2023-05-21 19:36:13.938] [info] queryID 396, userID 1000000, query_ip_cost 20881128, query_appr_ip_cost 5463453284, time_used 6472.66s
+[2023-05-21 19:36:48.178] [info] queryID 56, userID 1000000, query_ip_cost 14830324, query_appr_ip_cost 3768998042, time_used 4459.99s
+[2023-05-21 19:39:51.000] [info] queryID 132, userID 2000000, query_ip_cost 12270929, query_appr_ip_cost 5684236146, time_used 6689.72s
+[2023-05-21 19:43:11.942] [info] finish queryID 132, current_total_retrieval_time 6899.28s, single_query_retrieval_time 6899.26s, prune_ratio 1.00, ip_cost 12271143, appr_ip_cost 5847098168
+[2023-05-21 19:44:03.418] [info] queryID 990, userID 1000000, query_ip_cost 20681031, query_appr_ip_cost 5829548249, time_used 6942.14s
+[2023-05-21 19:44:40.211] [info] queryID 319, userID 1000000, query_ip_cost 14733855, query_appr_ip_cost 5859959898, time_used 6978.93s
+[2023-05-21 19:46:38.886] [info] queryID 640, userID 1000000, query_ip_cost 16255562, query_appr_ip_cost 6035069876, time_used 7097.60s
+[2023-05-21 19:47:02.154] [info] queryID 209, userID 1000000, query_ip_cost 12316540, query_appr_ip_cost 6012931151, time_used 7120.87s
+[2023-05-21 19:48:22.748] [info] queryID 880, userID 1000000, query_ip_cost 23042772, query_appr_ip_cost 6080668677, time_used 7201.47s
+[2023-05-21 19:48:43.653] [info] queryID 110, userID 2000000, query_ip_cost 19033208, query_appr_ip_cost 6069856124, time_used 7222.37s
+[2023-05-21 19:50:13.731] [info] queryID 740, userID 2000000, query_ip_cost 9639415, query_appr_ip_cost 6197201141, time_used 7312.45s
+[2023-05-21 19:51:28.271] [info] queryID 560, userID 1000000, query_ip_cost 20972908, query_appr_ip_cost 6220074325, time_used 7386.99s
+[2023-05-21 19:52:31.293] [info] finish queryID 110, current_total_retrieval_time 7458.63s, single_query_retrieval_time 7458.61s, prune_ratio 1.00, ip_cost 19034207, appr_ip_cost 6251705617
+[2023-05-21 19:53:05.505] [info] queryID 198, userID 1000000, query_ip_cost 21454147, query_appr_ip_cost 6312335815, time_used 7484.22s
+[2023-05-21 19:53:40.503] [info] queryID 850, userID 2000000, query_ip_cost 24178828, query_appr_ip_cost 6172752557, time_used 7519.22s
+[2023-05-21 19:53:55.632] [info] queryID 870, userID 2000000, query_ip_cost 19672357, query_appr_ip_cost 6312296091, time_used 7534.35s
+[2023-05-21 19:56:29.340] [info] finish queryID 850, current_total_retrieval_time 7696.68s, single_query_retrieval_time 7696.66s, prune_ratio 1.00, ip_cost 24178903, appr_ip_cost 6303809633
+[2023-05-21 19:57:17.907] [info] queryID 56, userID 2000000, query_ip_cost 14847695, query_appr_ip_cost 4773062982, time_used 5689.71s
+[2023-05-21 19:57:25.259] [info] finish queryID 870, current_total_retrieval_time 7752.59s, single_query_retrieval_time 7752.58s, prune_ratio 1.00, ip_cost 19672464, appr_ip_cost 6478952062
+[2023-05-21 19:57:41.174] [info] finish queryID 740, current_total_retrieval_time 7768.51s, single_query_retrieval_time 7768.51s, prune_ratio 1.00, ip_cost 9639597, appr_ip_cost 6570320958
+[2023-05-21 19:59:44.823] [info] finish queryID 56, current_total_retrieval_time 7892.16s, single_query_retrieval_time 5837.33s, prune_ratio 1.00, ip_cost 14847951, appr_ip_cost 4888791347
+[2023-05-21 20:00:49.488] [info] queryID 830, userID 1000000, query_ip_cost 21994807, query_appr_ip_cost 6650275916, time_used 7948.20s
+[2023-05-21 20:01:27.783] [info] queryID 396, userID 2000000, query_ip_cost 20936142, query_appr_ip_cost 6692888288, time_used 7986.50s
+[2023-05-21 20:01:36.075] [info] queryID 220, userID 2000000, query_ip_cost 21313629, query_appr_ip_cost 6682892804, time_used 7994.79s
+[2023-05-21 20:02:15.804] [info] queryID 620, userID 2000000, query_ip_cost 17799315, query_appr_ip_cost 6651178962, time_used 8034.52s
+[2023-05-21 20:04:50.154] [info] finish queryID 396, current_total_retrieval_time 8197.49s, single_query_retrieval_time 8197.47s, prune_ratio 1.00, ip_cost 20936142, appr_ip_cost 6855889612
+[2023-05-21 20:05:07.988] [info] finish queryID 220, current_total_retrieval_time 8215.32s, single_query_retrieval_time 8215.31s, prune_ratio 1.00, ip_cost 21317893, appr_ip_cost 6853284428
+[2023-05-21 20:06:54.013] [info] finish queryID 620, current_total_retrieval_time 8321.35s, single_query_retrieval_time 8321.33s, prune_ratio 1.00, ip_cost 17800267, appr_ip_cost 6873576042
+[2023-05-21 20:10:32.647] [info] queryID 374, userID 1000000, query_ip_cost 21396060, query_appr_ip_cost 7197074784, time_used 8531.36s
+[2023-05-21 20:12:51.867] [info] queryID 330, userID 1000000, query_ip_cost 18846670, query_appr_ip_cost 7288298053, time_used 8670.58s
+[2023-05-21 20:13:58.488] [info] queryID 385, userID 1000000, query_ip_cost 21967814, query_appr_ip_cost 7538066086, time_used 8737.20s
+[2023-05-21 20:15:38.615] [info] queryID 880, userID 2000000, query_ip_cost 23135062, query_appr_ip_cost 7411157504, time_used 8837.33s
+[2023-05-21 20:17:04.793] [info] queryID 570, userID 1000000, query_ip_cost 19815053, query_appr_ip_cost 7605472949, time_used 8923.51s
+[2023-05-21 20:17:50.842] [info] queryID 791, userID 1000000, query_ip_cost 17710764, query_appr_ip_cost 2961785645, time_used 3536.66s
+[2023-05-21 20:19:01.847] [info] queryID 231, userID 1000000, query_ip_cost 21473511, query_appr_ip_cost 7603956092, time_used 9040.56s
+[2023-05-21 20:19:18.749] [info] finish queryID 880, current_total_retrieval_time 9066.08s, single_query_retrieval_time 9066.08s, prune_ratio 1.00, ip_cost 23136511, appr_ip_cost 7590182450
+[2023-05-21 20:19:59.366] [info] queryID 630, userID 2000000, query_ip_cost 12601481, query_appr_ip_cost 7642568908, time_used 9098.08s
+[2023-05-21 20:24:47.455] [info] queryID 176, userID 1000000, query_ip_cost 19223038, query_appr_ip_cost 7870007062, time_used 9386.17s
+[2023-05-21 20:25:52.346] [info] queryID 730, userID 1000000, query_ip_cost 26701666, query_appr_ip_cost 7951966572, time_used 9451.06s
+[2023-05-21 20:26:11.654] [info] queryID 990, userID 2000000, query_ip_cost 20758934, query_appr_ip_cost 7914740037, time_used 9470.37s
+[2023-05-21 20:26:34.057] [info] queryID 791, userID 2000000, query_ip_cost 17727489, query_appr_ip_cost 3377151431, time_used 4059.87s
+[2023-05-21 20:27:24.065] [info] finish queryID 791, current_total_retrieval_time 9551.40s, single_query_retrieval_time 4110.32s, prune_ratio 1.00, ip_cost 17727570, appr_ip_cost 3414391824
+[2023-05-21 20:27:40.580] [info] finish queryID 630, current_total_retrieval_time 9567.92s, single_query_retrieval_time 9567.90s, prune_ratio 1.00, ip_cost 12601614, appr_ip_cost 8026305538
+[2023-05-21 20:27:42.418] [info] queryID 0, userID 1000000, query_ip_cost 16028957, query_appr_ip_cost 7980086240, time_used 9561.13s
+[2023-05-21 20:28:02.362] [info] queryID 407, userID 1000000, query_ip_cost 23244383, query_appr_ip_cost 7947487833, time_used 9581.08s
+[2023-05-21 20:30:00.414] [info] queryID 209, userID 2000000, query_ip_cost 12326462, query_appr_ip_cost 8122263953, time_used 9699.13s
+[2023-05-21 20:30:54.653] [info] queryID 530, userID 1000000, query_ip_cost 14411512, query_appr_ip_cost 8341770748, time_used 9753.37s
+[2023-05-21 20:32:46.833] [info] finish queryID 990, current_total_retrieval_time 9874.17s, single_query_retrieval_time 9874.15s, prune_ratio 1.00, ip_cost 20760102, appr_ip_cost 8238363187
+[2023-05-21 20:33:39.577] [info] queryID 560, userID 2000000, query_ip_cost 21014377, query_appr_ip_cost 8309771714, time_used 9918.29s
+[2023-05-21 20:33:54.016] [info] queryID 319, userID 2000000, query_ip_cost 14766437, query_appr_ip_cost 8304383532, time_used 9932.73s
+[2023-05-21 20:36:30.541] [info] queryID 198, userID 2000000, query_ip_cost 21522997, query_appr_ip_cost 8449793468, time_used 10089.26s
+[2023-05-21 20:36:56.785] [info] finish queryID 209, current_total_retrieval_time 10124.12s, single_query_retrieval_time 10124.12s, prune_ratio 1.00, ip_cost 12326607, appr_ip_cost 8459544430
+[2023-05-21 20:40:08.934] [info] queryID 385, userID 2000000, query_ip_cost 22089984, query_appr_ip_cost 8819378058, time_used 10307.65s
+[2023-05-21 20:40:18.440] [info] finish queryID 560, current_total_retrieval_time 10325.77s, single_query_retrieval_time 10325.77s, prune_ratio 1.00, ip_cost 21015417, appr_ip_cost 8636265622
+[2023-05-21 20:41:34.485] [info] queryID 830, userID 2000000, query_ip_cost 22072674, query_appr_ip_cost 8627101955, time_used 10393.20s
+[2023-05-21 20:41:37.239] [info] finish queryID 319, current_total_retrieval_time 10404.57s, single_query_retrieval_time 10404.56s, prune_ratio 1.00, ip_cost 14767609, appr_ip_cost 8689727369
+[2023-05-21 20:43:01.469] [info] finish queryID 198, current_total_retrieval_time 10488.80s, single_query_retrieval_time 10488.79s, prune_ratio 1.00, ip_cost 21524153, appr_ip_cost 8767721282
+[2023-05-21 20:43:51.969] [info] finish queryID 385, current_total_retrieval_time 10539.30s, single_query_retrieval_time 10539.29s, prune_ratio 1.00, ip_cost 22091590, appr_ip_cost 8999905948
+[2023-05-21 20:47:34.930] [info] finish queryID 830, current_total_retrieval_time 10762.27s, single_query_retrieval_time 10762.25s, prune_ratio 1.00, ip_cost 22073875, appr_ip_cost 8915735184
+[2023-05-21 20:49:10.085] [info] queryID 640, userID 2000000, query_ip_cost 16289047, query_appr_ip_cost 9195268087, time_used 10848.80s
+[2023-05-21 20:49:43.299] [info] queryID 342, userID 1000000, query_ip_cost 17426375, query_appr_ip_cost 4988109798, time_used 5956.52s
+[2023-05-21 20:55:24.164] [info] queryID 374, userID 2000000, query_ip_cost 21487460, query_appr_ip_cost 9411006197, time_used 11222.88s
+[2023-05-21 20:58:01.237] [info] queryID 920, userID 1000000, query_ip_cost 25103159, query_appr_ip_cost 9600052768, time_used 11379.95s
+[2023-05-21 21:00:12.910] [info] finish queryID 640, current_total_retrieval_time 11520.25s, single_query_retrieval_time 11520.23s, prune_ratio 1.00, ip_cost 16289612, appr_ip_cost 9752447218
+[2023-05-21 21:02:00.850] [info] finish queryID 374, current_total_retrieval_time 11628.19s, single_query_retrieval_time 11628.17s, prune_ratio 1.00, ip_cost 21489827, appr_ip_cost 9742520608
+[2023-05-21 21:05:13.889] [info] queryID 275, userID 1000000, query_ip_cost 26519349, query_appr_ip_cost 10077229601, time_used 11812.61s
+[2023-05-21 21:05:38.164] [info] queryID 441, userID 1000000, query_ip_cost 19392012, query_appr_ip_cost 4786004461, time_used 5679.75s
+[2023-05-21 21:06:18.827] [info] queryID 730, userID 2000000, query_ip_cost 26812275, query_appr_ip_cost 9917909524, time_used 11877.54s
+[2023-05-21 21:06:37.168] [info] queryID 570, userID 2000000, query_ip_cost 19953367, query_appr_ip_cost 10070531003, time_used 11895.89s
+[2023-05-21 21:09:01.640] [info] queryID 231, userID 2000000, query_ip_cost 21539902, query_appr_ip_cost 10058575360, time_used 12040.36s
+[2023-05-21 21:12:02.523] [info] finish queryID 730, current_total_retrieval_time 12229.86s, single_query_retrieval_time 12229.84s, prune_ratio 1.00, ip_cost 26814813, appr_ip_cost 10191941687
+[2023-05-21 21:13:18.525] [info] queryID 330, userID 2000000, query_ip_cost 18920945, query_appr_ip_cost 10279129612, time_used 12297.24s
+[2023-05-21 21:13:59.660] [info] finish queryID 570, current_total_retrieval_time 12347.00s, single_query_retrieval_time 12346.98s, prune_ratio 1.00, ip_cost 19955271, appr_ip_cost 10440006905
+[2023-05-21 21:16:53.187] [info] finish queryID 231, current_total_retrieval_time 12520.52s, single_query_retrieval_time 12520.52s, prune_ratio 1.00, ip_cost 21543288, appr_ip_cost 10443659572
+[2023-05-21 21:22:59.070] [info] finish queryID 330, current_total_retrieval_time 12886.41s, single_query_retrieval_time 12886.39s, prune_ratio 1.00, ip_cost 18925465, appr_ip_cost 10762112635
+[2023-05-21 21:23:01.136] [info] queryID 610, userID 1000000, query_ip_cost 21286224, query_appr_ip_cost 10783034567, time_used 12879.85s
+[2023-05-21 21:23:35.916] [info] queryID 342, userID 2000000, query_ip_cost 17455751, query_appr_ip_cost 6640958747, time_used 7989.14s
+[2023-05-21 21:26:54.431] [info] queryID 407, userID 2000000, query_ip_cost 23316222, query_appr_ip_cost 10807603057, time_used 13113.15s
+[2023-05-21 21:27:15.233] [info] queryID 176, userID 2000000, query_ip_cost 19279219, query_appr_ip_cost 10961461886, time_used 13133.95s
+[2023-05-21 21:27:49.497] [info] queryID 441, userID 2000000, query_ip_cost 19459153, query_appr_ip_cost 5869641956, time_used 7011.09s
+[2023-05-21 21:28:36.452] [info] finish queryID 342, current_total_retrieval_time 13223.79s, single_query_retrieval_time 8290.11s, prune_ratio 1.00, ip_cost 17455884, appr_ip_cost 6881959731
+[2023-05-21 21:28:44.791] [info] queryID 429, userID 1000000, query_ip_cost 27921766, query_appr_ip_cost 11273291093, time_used 13223.51s
+[2023-05-21 21:29:21.834] [info] queryID 363, userID 1000000, query_ip_cost 24503966, query_appr_ip_cost 11312056177, time_used 13260.55s
+[2023-05-21 21:30:28.178] [info] finish queryID 441, current_total_retrieval_time 13335.51s, single_query_retrieval_time 7170.43s, prune_ratio 1.00, ip_cost 19459249, appr_ip_cost 5995405506
+[2023-05-21 21:33:49.428] [info] queryID 0, userID 2000000, query_ip_cost 16078791, query_appr_ip_cost 11212797640, time_used 13528.15s
+[2023-05-21 21:36:06.920] [info] finish queryID 407, current_total_retrieval_time 13674.26s, single_query_retrieval_time 13674.24s, prune_ratio 1.00, ip_cost 23316521, appr_ip_cost 11252727013
+[2023-05-21 21:36:28.326] [info] queryID 750, userID 1000000, query_ip_cost 28523030, query_appr_ip_cost 11585637543, time_used 13687.04s
+[2023-05-21 21:37:00.699] [info] finish queryID 176, current_total_retrieval_time 13728.03s, single_query_retrieval_time 13728.02s, prune_ratio 1.00, ip_cost 19279791, appr_ip_cost 11442691486
+[2023-05-21 21:40:23.468] [info] queryID 221, userID 1000000, query_ip_cost 19793246, query_appr_ip_cost 4831635437, time_used 5715.04s
+[2023-05-21 21:42:54.111] [info] queryID 530, userID 2000000, query_ip_cost 14443571, query_appr_ip_cost 11946693781, time_used 14072.83s
+[2023-05-21 21:44:00.968] [info] finish queryID 0, current_total_retrieval_time 14148.30s, single_query_retrieval_time 14148.30s, prune_ratio 1.00, ip_cost 16079367, appr_ip_cost 11708619717
+[2023-05-21 21:49:37.436] [info] queryID 133, userID 1000000, query_ip_cost 23334447, query_appr_ip_cost 6378294523, time_used 7584.96s
+[2023-05-21 21:50:12.875] [info] queryID 264, userID 1000000, query_ip_cost 21618119, query_appr_ip_cost 12209205252, time_used 14511.59s
+[2023-05-21 21:54:34.527] [info] finish queryID 530, current_total_retrieval_time 14781.86s, single_query_retrieval_time 14781.86s, prune_ratio 1.00, ip_cost 14444202, appr_ip_cost 12530471031
+[2023-05-21 21:59:41.942] [info] queryID 187, userID 1000000, query_ip_cost 7186797, query_appr_ip_cost 12641150175, time_used 15080.66s
+[2023-05-21 22:02:12.392] [info] queryID 11, userID 1000000, query_ip_cost 25965196, query_appr_ip_cost 12729606481, time_used 15231.11s
+[2023-05-21 22:07:51.496] [info] queryID 601, userID 1000000, query_ip_cost 19776335, query_appr_ip_cost 9255189855, time_used 11076.63s
+[2023-05-21 22:08:48.115] [info] queryID 920, userID 2000000, query_ip_cost 25218065, query_appr_ip_cost 13087582248, time_used 15626.83s
+[2023-05-21 22:09:40.288] [info] queryID 275, userID 2000000, query_ip_cost 26701243, query_appr_ip_cost 13271891951, time_used 15679.01s
+[2023-05-21 22:10:46.800] [info] queryID 287, userID 1000000, query_ip_cost 19915255, query_appr_ip_cost 8534387806, time_used 10221.93s
+[2023-05-21 22:12:40.278] [info] queryID 221, userID 2000000, query_ip_cost 19817782, query_appr_ip_cost 6419914630, time_used 7651.85s
+[2023-05-21 22:14:13.094] [info] queryID 480, userID 1000000, query_ip_cost 25092339, query_appr_ip_cost 13737135493, time_used 15951.81s
+[2023-05-21 22:17:46.035] [info] finish queryID 221, current_total_retrieval_time 16173.37s, single_query_retrieval_time 7958.05s, prune_ratio 1.00, ip_cost 19817782, appr_ip_cost 6668903128
+[2023-05-21 22:18:03.249] [info] queryID 851, userID 1000000, query_ip_cost 19360681, query_appr_ip_cost 7138296104, time_used 8493.19s
+[2023-05-21 22:19:41.025] [info] finish queryID 275, current_total_retrieval_time 16288.36s, single_query_retrieval_time 16288.34s, prune_ratio 1.00, ip_cost 26708613, appr_ip_cost 13765367869
+[2023-05-21 22:19:48.439] [info] queryID 490, userID 1000000, query_ip_cost 18836907, query_appr_ip_cost 13766022419, time_used 16287.16s
+[2023-05-21 22:20:03.088] [info] queryID 133, userID 2000000, query_ip_cost 23443866, query_appr_ip_cost 7862648232, time_used 9410.61s
+[2023-05-21 22:20:05.828] [info] queryID 941, userID 1000000, query_ip_cost 24463873, query_appr_ip_cost 9239533742, time_used 11091.47s
+[2023-05-21 22:20:13.421] [info] finish queryID 920, current_total_retrieval_time 16320.76s, single_query_retrieval_time 16320.74s, prune_ratio 1.00, ip_cost 25219042, appr_ip_cost 13647547725
+[2023-05-21 22:24:26.478] [info] finish queryID 133, current_total_retrieval_time 16573.81s, single_query_retrieval_time 9674.53s, prune_ratio 1.00, ip_cost 23445023, appr_ip_cost 8074633497
+[2023-05-21 22:27:59.017] [info] queryID 429, userID 2000000, query_ip_cost 28161133, query_appr_ip_cost 14183022557, time_used 16777.73s
+[2023-05-21 22:29:02.998] [info] queryID 900, userID 1000000, query_ip_cost 31300021, query_appr_ip_cost 14332608501, time_used 16841.71s
+[2023-05-21 22:37:06.016] [info] finish queryID 429, current_total_retrieval_time 17333.35s, single_query_retrieval_time 17333.33s, prune_ratio 1.00, ip_cost 28164091, appr_ip_cost 14630245735
+[2023-05-21 22:37:18.151] [info] queryID 44, userID 1000000, query_ip_cost 27734640, query_appr_ip_cost 14760180827, time_used 17336.87s
+[2023-05-21 22:47:52.740] [info] queryID 610, userID 2000000, query_ip_cost 21387007, query_appr_ip_cost 14929140446, time_used 17971.46s
+[2023-05-21 22:52:25.186] [info] queryID 363, userID 2000000, query_ip_cost 24809887, query_appr_ip_cost 15446134886, time_used 18243.90s
+[2023-05-21 22:53:09.730] [info] queryID 750, userID 2000000, query_ip_cost 28838508, query_appr_ip_cost 15379834299, time_used 18288.45s
+[2023-05-21 22:54:28.789] [info] queryID 89, userID 1000000, query_ip_cost 6894632, query_appr_ip_cost 11570924276, time_used 13700.30s
+[2023-05-21 22:58:24.758] [info] queryID 22, userID 1000000, query_ip_cost 22288105, query_appr_ip_cost 15733551227, time_used 18603.47s
+[2023-05-21 23:00:26.140] [info] queryID 820, userID 1000000, query_ip_cost 30246120, query_appr_ip_cost 16195210181, time_used 18724.86s
+[2023-05-21 23:00:59.405] [info] finish queryID 610, current_total_retrieval_time 18766.74s, single_query_retrieval_time 18766.74s, prune_ratio 1.00, ip_cost 21387007, appr_ip_cost 15564161574
+[2023-05-21 23:04:28.049] [info] queryID 99, userID 1000000, query_ip_cost 22394199, query_appr_ip_cost 15898108078, time_used 18966.77s
+[2023-05-21 23:04:50.811] [info] queryID 631, userID 1000000, query_ip_cost 27148312, query_appr_ip_cost 7902408518, time_used 9429.80s
+[2023-05-21 23:05:03.662] [info] queryID 851, userID 2000000, query_ip_cost 19405128, query_appr_ip_cost 9437352843, time_used 11313.60s
+[2023-05-21 23:05:13.707] [info] finish queryID 363, current_total_retrieval_time 19021.04s, single_query_retrieval_time 19021.02s, prune_ratio 1.00, ip_cost 24809887, appr_ip_cost 16084024164
+[2023-05-21 23:05:24.810] [info] finish queryID 750, current_total_retrieval_time 19032.15s, single_query_retrieval_time 19032.13s, prune_ratio 1.00, ip_cost 28848433, appr_ip_cost 15989456039
+[2023-05-21 23:05:43.880] [info] queryID 500, userID 1000000, query_ip_cost 28035089, query_appr_ip_cost 16145873432, time_used 19042.60s
+[2023-05-21 23:11:59.245] [info] finish queryID 851, current_total_retrieval_time 19426.58s, single_query_retrieval_time 11729.90s, prune_ratio 1.00, ip_cost 19406006, appr_ip_cost 9771235386
+[2023-05-21 23:19:18.403] [info] queryID 287, userID 2000000, query_ip_cost 19985732, query_appr_ip_cost 11933849128, time_used 14333.53s
+[2023-05-21 23:23:10.329] [info] queryID 780, userID 1000000, query_ip_cost 10383626, query_appr_ip_cost 17203752508, time_used 20089.05s
+[2023-05-21 23:23:32.352] [info] queryID 601, userID 2000000, query_ip_cost 19846082, query_appr_ip_cost 12961590109, time_used 15617.48s
+[2023-05-21 23:25:40.939] [info] queryID 941, userID 2000000, query_ip_cost 24571653, query_appr_ip_cost 12419114892, time_used 15026.58s
+[2023-05-21 23:30:22.421] [info] queryID 540, userID 1000000, query_ip_cost 24252209, query_appr_ip_cost 18215308321, time_used 20521.14s
+[2023-05-21 23:30:38.890] [info] finish queryID 287, current_total_retrieval_time 20546.22s, single_query_retrieval_time 15014.45s, prune_ratio 1.00, ip_cost 19989373, appr_ip_cost 12496302560
+[2023-05-21 23:32:24.269] [info] queryID 650, userID 1000000, query_ip_cost 32217870, query_appr_ip_cost 17685320919, time_used 20642.99s
+[2023-05-21 23:35:17.981] [info] finish queryID 601, current_total_retrieval_time 20825.32s, single_query_retrieval_time 16323.64s, prune_ratio 1.00, ip_cost 19848390, appr_ip_cost 13534479766
+[2023-05-21 23:36:06.288] [info] finish queryID 941, current_total_retrieval_time 20873.62s, single_query_retrieval_time 15652.36s, prune_ratio 1.00, ip_cost 24575362, appr_ip_cost 12920761036
+[2023-05-21 23:46:12.593] [info] queryID 264, userID 2000000, query_ip_cost 21803305, query_appr_ip_cost 17986814840, time_used 21471.31s
+[2023-05-21 23:47:55.219] [info] queryID 631, userID 2000000, query_ip_cost 27279109, query_appr_ip_cost 9985145689, time_used 12014.20s
+[2023-05-21 23:48:00.732] [info] queryID 1, userID 1000000, query_ip_cost 22788928, query_appr_ip_cost 6321506318, time_used 7439.01s
+[2023-05-21 23:50:39.014] [info] queryID 930, userID 1000000, query_ip_cost 32789193, query_appr_ip_cost 18754425790, time_used 21737.73s
+[2023-05-21 23:53:27.548] [info] queryID 331, userID 1000000, query_ip_cost 25942286, query_appr_ip_cost 7607190305, time_used 9027.93s
+[2023-05-21 23:54:23.645] [info] finish queryID 631, current_total_retrieval_time 21970.98s, single_query_retrieval_time 12403.06s, prune_ratio 1.00, ip_cost 27279267, appr_ip_cost 10295478163
+[2023-05-21 23:58:07.502] [info] queryID 480, userID 2000000, query_ip_cost 25360223, query_appr_ip_cost 19003814951, time_used 22186.22s
+[2023-05-21 23:59:18.625] [info] queryID 11, userID 2000000, query_ip_cost 26136913, query_appr_ip_cost 18482724147, time_used 22257.34s
+[2023-05-22 00:01:08.693] [info] queryID 297, userID 1000000, query_ip_cost 32028455, query_appr_ip_cost 18895501757, time_used 22367.41s
+[2023-05-22 00:02:41.090] [info] queryID 760, userID 1000000, query_ip_cost 30370902, query_appr_ip_cost 19446266111, time_used 22459.81s
+[2023-05-22 00:04:47.628] [info] finish queryID 264, current_total_retrieval_time 22594.96s, single_query_retrieval_time 22594.95s, prune_ratio 1.00, ip_cost 21808378, appr_ip_cost 18912920072
+[2023-05-22 00:09:17.316] [info] queryID 900, userID 2000000, query_ip_cost 31736712, query_appr_ip_cost 19330822898, time_used 22856.03s
+[2023-05-22 00:10:08.449] [info] queryID 1, userID 2000000, query_ip_cost 22861292, query_appr_ip_cost 7391435209, time_used 8766.73s
+[2023-05-22 00:13:04.173] [info] finish queryID 1, current_total_retrieval_time 23091.51s, single_query_retrieval_time 8943.20s, prune_ratio 1.00, ip_cost 22861618, appr_ip_cost 7531326519
+[2023-05-22 00:14:40.413] [info] queryID 430, userID 1000000, query_ip_cost 6601953, query_appr_ip_cost 4931700559, time_used 5853.73s
+[2023-05-22 00:14:49.241] [info] finish queryID 480, current_total_retrieval_time 23196.58s, single_query_retrieval_time 23196.56s, prune_ratio 1.00, ip_cost 25368275, appr_ip_cost 19848682087
+[2023-05-22 00:17:38.742] [info] queryID 531, userID 1000000, query_ip_cost 20749658, query_appr_ip_cost 7244114009, time_used 8583.61s
+[2023-05-22 00:18:35.769] [info] finish queryID 11, current_total_retrieval_time 23423.10s, single_query_retrieval_time 23423.09s, prune_ratio 1.00, ip_cost 26146023, appr_ip_cost 19426235253
+[2023-05-22 00:22:27.764] [info] queryID 33, userID 1000000, query_ip_cost 28898024, query_appr_ip_cost 20551254898, time_used 23646.48s
+[2023-05-22 00:22:50.667] [info] queryID 590, userID 1000000, query_ip_cost 28992745, query_appr_ip_cost 20343399378, time_used 23669.38s
+[2023-05-22 00:26:03.858] [info] finish queryID 900, current_total_retrieval_time 23871.19s, single_query_retrieval_time 23871.18s, prune_ratio 1.00, ip_cost 31736712, appr_ip_cost 20171702974
+[2023-05-22 00:27:35.636] [info] queryID 77, userID 1000000, query_ip_cost 33563857, query_appr_ip_cost 20388255607, time_used 23954.35s
+[2023-05-22 00:33:25.123] [info] queryID 187, userID 2000000, query_ip_cost 7209376, query_appr_ip_cost 20296038027, time_used 24303.84s
+[2023-05-22 00:36:03.451] [info] queryID 331, userID 2000000, query_ip_cost 26068939, query_appr_ip_cost 9678786053, time_used 11583.83s
+[2023-05-22 00:37:28.798] [info] queryID 852, userID 1000000, query_ip_cost 20820821, query_appr_ip_cost 4297613830, time_used 5128.95s
+[2023-05-22 00:42:19.147] [info] finish queryID 331, current_total_retrieval_time 24846.48s, single_query_retrieval_time 11960.08s, prune_ratio 1.00, ip_cost 26071710, appr_ip_cost 9979170918
+[2023-05-22 00:42:52.252] [info] queryID 490, userID 2000000, query_ip_cost 19012459, query_appr_ip_cost 20970381590, time_used 24870.97s
+[2023-05-22 00:44:14.356] [info] queryID 121, userID 1000000, query_ip_cost 29156770, query_appr_ip_cost 21845988236, time_used 24953.07s
+[2023-05-22 00:44:34.191] [info] queryID 731, userID 1000000, query_ip_cost 27223263, query_appr_ip_cost 10765006140, time_used 12751.12s
+[2023-05-22 00:48:07.485] [info] queryID 397, userID 1000000, query_ip_cost 30475942, query_appr_ip_cost 14287090352, time_used 16996.90s
+[2023-05-22 00:50:25.681] [info] queryID 430, userID 2000000, query_ip_cost 6604396, query_appr_ip_cost 6698993070, time_used 7999.00s
+[2023-05-22 00:54:33.655] [info] finish queryID 430, current_total_retrieval_time 25580.99s, single_query_retrieval_time 8247.64s, prune_ratio 1.00, ip_cost 6604447, appr_ip_cost 6899259516
+[2023-05-22 00:55:49.896] [info] queryID 852, userID 2000000, query_ip_cost 20858661, query_appr_ip_cost 5185026167, time_used 6230.05s
+[2023-05-22 00:57:16.747] [info] queryID 611, userID 1000000, query_ip_cost 21366884, query_appr_ip_cost 5905445182, time_used 6976.90s
+[2023-05-22 00:57:21.813] [info] queryID 711, userID 1000000, query_ip_cost 33665884, query_appr_ip_cost 17676349534, time_used 20787.07s
+[2023-05-22 00:58:15.960] [info] finish queryID 852, current_total_retrieval_time 25803.29s, single_query_retrieval_time 6376.71s, prune_ratio 1.00, ip_cost 20858670, appr_ip_cost 5300433606
+[2023-05-22 00:59:25.536] [info] queryID 700, userID 1000000, query_ip_cost 14852032, query_appr_ip_cost 21883261241, time_used 25864.25s
+[2023-05-22 00:59:38.588] [info] finish queryID 187, current_total_retrieval_time 25885.92s, single_query_retrieval_time 25885.92s, prune_ratio 1.00, ip_cost 7210274, appr_ip_cost 21600144966
+[2023-05-22 01:04:47.165] [info] queryID 820, userID 2000000, query_ip_cost 30700025, query_appr_ip_cost 22498101052, time_used 26185.88s
+[2023-05-22 01:06:54.692] [info] finish queryID 490, current_total_retrieval_time 26322.03s, single_query_retrieval_time 26322.02s, prune_ratio 1.00, ip_cost 19013967, appr_ip_cost 22185294643
+[2023-05-22 01:08:02.064] [info] queryID 89, userID 2000000, query_ip_cost 6904775, query_appr_ip_cost 18272835124, time_used 21713.57s
+[2023-05-22 01:10:16.941] [info] queryID 308, userID 1000000, query_ip_cost 32783516, query_appr_ip_cost 22660471193, time_used 26515.66s
+[2023-05-22 01:10:26.589] [info] queryID 531, userID 2000000, query_ip_cost 20847718, query_appr_ip_cost 9857032436, time_used 11751.46s
+[2023-05-22 01:10:35.395] [info] queryID 44, userID 2000000, query_ip_cost 27979560, query_appr_ip_cost 22493700366, time_used 26534.11s
+[2023-05-22 01:18:27.231] [info] finish queryID 531, current_total_retrieval_time 27014.57s, single_query_retrieval_time 12232.70s, prune_ratio 1.00, ip_cost 20850719, appr_ip_cost 10253165436
+[2023-05-22 01:24:10.721] [info] queryID 840, userID 1000000, query_ip_cost 30282366, query_appr_ip_cost 23310237968, time_used 27349.44s
+[2023-05-22 01:24:37.414] [info] finish queryID 820, current_total_retrieval_time 27384.75s, single_query_retrieval_time 27384.73s, prune_ratio 1.00, ip_cost 30720075, appr_ip_cost 23503291641
+[2023-05-22 01:26:08.756] [info] queryID 611, userID 2000000, query_ip_cost 21444015, query_appr_ip_cost 7317855845, time_used 8708.91s
+[2023-05-22 01:28:46.834] [info] queryID 520, userID 1000000, query_ip_cost 32245786, query_appr_ip_cost 23466209543, time_used 27625.55s
+[2023-05-22 01:28:49.744] [info] queryID 670, userID 1000000, query_ip_cost 32056685, query_appr_ip_cost 24404489838, time_used 27628.46s
+[2023-05-22 01:29:11.044] [info] queryID 199, userID 1000000, query_ip_cost 22401049, query_appr_ip_cost 15321705328, time_used 17169.14s
+[2023-05-22 01:30:15.295] [info] finish queryID 611, current_total_retrieval_time 27722.63s, single_query_retrieval_time 8955.89s, prune_ratio 1.00, ip_cost 21446344, appr_ip_cost 7519075850
+[2023-05-22 01:31:52.495] [info] finish queryID 89, current_total_retrieval_time 27819.83s, single_query_retrieval_time 23144.55s, prune_ratio 1.00, ip_cost 6904907, appr_ip_cost 19468341502
+[2023-05-22 01:32:55.608] [info] queryID 921, userID 1000000, query_ip_cost 26762640, query_appr_ip_cost 9697085300, time_used 11561.75s
+[2023-05-22 01:34:31.901] [info] queryID 12, userID 1000000, query_ip_cost 18715848, query_appr_ip_cost 3844558414, time_used 4555.62s
+[2023-05-22 01:35:51.774] [info] queryID 910, userID 1000000, query_ip_cost 34716417, query_appr_ip_cost 24447428470, time_used 28050.49s
+[2023-05-22 01:37:14.720] [info] finish queryID 44, current_total_retrieval_time 28142.05s, single_query_retrieval_time 28142.04s, prune_ratio 1.00, ip_cost 27988832, appr_ip_cost 23838662833
+[2023-05-22 01:38:57.489] [info] queryID 540, userID 2000000, query_ip_cost 24736956, query_appr_ip_cost 24959287226, time_used 28236.21s
+[2023-05-22 01:47:46.356] [info] queryID 134, userID 1000000, query_ip_cost 11136270, query_appr_ip_cost 10300539034, time_used 12199.22s
+[2023-05-22 01:49:41.883] [info] queryID 650, userID 2000000, query_ip_cost 32882846, query_appr_ip_cost 24589612975, time_used 28880.60s
+[2023-05-22 01:51:25.222] [info] queryID 12, userID 2000000, query_ip_cost 18740939, query_appr_ip_cost 4667665158, time_used 5568.94s
+[2023-05-22 01:53:41.617] [info] finish queryID 12, current_total_retrieval_time 29128.95s, single_query_retrieval_time 5705.85s, prune_ratio 1.00, ip_cost 18741324, appr_ip_cost 4775967353
+[2023-05-22 01:54:38.136] [info] queryID 99, userID 2000000, query_ip_cost 22742510, query_appr_ip_cost 24421445804, time_used 29176.85s
+[2023-05-22 01:55:36.094] [info] queryID 22, userID 2000000, query_ip_cost 22468550, query_appr_ip_cost 24629796859, time_used 29234.81s
+[2023-05-22 01:58:43.980] [info] queryID 500, userID 2000000, query_ip_cost 28190912, query_appr_ip_cost 24838341647, time_used 29422.70s
+[2023-05-22 01:59:55.359] [info] finish queryID 540, current_total_retrieval_time 29502.69s, single_query_retrieval_time 29502.68s, prune_ratio 1.00, ip_cost 24749904, appr_ip_cost 26058016269
+[2023-05-22 02:02:42.541] [info] queryID 731, userID 2000000, query_ip_cost 27393113, query_appr_ip_cost 14621077148, time_used 17439.47s
+[2023-05-22 02:10:33.412] [info] finish queryID 650, current_total_retrieval_time 30140.75s, single_query_retrieval_time 30140.73s, prune_ratio 1.00, ip_cost 32887448, appr_ip_cost 25641752687
+[2023-05-22 02:11:32.807] [info] queryID 2, userID 1000000, query_ip_cost 21124320, query_appr_ip_cost 5935471859, time_used 7107.99s
+[2023-05-22 02:13:25.765] [info] queryID 881, userID 1000000, query_ip_cost 19563701, query_appr_ip_cost 19004612058, time_used 21246.58s
+[2023-05-22 02:14:27.687] [info] queryID 930, userID 2000000, query_ip_cost 33423152, query_appr_ip_cost 26070975012, time_used 30366.40s
+[2023-05-22 02:15:16.429] [info] finish queryID 731, current_total_retrieval_time 30423.76s, single_query_retrieval_time 18193.90s, prune_ratio 1.00, ip_cost 27395421, appr_ip_cost 15234519924
+[2023-05-22 02:22:29.848] [info] finish queryID 99, current_total_retrieval_time 30857.18s, single_query_retrieval_time 30857.17s, prune_ratio 1.00, ip_cost 22758623, appr_ip_cost 25815839202
+[2023-05-22 02:25:56.312] [info] finish queryID 22, current_total_retrieval_time 31063.65s, single_query_retrieval_time 31063.65s, prune_ratio 1.00, ip_cost 22471437, appr_ip_cost 26158732777
+[2023-05-22 02:29:52.638] [info] finish queryID 500, current_total_retrieval_time 31299.97s, single_query_retrieval_time 31299.96s, prune_ratio 1.00, ip_cost 28201168, appr_ip_cost 26402911642
+[2023-05-22 02:34:45.063] [info] queryID 760, userID 2000000, query_ip_cost 30863339, query_appr_ip_cost 27246785858, time_used 31583.78s
+[2023-05-22 02:37:39.158] [info] finish queryID 930, current_total_retrieval_time 31766.49s, single_query_retrieval_time 31766.47s, prune_ratio 1.00, ip_cost 33425853, appr_ip_cost 27253469417
+[2023-05-22 02:38:34.213] [info] queryID 276, userID 1000000, query_ip_cost 28732772, query_appr_ip_cost 13082061214, time_used 15532.46s
+[2023-05-22 02:40:27.349] [info] queryID 580, userID 1000000, query_ip_cost 16503937, query_appr_ip_cost 27382425145, time_used 31926.07s
+[2023-05-22 02:42:26.346] [info] queryID 431, userID 1000000, query_ip_cost 20730691, query_appr_ip_cost 5565893974, time_used 6472.00s
+[2023-05-22 02:45:07.674] [info] queryID 2, userID 2000000, query_ip_cost 21157554, query_appr_ip_cost 7554239799, time_used 9122.86s
+[2023-05-22 02:46:36.827] [info] queryID 397, userID 2000000, query_ip_cost 30759221, query_appr_ip_cost 20158703732, time_used 24106.24s
+[2023-05-22 02:47:13.056] [info] queryID 222, userID 1000000, query_ip_cost 21338740, query_appr_ip_cost 13620148259, time_used 16166.59s
+[2023-05-22 02:49:56.235] [info] queryID 57, userID 1000000, query_ip_cost 26972396, query_appr_ip_cost 21911953694, time_used 24610.98s
+[2023-05-22 02:50:19.686] [info] finish queryID 2, current_total_retrieval_time 32527.02s, single_query_retrieval_time 9435.51s, prune_ratio 1.00, ip_cost 21158469, appr_ip_cost 7802023735
+[2023-05-22 02:50:28.000] [info] queryID 690, userID 1000000, query_ip_cost 39753714, query_appr_ip_cost 27688345109, time_used 32526.72s
+[2023-05-22 02:52:02.969] [info] queryID 265, userID 1000000, query_ip_cost 22081737, query_appr_ip_cost 8552361212, time_used 10034.70s
+[2023-05-22 02:54:39.149] [info] queryID 921, userID 2000000, query_ip_cost 27009119, query_appr_ip_cost 13718313026, time_used 16465.29s
+[2023-05-22 02:57:39.982] [info] queryID 199, userID 2000000, query_ip_cost 22789267, query_appr_ip_cost 19892209529, time_used 22478.08s
+[2023-05-22 03:00:24.422] [info] finish queryID 760, current_total_retrieval_time 33131.76s, single_query_retrieval_time 33131.75s, prune_ratio 1.00, ip_cost 30879594, appr_ip_cost 28571944336
+[2023-05-22 03:00:49.425] [info] queryID 853, userID 1000000, query_ip_cost 15029653, query_appr_ip_cost 6171067819, time_used 7352.99s
+[2023-05-22 03:03:23.328] [info] queryID 431, userID 2000000, query_ip_cost 20790644, query_appr_ip_cost 6597229470, time_used 7728.99s
+[2023-05-22 03:06:08.686] [info] finish queryID 431, current_total_retrieval_time 33476.02s, single_query_retrieval_time 7895.03s, prune_ratio 1.00, ip_cost 20790796, appr_ip_cost 6730136414
+[2023-05-22 03:06:09.177] [info] finish queryID 397, current_total_retrieval_time 33476.51s, single_query_retrieval_time 25279.02s, prune_ratio 1.00, ip_cost 30765703, appr_ip_cost 21123705518
+[2023-05-22 03:07:21.429] [info] queryID 33, userID 2000000, query_ip_cost 29345884, query_appr_ip_cost 29101792238, time_used 33540.15s
+[2023-05-22 03:07:37.776] [info] finish queryID 921, current_total_retrieval_time 33565.11s, single_query_retrieval_time 17244.35s, prune_ratio 1.00, ip_cost 27012003, appr_ip_cost 14353351505
+[2023-05-22 03:10:59.040] [info] queryID 821, userID 1000000, query_ip_cost 20722470, query_appr_ip_cost 5322575259, time_used 6381.19s
+[2023-05-22 03:11:37.865] [info] finish queryID 199, current_total_retrieval_time 33805.20s, single_query_retrieval_time 23316.39s, prune_ratio 1.00, ip_cost 22792569, appr_ip_cost 20603786615
+[2023-05-22 03:13:57.851] [info] queryID 450, userID 1000000, query_ip_cost 38978014, query_appr_ip_cost 29042522734, time_used 33936.57s
+[2023-05-22 03:14:27.587] [info] queryID 297, userID 2000000, query_ip_cost 32384753, query_appr_ip_cost 28617033295, time_used 33966.30s
+[2023-05-22 03:16:48.897] [info] queryID 751, userID 1000000, query_ip_cost 22981787, query_appr_ip_cost 12586075526, time_used 15083.65s
+[2023-05-22 03:17:15.400] [info] queryID 320, userID 1000000, query_ip_cost 35549749, query_appr_ip_cost 19989594489, time_used 23737.72s
+[2023-05-22 03:19:01.248] [info] queryID 561, userID 1000000, query_ip_cost 28188463, query_appr_ip_cost 20984820188, time_used 23922.08s
+[2023-05-22 03:20:17.806] [info] queryID 343, userID 1000000, query_ip_cost 24012533, query_appr_ip_cost 18516690772, time_used 21100.89s
+[2023-05-22 03:26:10.290] [info] queryID 711, userID 2000000, query_ip_cost 34078472, query_appr_ip_cost 25115899159, time_used 29715.54s
+[2023-05-22 03:33:49.915] [info] queryID 144, userID 1000000, query_ip_cost 36130663, query_appr_ip_cost 26834670630, time_used 31105.73s
+[2023-05-22 03:35:24.047] [info] finish queryID 33, current_total_retrieval_time 35231.38s, single_query_retrieval_time 35231.36s, prune_ratio 1.00, ip_cost 29356950, appr_ip_cost 30548802021
+[2023-05-22 03:35:43.858] [info] queryID 265, userID 2000000, query_ip_cost 22223335, query_appr_ip_cost 10713514809, time_used 12655.59s
+[2023-05-22 03:36:19.614] [info] queryID 121, userID 2000000, query_ip_cost 29769867, query_appr_ip_cost 30782163048, time_used 35278.33s
+[2023-05-22 03:39:41.883] [info] queryID 821, userID 2000000, query_ip_cost 20748432, query_appr_ip_cost 6700364825, time_used 8104.03s
+[2023-05-22 03:42:18.240] [info] finish queryID 265, current_total_retrieval_time 35645.58s, single_query_retrieval_time 13050.61s, prune_ratio 1.00, ip_cost 22228579, appr_ip_cost 11035803463
+[2023-05-22 03:43:41.234] [info] queryID 853, userID 2000000, query_ip_cost 15049148, query_appr_ip_cost 8262977869, time_used 9924.80s
+[2023-05-22 03:44:02.874] [info] finish queryID 821, current_total_retrieval_time 35750.21s, single_query_retrieval_time 8365.46s, prune_ratio 1.00, ip_cost 20749330, appr_ip_cost 6906641427
+[2023-05-22 03:44:44.097] [info] queryID 134, userID 2000000, query_ip_cost 11160666, query_appr_ip_cost 16177017136, time_used 19216.96s
+[2023-05-22 03:46:52.880] [info] queryID 922, userID 1000000, query_ip_cost 12591185, query_appr_ip_cost 2004426878, time_used 2354.51s
+[2023-05-22 03:47:13.258] [info] finish queryID 297, current_total_retrieval_time 35940.59s, single_query_retrieval_time 35940.57s, prune_ratio 1.00, ip_cost 32395688, appr_ip_cost 30257095171
+[2023-05-22 03:48:12.671] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.705] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.705] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.711] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.712] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.713] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.718] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.722] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.725] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.728] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.729] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.730] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.737] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.738] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.760] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.780] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.791] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.808] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.811] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.823] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.835] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.852] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.858] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.863] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.884] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.893] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.920] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.931] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.947] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.947] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.964] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.964] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.972] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.975] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:12.978] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.039] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.048] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.050] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.059] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.091] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.121] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.127] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.133] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.134] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.134] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.148] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.196] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.197] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.208] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.213] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.219] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.227] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.326] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.360] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.371] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.375] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.380] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.398] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.410] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.454] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.462] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.476] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.493] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.514] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.516] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.597] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.618] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.629] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.632] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.750] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.771] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:13.997] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.025] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.027] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.107] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.114] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.153] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.193] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.475] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.489] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.526] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.583] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.656] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.750] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:14.808] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:15.221] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:15.373] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:15.543] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:15.545] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:16.163] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:16.376] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:16.456] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:16.592] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:17.045] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:17.126] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:20.058] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-22 03:48:20.058] [info] finish top-100
+[2023-05-22 03:48:20.058] [info] top100 retrieval time: total 36007.393s, n_proc_query 122.69
+	accumulate query inner product time 874.938s, accumulate refinement time 3455218.866s
+	early prune ratio 0.9993, total IP cost 4650644455, total appr IP cost 2952944041172
+	maximum ip cost 185794803060, proportion 0.025
+[2023-05-22 03:48:20.058] [info] build index time: total 5.373419162s
+top100 retrieval time: total 36007.393s, n_proc_query 122.69
+	accumulate query inner product time 874.938s, accumulate refinement time 3455218.866s
+	early prune ratio 0.9993, total IP cost 4650644455, total appr IP cost 2952944041172
+	maximum ip cost 185794803060, proportion 0.025

@@ -1,0 +1,166 @@
+nohup: ignoring input
+[2023-06-01 15:03:15.969] [info] Retrieval method_name RtreeItemOnly, dataset_name yelp-150d, topk 10
+[2023-06-01 15:03:15.969] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-01 15:03:15.969] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-01 15:03:24.368] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-01 15:03:24.368] [info] input parameter: stop_time 28800s
+159585 entries created
+159585 entries created
+[2023-06-01 16:43:59.344] [info] finish preprocess and save the index
+[2023-06-01 16:56:02.454] [info] finish queryID 0, single_query_retrieval_time 723.11s, ip_cost 195005830, n_proc_query 1.00
+[2023-06-01 17:05:25.279] [info] finish queryID 1, single_query_retrieval_time 562.82s, ip_cost 117845191, n_proc_query 2.00
+[2023-06-01 17:16:31.736] [info] finish queryID 2, single_query_retrieval_time 666.46s, ip_cost 155035912, n_proc_query 3.00
+[2023-06-01 17:32:42.439] [info] finish queryID 3, single_query_retrieval_time 970.70s, ip_cost 389760747, n_proc_query 4.00
+[2023-06-01 17:45:51.193] [info] finish queryID 4, single_query_retrieval_time 788.75s, ip_cost 260241652, n_proc_query 5.00
+[2023-06-01 17:58:11.591] [info] finish queryID 5, single_query_retrieval_time 740.40s, ip_cost 208493768, n_proc_query 6.00
+[2023-06-01 18:17:31.164] [info] finish queryID 6, single_query_retrieval_time 1159.57s, ip_cost 420835380, n_proc_query 7.00
+[2023-06-01 18:29:01.688] [info] finish queryID 7, single_query_retrieval_time 690.52s, ip_cost 178543702, n_proc_query 8.00
+[2023-06-01 18:53:44.413] [info] finish queryID 8, single_query_retrieval_time 1482.72s, ip_cost 516174313, n_proc_query 9.00
+[2023-06-01 19:03:34.983] [info] finish queryID 9, single_query_retrieval_time 590.57s, ip_cost 212749557, n_proc_query 10.00
+[2023-06-01 19:23:51.869] [info] finish queryID 10, single_query_retrieval_time 1216.89s, ip_cost 485556449, n_proc_query 11.00
+[2023-06-01 19:37:37.471] [info] finish queryID 11, single_query_retrieval_time 825.60s, ip_cost 300039473, n_proc_query 12.00
+[2023-06-01 19:48:43.636] [info] finish queryID 12, single_query_retrieval_time 666.17s, ip_cost 154354560, n_proc_query 13.00
+[2023-06-01 20:13:59.576] [info] finish queryID 13, single_query_retrieval_time 1515.94s, ip_cost 528216766, n_proc_query 14.00
+[2023-06-01 20:36:55.586] [info] finish queryID 14, single_query_retrieval_time 1376.01s, ip_cost 504471126, n_proc_query 15.00
+[2023-06-01 20:50:53.616] [info] finish queryID 15, single_query_retrieval_time 838.03s, ip_cost 280660784, n_proc_query 16.00
+[2023-06-01 21:12:06.423] [info] finish queryID 16, single_query_retrieval_time 1272.81s, ip_cost 426368322, n_proc_query 17.00
+[2023-06-01 22:05:10.961] [info] finish queryID 17, single_query_retrieval_time 3184.54s, ip_cost 1093610992, n_proc_query 18.00
+[2023-06-01 23:03:56.242] [info] finish queryID 18, single_query_retrieval_time 3525.28s, ip_cost 1129845526, n_proc_query 19.00
+[2023-06-01 23:27:15.552] [info] finish queryID 19, single_query_retrieval_time 1399.31s, ip_cost 507362991, n_proc_query 20.00
+[2023-06-01 23:45:52.597] [info] finish queryID 20, single_query_retrieval_time 1117.04s, ip_cost 357366375, n_proc_query 21.00
+[2023-06-02 00:24:34.884] [info] finish queryID 21, single_query_retrieval_time 2322.29s, ip_cost 637624028, n_proc_query 22.00
+[2023-06-02 00:43:07.952] [info] finish queryID 22, single_query_retrieval_time 1113.07s, ip_cost 379608413, n_proc_query 23.00
+[2023-06-02 00:57:51.744] [info] finish queryID 23, single_query_retrieval_time 883.79s, ip_cost 247236137, n_proc_query 24.00
+[2023-06-02 00:57:51.744] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-02 00:57:51.744] [info] finish top-10
+[2023-06-02 00:57:51.744] [info] top10 retrieval time: total 29632.400s, n_proc_query 24.000
+	total single query retrieval time 29632.398s, total ip cost 9687007994
+[2023-06-02 00:57:51.744] [info] build index time: total 6034.975759127s
+top10 retrieval time: total 29632.400s, n_proc_query 24.000
+	total single query retrieval time 29632.398s, total ip cost 9687007994
+[2023-06-02 00:57:54.705] [info] Retrieval method_name RtreeItemOnly, dataset_name yelp-150d, topk 50
+[2023-06-02 00:57:54.719] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-02 00:57:54.719] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-02 00:58:02.864] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-02 00:58:02.864] [info] input parameter: stop_time 28800s
+159585 entries created
+159585 entries created
+[2023-06-02 02:37:39.632] [info] finish preprocess and save the index
+[2023-06-02 02:53:05.466] [info] finish queryID 0, single_query_retrieval_time 925.83s, ip_cost 331798491, n_proc_query 1.00
+[2023-06-02 03:07:55.436] [info] finish queryID 1, single_query_retrieval_time 889.97s, ip_cost 273903733, n_proc_query 2.00
+[2023-06-02 03:21:28.028] [info] finish queryID 2, single_query_retrieval_time 812.59s, ip_cost 275085903, n_proc_query 3.00
+[2023-06-02 03:46:17.080] [info] finish queryID 3, single_query_retrieval_time 1489.05s, ip_cost 541457570, n_proc_query 4.00
+[2023-06-02 04:03:21.898] [info] finish queryID 4, single_query_retrieval_time 1024.82s, ip_cost 373781361, n_proc_query 5.00
+[2023-06-02 04:19:21.873] [info] finish queryID 5, single_query_retrieval_time 959.97s, ip_cost 331854934, n_proc_query 6.00
+[2023-06-02 04:46:43.125] [info] finish queryID 6, single_query_retrieval_time 1641.25s, ip_cost 560340581, n_proc_query 7.00
+[2023-06-02 05:02:10.771] [info] finish queryID 7, single_query_retrieval_time 927.65s, ip_cost 347317194, n_proc_query 8.00
+[2023-06-02 05:36:50.726] [info] finish queryID 8, single_query_retrieval_time 2079.96s, ip_cost 648862052, n_proc_query 9.00
+[2023-06-02 05:54:08.206] [info] finish queryID 9, single_query_retrieval_time 1037.48s, ip_cost 365298922, n_proc_query 10.00
+[2023-06-02 06:25:24.323] [info] finish queryID 10, single_query_retrieval_time 1876.12s, ip_cost 649309779, n_proc_query 11.00
+[2023-06-02 06:48:24.140] [info] finish queryID 11, single_query_retrieval_time 1379.82s, ip_cost 487912666, n_proc_query 12.00
+[2023-06-02 07:02:01.143] [info] finish queryID 12, single_query_retrieval_time 817.00s, ip_cost 232325041, n_proc_query 13.00
+[2023-06-02 07:36:41.972] [info] finish queryID 13, single_query_retrieval_time 2080.83s, ip_cost 645855861, n_proc_query 14.00
+[2023-06-02 08:14:13.180] [info] finish queryID 14, single_query_retrieval_time 2251.21s, ip_cost 678862099, n_proc_query 15.00
+[2023-06-02 08:37:37.656] [info] finish queryID 15, single_query_retrieval_time 1404.48s, ip_cost 456172442, n_proc_query 16.00
+[2023-06-02 09:14:10.357] [info] finish queryID 16, single_query_retrieval_time 2192.70s, ip_cost 702743539, n_proc_query 17.00
+[2023-06-02 10:50:28.461] [info] finish queryID 17, single_query_retrieval_time 5778.10s, ip_cost 1743033223, n_proc_query 18.00
+[2023-06-02 10:50:28.461] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-02 10:50:28.461] [info] finish top-50
+[2023-06-02 10:50:28.461] [info] top50 retrieval time: total 29568.828s, n_proc_query 18.000
+	total single query retrieval time 29568.826s, total ip cost 9645915391
+[2023-06-02 10:50:28.461] [info] build index time: total 5976.767861452s
+top50 retrieval time: total 29568.828s, n_proc_query 18.000
+	total single query retrieval time 29568.826s, total ip cost 9645915391
+[2023-06-02 10:50:31.935] [info] Retrieval method_name RtreeItemOnly, dataset_name yelp-150d, topk 100
+[2023-06-02 10:50:31.935] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-02 10:50:31.935] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-02 10:50:40.043] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-02 10:50:40.043] [info] input parameter: stop_time 28800s
+159585 entries created
+159585 entries created
+[2023-06-02 12:31:49.702] [info] finish preprocess and save the index
+[2023-06-02 12:50:15.174] [info] finish queryID 0, single_query_retrieval_time 1105.47s, ip_cost 390203032, n_proc_query 1.00
+[2023-06-02 13:09:48.515] [info] finish queryID 1, single_query_retrieval_time 1173.34s, ip_cost 370181723, n_proc_query 2.00
+[2023-06-02 13:26:26.789] [info] finish queryID 2, single_query_retrieval_time 998.27s, ip_cost 353886628, n_proc_query 3.00
+[2023-06-02 13:58:40.757] [info] finish queryID 3, single_query_retrieval_time 1933.97s, ip_cost 610415272, n_proc_query 4.00
+[2023-06-02 14:19:52.017] [info] finish queryID 4, single_query_retrieval_time 1271.26s, ip_cost 429126099, n_proc_query 5.00
+[2023-06-02 14:39:13.746] [info] finish queryID 5, single_query_retrieval_time 1161.73s, ip_cost 399614931, n_proc_query 6.00
+[2023-06-02 15:12:23.957] [info] finish queryID 6, single_query_retrieval_time 1990.21s, ip_cost 659772351, n_proc_query 7.00
+[2023-06-02 15:32:01.956] [info] finish queryID 7, single_query_retrieval_time 1178.00s, ip_cost 427506850, n_proc_query 8.00
+[2023-06-02 16:12:40.398] [info] finish queryID 8, single_query_retrieval_time 2438.44s, ip_cost 741188820, n_proc_query 9.00
+[2023-06-02 16:36:49.832] [info] finish queryID 9, single_query_retrieval_time 1449.43s, ip_cost 475133708, n_proc_query 10.00
+[2023-06-02 17:15:31.877] [info] finish queryID 10, single_query_retrieval_time 2322.04s, ip_cost 765385145, n_proc_query 11.00
+[2023-06-02 17:42:29.730] [info] finish queryID 11, single_query_retrieval_time 1617.85s, ip_cost 575956877, n_proc_query 12.00
+[2023-06-02 17:57:05.926] [info] finish queryID 12, single_query_retrieval_time 876.20s, ip_cost 274442850, n_proc_query 13.00
+[2023-06-02 18:37:46.722] [info] finish queryID 13, single_query_retrieval_time 2440.80s, ip_cost 721528243, n_proc_query 14.00
+[2023-06-02 19:23:53.192] [info] finish queryID 14, single_query_retrieval_time 2766.47s, ip_cost 802033443, n_proc_query 15.00
+[2023-06-02 19:56:26.808] [info] finish queryID 15, single_query_retrieval_time 1953.62s, ip_cost 573511667, n_proc_query 16.00
+[2023-06-02 20:42:36.780] [info] finish queryID 16, single_query_retrieval_time 2769.97s, ip_cost 876707754, n_proc_query 17.00
+[2023-06-02 20:42:36.781] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-02 20:42:36.781] [info] finish top-100
+[2023-06-02 20:42:36.781] [info] top100 retrieval time: total 29447.078s, n_proc_query 17.000
+	total single query retrieval time 29447.077s, total ip cost 9446595393
+[2023-06-02 20:42:36.781] [info] build index time: total 6069.658896803s
+top100 retrieval time: total 29447.078s, n_proc_query 17.000
+	total single query retrieval time 29447.077s, total ip cost 9446595393
+[2023-06-02 20:42:40.117] [info] Retrieval method_name RtreeItemOnly, dataset_name yelp-150d, topk 150
+[2023-06-02 20:42:40.117] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-02 20:42:40.117] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-02 20:42:48.330] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-02 20:42:48.330] [info] input parameter: stop_time 28800s
+159585 entries created
+159585 entries created
+[2023-06-02 22:24:12.279] [info] finish preprocess and save the index
+[2023-06-02 22:44:41.004] [info] finish queryID 0, single_query_retrieval_time 1228.72s, ip_cost 424173463, n_proc_query 1.00
+[2023-06-02 23:08:04.507] [info] finish queryID 1, single_query_retrieval_time 1403.50s, ip_cost 453886599, n_proc_query 2.00
+[2023-06-02 23:26:56.473] [info] finish queryID 2, single_query_retrieval_time 1131.97s, ip_cost 417637866, n_proc_query 3.00
+[2023-06-03 00:01:14.068] [info] finish queryID 3, single_query_retrieval_time 2057.59s, ip_cost 680875921, n_proc_query 4.00
+[2023-06-03 00:23:44.546] [info] finish queryID 4, single_query_retrieval_time 1350.48s, ip_cost 470393022, n_proc_query 5.00
+[2023-06-03 00:45:20.597] [info] finish queryID 5, single_query_retrieval_time 1296.05s, ip_cost 451115129, n_proc_query 6.00
+[2023-06-03 01:22:57.472] [info] finish queryID 6, single_query_retrieval_time 2256.88s, ip_cost 721117052, n_proc_query 7.00
+[2023-06-03 01:46:39.184] [info] finish queryID 7, single_query_retrieval_time 1421.71s, ip_cost 474901583, n_proc_query 8.00
+[2023-06-03 02:33:04.889] [info] finish queryID 8, single_query_retrieval_time 2785.70s, ip_cost 805560283, n_proc_query 9.00
+[2023-06-03 03:01:00.789] [info] finish queryID 9, single_query_retrieval_time 1675.90s, ip_cost 551387375, n_proc_query 10.00
+[2023-06-03 03:45:29.653] [info] finish queryID 10, single_query_retrieval_time 2668.86s, ip_cost 847168612, n_proc_query 11.00
+[2023-06-03 04:17:02.156] [info] finish queryID 11, single_query_retrieval_time 1892.50s, ip_cost 643327284, n_proc_query 12.00
+[2023-06-03 04:32:46.675] [info] finish queryID 12, single_query_retrieval_time 944.52s, ip_cost 308158519, n_proc_query 13.00
+[2023-06-03 05:15:42.472] [info] finish queryID 13, single_query_retrieval_time 2575.80s, ip_cost 776897049, n_proc_query 14.00
+[2023-06-03 06:06:09.952] [info] finish queryID 14, single_query_retrieval_time 3027.48s, ip_cost 900750671, n_proc_query 15.00
+[2023-06-03 06:40:26.706] [info] finish queryID 15, single_query_retrieval_time 2056.75s, ip_cost 661940100, n_proc_query 16.00
+[2023-06-03 06:40:26.706] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-03 06:40:26.707] [info] finish top-150
+[2023-06-03 06:40:26.707] [info] top150 retrieval time: total 29774.427s, n_proc_query 16.000
+	total single query retrieval time 29774.425s, total ip cost 9589290528
+[2023-06-03 06:40:26.707] [info] build index time: total 6083.949604841s
+top150 retrieval time: total 29774.427s, n_proc_query 16.000
+	total single query retrieval time 29774.425s, total ip cost 9589290528
+[2023-06-03 06:40:30.152] [info] Retrieval method_name RtreeItemOnly, dataset_name yelp-150d, topk 200
+[2023-06-03 06:40:30.152] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-03 06:40:30.152] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-03 06:40:38.279] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-03 06:40:38.279] [info] input parameter: stop_time 28800s
+159585 entries created
+159585 entries created
+[2023-06-03 08:21:55.376] [info] finish preprocess and save the index
+[2023-06-03 08:44:24.529] [info] finish queryID 0, single_query_retrieval_time 1349.15s, ip_cost 445546226, n_proc_query 1.00
+[2023-06-03 09:10:47.042] [info] finish queryID 1, single_query_retrieval_time 1582.51s, ip_cost 516383293, n_proc_query 2.00
+[2023-06-03 09:31:44.268] [info] finish queryID 2, single_query_retrieval_time 1257.23s, ip_cost 463300254, n_proc_query 3.00
+[2023-06-03 10:09:21.753] [info] finish queryID 3, single_query_retrieval_time 2257.48s, ip_cost 733591243, n_proc_query 4.00
+[2023-06-03 10:34:33.785] [info] finish queryID 4, single_query_retrieval_time 1512.03s, ip_cost 498366614, n_proc_query 5.00
+[2023-06-03 11:00:01.949] [info] finish queryID 5, single_query_retrieval_time 1528.16s, ip_cost 486910867, n_proc_query 6.00
+[2023-06-03 11:41:48.890] [info] finish queryID 6, single_query_retrieval_time 2506.94s, ip_cost 777028677, n_proc_query 7.00
+[2023-06-03 12:07:01.841] [info] finish queryID 7, single_query_retrieval_time 1512.95s, ip_cost 515566259, n_proc_query 8.00
+[2023-06-03 12:54:27.451] [info] finish queryID 8, single_query_retrieval_time 2845.61s, ip_cost 859827870, n_proc_query 9.00
+[2023-06-03 13:26:34.481] [info] finish queryID 9, single_query_retrieval_time 1927.03s, ip_cost 621658311, n_proc_query 10.00
+[2023-06-03 14:14:42.655] [info] finish queryID 10, single_query_retrieval_time 2888.17s, ip_cost 914907049, n_proc_query 11.00
+[2023-06-03 14:49:32.845] [info] finish queryID 11, single_query_retrieval_time 2090.19s, ip_cost 691928326, n_proc_query 12.00
+[2023-06-03 15:06:18.992] [info] finish queryID 12, single_query_retrieval_time 1006.15s, ip_cost 334240085, n_proc_query 13.00
+[2023-06-03 15:52:28.182] [info] finish queryID 13, single_query_retrieval_time 2769.19s, ip_cost 827542192, n_proc_query 14.00
+[2023-06-03 16:46:16.590] [info] finish queryID 14, single_query_retrieval_time 3228.41s, ip_cost 976230047, n_proc_query 15.00
+[2023-06-03 16:46:16.590] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-03 16:46:16.590] [info] finish top-200
+[2023-06-03 16:46:16.590] [info] top200 retrieval time: total 30261.213s, n_proc_query 15.000
+	total single query retrieval time 30261.212s, total ip cost 9663027313
+[2023-06-03 16:46:16.590] [info] build index time: total 6077.096922833s
+top200 retrieval time: total 30261.213s, n_proc_query 15.000
+	total single query retrieval time 30261.212s, total ip cost 9663027313

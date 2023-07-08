@@ -1,0 +1,420 @@
+[2023-06-07 16:01:58.233] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name yelp_weighted_query-150d, sample_method_name Uniform, method_name US
+[2023-06-07 16:01:58.233] [info] sample_index_name US
+[2023-06-07 16:01:58.233] [info] n_sample 31386, n_data_item 159585, n_user 2189457
+[2023-06-07 16:01:58.233] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 5 10 15 20 25 30 35 40 45 50 55 61 66 71 76 81 86 91 96 101 106 111 116 122 127 132 137 142 147 152 157 162 167 172 177 183 188 193 198 203 208 213 218 223 228 233 238 244 249 
+last 50 rank: 159329 159334 159339 159345 159350 159355 159360 159365 159370 159375 159380 159385 159390 159395 159400 159406 159411 159416 159421 159426 159431 159436 159441 159446 159451 159456 159461 159467 159472 159477 159482 159487 159492 159497 159502 159507 159512 159517 159522 159528 159533 159538 159543 159548 159553 159558 159563 159568 159573 159578 
+[2023-06-07 16:01:58.235] [info] uniform sample: max_sample_every 6, n_sample 31386
+[2023-06-07 16:03:53.533] [info] finish preprocess and save the index
+[2023-06-07 16:03:53.533] [info] FindSampleRank build index time: total 115.299696182s
+[2023-06-07 16:03:53.535] [info] FindSampleRank finish
+[2023-06-07 16:04:01.284] [info] BuildSampleIndexByComputation dataset_name yelp_weighted_query-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 16:04:01.284] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 16:04:03.889] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 16:04:03.889] [info] n_sample 31386, memory_capacity 256.00GB
+[2023-06-07 16:04:03.889] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-yelp_weighted_query-150d-n_sample_31386.index
+first 50 rank: 0 5 10 15 20 25 30 35 40 45 50 55 61 66 71 76 81 86 91 96 101 106 111 116 122 127 132 137 142 147 152 157 162 167 172 177 183 188 193 198 203 208 213 218 223 228 233 238 244 249 
+last 50 rank: 159329 159334 159339 159345 159350 159355 159360 159365 159370 159375 159380 159385 159390 159395 159400 159406 159411 159416 159421 159426 159431 159436 159441 159446 159451 159456 159461 159467 159472 159477 159482 159487 159492 159497 159502 159507 159512 159517 159522 159528 159533 159538 159543 159548 159553 159558 159563 159568 159573 159578 
+[2023-06-07 16:06:00.732] [info] use GPU
+[2023-06-07 16:06:00.732] [info] 16114 user per batch, n_batch 136
+[2023-06-07 16:06:05.383] [info] use GPU stream
+[2023-06-07 16:06:07.723] [info] preprocessed 0.0%, Mem: 288227 Mb, 1.9397 s/iter, compute sort time 1.7054s, build memory index time 0.2343s
+[2023-06-07 16:07:08.622] [info] preprocessed 22.1%, Mem: 288227 Mb, 60.8980 s/iter, compute sort time 51.3414s, build memory index time 9.5566s
+[2023-06-07 16:08:07.974] [info] preprocessed 44.1%, Mem: 288227 Mb, 59.3521 s/iter, compute sort time 51.2767s, build memory index time 8.0754s
+[2023-06-07 16:09:07.659] [info] preprocessed 66.2%, Mem: 288227 Mb, 59.6853 s/iter, compute sort time 51.9475s, build memory index time 7.7378s
+[2023-06-07 16:10:04.523] [info] preprocessed 88.2%, Mem: 288227 Mb, 56.8633 s/iter, compute sort time 51.4226s, build memory index time 5.4407s
+[2023-06-07 16:18:46.739] [info] finish preprocess and save the index
+[2023-06-07 16:18:46.775] [info] total_index_construction_time: 272.50s, total_init_time: 5.17s, total_compute_sort_time: 233.27s, total_build_memory_index_time: 34.06s, total_save_index_time: 484.74s
+[2023-06-07 16:18:55.608] [info] Retrieval method_name US, dataset_name yelp_weighted_query-150d, topk 100
+[2023-06-07 16:18:55.608] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 16:18:55.608] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 16:20:14.370] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 16:20:14.370] [info] input parameter: n_sample 31386
+[2023-06-07 16:20:14.370] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-yelp_weighted_query-150d-n_sample_31386.index
+first 50 rank: 0 5 10 15 20 25 30 35 40 45 50 55 61 66 71 76 81 86 91 96 101 106 111 116 122 127 132 137 142 147 152 157 162 167 172 177 183 188 193 198 203 208 213 218 223 228 233 238 244 249 
+last 50 rank: 159329 159334 159339 159345 159350 159355 159360 159365 159370 159375 159380 159385 159390 159395 159400 159406 159411 159416 159421 159426 159431 159436 159441 159446 159451 159456 159461 159467 159472 159477 159482 159487 159492 159497 159502 159507 159512 159517 159522 159528 159533 159538 159543 159548 159553 159558 159563 159568 159573 159578 
+[2023-06-07 16:31:32.493] [info] finish preprocess and save the index
+[2023-06-07 16:33:39.280] [info] finish top-100
+[2023-06-07 16:33:39.280] [info] top100 retrieval time: total 126.786s
+	inner product 12.315s, rank bound 88.150s, prune user 7.355s, refine user 13.868s
+	total ip cost 2189457000, total refine ip cost 1452223500, total refine user 9100, rank prune ratio 1.0000
+[2023-06-07 16:33:39.298] [info] build index time: total 678.123436163s
+top100 retrieval time: total 126.786s
+	inner product 12.315s, rank bound 88.150s, prune user 7.355s, refine user 13.868s
+	total ip cost 2189457000, total refine ip cost 1452223500, total refine user 9100, rank prune ratio 1.0000
+[2023-06-07 16:33:47.295] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name yelp_weighted_query-150d, sample_method_name Uniform, method_name US
+[2023-06-07 16:33:47.295] [info] sample_index_name US
+[2023-06-07 16:33:47.295] [info] n_sample 7846, n_data_item 159585, n_user 2189457
+[2023-06-07 16:33:47.295] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 20 40 61 81 101 122 142 162 183 203 223 244 264 284 305 325 345 366 386 406 427 447 467 488 508 528 549 569 589 610 630 650 671 691 711 732 752 772 793 813 833 854 874 894 915 935 955 976 996 
+last 50 rank: 158567 158587 158607 158628 158648 158668 158689 158709 158729 158750 158770 158790 158811 158831 158851 158872 158892 158912 158933 158953 158973 158994 159014 159034 159055 159075 159095 159116 159136 159156 159177 159197 159217 159238 159258 159278 159299 159319 159339 159360 159380 159400 159421 159441 159461 159482 159502 159522 159543 159563 
+[2023-06-07 16:33:47.295] [info] uniform sample: max_sample_every 21, n_sample 7846
+[2023-06-07 16:34:14.741] [info] finish preprocess and save the index
+[2023-06-07 16:34:14.741] [info] FindSampleRank build index time: total 27.446185143s
+[2023-06-07 16:34:14.742] [info] FindSampleRank finish
+[2023-06-07 16:34:16.709] [info] BuildSampleIndexByComputation dataset_name yelp_weighted_query-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 16:34:16.709] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 16:34:19.378] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 16:34:19.401] [info] n_sample 7846, memory_capacity 63.99GB
+[2023-06-07 16:34:19.401] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-yelp_weighted_query-150d-n_sample_7846.index
+first 50 rank: 0 20 40 61 81 101 122 142 162 183 203 223 244 264 284 305 325 345 366 386 406 427 447 467 488 508 528 549 569 589 610 630 650 671 691 711 732 752 772 793 813 833 854 874 894 915 935 955 976 996 
+last 50 rank: 158567 158587 158607 158628 158648 158668 158689 158709 158729 158750 158770 158790 158811 158831 158851 158872 158892 158912 158933 158953 158973 158994 159014 159034 159055 159075 159095 159116 159136 159156 159177 159197 159217 159238 159258 159278 159299 159319 159339 159360 159380 159400 159421 159441 159461 159482 159502 159522 159543 159563 
+[2023-06-07 16:34:49.917] [info] use GPU
+[2023-06-07 16:34:49.917] [info] 16114 user per batch, n_batch 136
+[2023-06-07 16:34:54.682] [info] use GPU stream
+[2023-06-07 16:34:56.929] [info] preprocessed 0.0%, Mem: 82052 Mb, 1.8751 s/iter, compute sort time 1.7339s, build memory index time 0.1412s
+[2023-06-07 16:36:06.777] [info] preprocessed 22.1%, Mem: 82052 Mb, 69.8477 s/iter, compute sort time 51.2318s, build memory index time 18.6158s
+[2023-06-07 16:37:10.059] [info] preprocessed 44.1%, Mem: 82052 Mb, 63.2818 s/iter, compute sort time 50.7666s, build memory index time 12.5151s
+[2023-06-07 16:38:11.174] [info] preprocessed 66.2%, Mem: 82052 Mb, 61.1144 s/iter, compute sort time 50.7491s, build memory index time 10.3653s
+[2023-06-07 16:39:15.178] [info] preprocessed 88.2%, Mem: 82052 Mb, 64.0038 s/iter, compute sort time 50.8086s, build memory index time 13.1951s
+[2023-06-07 16:40:29.130] [info] finish preprocess and save the index
+[2023-06-07 16:40:29.130] [info] total_index_construction_time: 298.01s, total_init_time: 5.08s, total_compute_sort_time: 230.50s, total_build_memory_index_time: 62.43s, total_save_index_time: 37.67s
+[2023-06-07 16:40:29.808] [info] Retrieval method_name US, dataset_name yelp_weighted_query-150d, topk 100
+[2023-06-07 16:40:29.808] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 16:40:29.808] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 16:40:33.562] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 16:40:33.562] [info] input parameter: n_sample 7846
+[2023-06-07 16:40:33.562] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-yelp_weighted_query-150d-n_sample_7846.index
+first 50 rank: 0 20 40 61 81 101 122 142 162 183 203 223 244 264 284 305 325 345 366 386 406 427 447 467 488 508 528 549 569 589 610 630 650 671 691 711 732 752 772 793 813 833 854 874 894 915 935 955 976 996 
+last 50 rank: 158567 158587 158607 158628 158648 158668 158689 158709 158729 158750 158770 158790 158811 158831 158851 158872 158892 158912 158933 158953 158973 158994 159014 159034 159055 159075 159095 159116 159136 159156 159177 159197 159217 159238 159258 159278 159299 159319 159339 159360 159380 159400 159421 159441 159461 159482 159502 159522 159543 159563 
+[2023-06-07 16:41:24.849] [info] finish preprocess and save the index
+[2023-06-07 16:43:17.800] [info] finish top-100
+[2023-06-07 16:43:17.800] [info] top100 retrieval time: total 112.950s
+	inner product 11.013s, rank bound 60.787s, prune user 8.310s, refine user 27.031s
+	total ip cost 2189457000, total refine ip cost 6276158880, total refine user 39328, rank prune ratio 1.0000
+[2023-06-07 16:43:17.800] [info] build index time: total 51.287048767s
+top100 retrieval time: total 112.950s
+	inner product 11.013s, rank bound 60.787s, prune user 8.310s, refine user 27.031s
+	total ip cost 2189457000, total refine ip cost 6276158880, total refine user 39328, rank prune ratio 1.0000
+[2023-06-07 16:43:20.373] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name yelp_weighted_query-150d, sample_method_name Uniform, method_name US
+[2023-06-07 16:43:20.373] [info] sample_index_name US
+[2023-06-07 16:43:20.373] [info] n_sample 1961, n_data_item 159585, n_user 2189457
+[2023-06-07 16:43:20.373] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 81 162 244 325 406 488 569 651 732 813 895 976 1057 1139 1220 1302 1383 1464 1546 1627 1708 1790 1871 1953 2034 2115 2197 2278 2359 2441 2522 2604 2685 2766 2848 2929 3011 3092 3173 3255 3336 3417 3499 3580 3662 3743 3824 3906 3987 
+last 50 rank: 155515 155596 155677 155759 155840 155921 156003 156084 156166 156247 156328 156410 156491 156572 156654 156735 156817 156898 156979 157061 157142 157224 157305 157386 157468 157549 157630 157712 157793 157875 157956 158037 158119 158200 158281 158363 158444 158526 158607 158688 158770 158851 158932 159014 159095 159177 159258 159339 159421 159502 
+[2023-06-07 16:43:20.373] [info] uniform sample: max_sample_every 82, n_sample 1961
+[2023-06-07 16:43:27.316] [info] finish preprocess and save the index
+[2023-06-07 16:43:27.316] [info] FindSampleRank build index time: total 6.942812519s
+[2023-06-07 16:43:27.316] [info] FindSampleRank finish
+[2023-06-07 16:43:27.867] [info] BuildSampleIndexByComputation dataset_name yelp_weighted_query-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 16:43:27.867] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 16:43:30.516] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 16:43:30.516] [info] n_sample 1961, memory_capacity 15.99GB
+[2023-06-07 16:43:30.516] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-yelp_weighted_query-150d-n_sample_1961.index
+first 50 rank: 0 81 162 244 325 406 488 569 651 732 813 895 976 1057 1139 1220 1302 1383 1464 1546 1627 1708 1790 1871 1953 2034 2115 2197 2278 2359 2441 2522 2604 2685 2766 2848 2929 3011 3092 3173 3255 3336 3417 3499 3580 3662 3743 3824 3906 3987 
+last 50 rank: 155515 155596 155677 155759 155840 155921 156003 156084 156166 156247 156328 156410 156491 156572 156654 156735 156817 156898 156979 157061 157142 157224 157305 157386 157468 157549 157630 157712 157793 157875 157956 158037 158119 158200 158281 158363 158444 158526 158607 158688 158770 158851 158932 159014 159095 159177 159258 159339 159421 159502 
+[2023-06-07 16:43:41.137] [info] use GPU
+[2023-06-07 16:43:41.137] [info] 16114 user per batch, n_batch 136
+[2023-06-07 16:43:45.905] [info] use GPU stream
+[2023-06-07 16:43:50.659] [info] preprocessed 0.0%, Mem: 30516 Mb, 4.3856 s/iter, compute sort time 1.7081s, build memory index time 2.6774s
+[2023-06-07 16:45:17.259] [info] preprocessed 22.1%, Mem: 30516 Mb, 86.6001 s/iter, compute sort time 52.0057s, build memory index time 34.5944s
+[2023-06-07 16:46:50.795] [info] preprocessed 44.1%, Mem: 30516 Mb, 93.5360 s/iter, compute sort time 51.8647s, build memory index time 41.6713s
+[2023-06-07 16:48:19.353] [info] preprocessed 66.2%, Mem: 30516 Mb, 88.5573 s/iter, compute sort time 51.9283s, build memory index time 36.6289s
+[2023-06-07 16:49:50.161] [info] preprocessed 88.2%, Mem: 30516 Mb, 90.8079 s/iter, compute sort time 51.8659s, build memory index time 38.9420s
+[2023-06-07 16:50:44.686] [info] finish preprocess and save the index
+[2023-06-07 16:50:44.686] [info] total_index_construction_time: 412.16s, total_init_time: 4.92s, total_compute_sort_time: 235.09s, total_build_memory_index_time: 172.15s, total_save_index_time: 9.33s
+[2023-06-07 16:50:45.264] [info] Retrieval method_name US, dataset_name yelp_weighted_query-150d, topk 100
+[2023-06-07 16:50:45.264] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 16:50:45.264] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 16:50:48.406] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 16:50:48.406] [info] input parameter: n_sample 1961
+[2023-06-07 16:50:48.406] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-yelp_weighted_query-150d-n_sample_1961.index
+first 50 rank: 0 81 162 244 325 406 488 569 651 732 813 895 976 1057 1139 1220 1302 1383 1464 1546 1627 1708 1790 1871 1953 2034 2115 2197 2278 2359 2441 2522 2604 2685 2766 2848 2929 3011 3092 3173 3255 3336 3417 3499 3580 3662 3743 3824 3906 3987 
+last 50 rank: 155515 155596 155677 155759 155840 155921 156003 156084 156166 156247 156328 156410 156491 156572 156654 156735 156817 156898 156979 157061 157142 157224 157305 157386 157468 157549 157630 157712 157793 157875 157956 158037 158119 158200 158281 158363 158444 158526 158607 158688 158770 158851 158932 159014 159095 159177 159258 159339 159421 159502 
+[2023-06-07 16:51:10.372] [info] finish preprocess and save the index
+[2023-06-07 16:54:16.707] [info] finish top-100
+[2023-06-07 16:54:16.708] [info] top100 retrieval time: total 186.335s
+	inner product 11.128s, rank bound 37.022s, prune user 7.983s, refine user 123.731s
+	total ip cost 2189457000, total refine ip cost 49877653410, total refine user 312546, rank prune ratio 0.9999
+[2023-06-07 16:54:16.708] [info] build index time: total 21.96574336s
+top100 retrieval time: total 186.335s
+	inner product 11.128s, rank bound 37.022s, prune user 7.983s, refine user 123.731s
+	total ip cost 2189457000, total refine ip cost 49877653410, total refine user 312546, rank prune ratio 0.9999
+[2023-06-07 16:54:17.514] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name yelp_weighted_query-150d, sample_method_name Uniform, method_name US
+[2023-06-07 16:54:17.514] [info] sample_index_name US
+[2023-06-07 16:54:17.514] [info] n_sample 490, n_data_item 159585, n_user 2189457
+[2023-06-07 16:54:17.514] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 325 651 977 1302 1628 1954 2279 2605 2931 3256 3582 3908 4233 4559 4885 5210 5536 5862 6187 6513 6839 7164 7490 7816 8142 8467 8793 9119 9444 9770 10096 10421 10747 11073 11398 11724 12050 12375 12701 13027 13352 13678 14004 14329 14655 14981 15307 15632 15958 
+last 50 rank: 143299 143625 143951 144276 144602 144928 145254 145579 145905 146231 146556 146882 147208 147533 147859 148185 148510 148836 149162 149487 149813 150139 150464 150790 151116 151441 151767 152093 152419 152744 153070 153396 153721 154047 154373 154698 155024 155350 155675 156001 156327 156652 156978 157304 157629 157955 158281 158606 158932 159258 
+[2023-06-07 16:54:17.514] [info] uniform sample: max_sample_every 326, n_sample 490
+[2023-06-07 16:54:19.256] [info] finish preprocess and save the index
+[2023-06-07 16:54:19.256] [info] FindSampleRank build index time: total 1.742118949s
+[2023-06-07 16:54:19.256] [info] FindSampleRank finish
+[2023-06-07 16:54:19.439] [info] BuildSampleIndexByComputation dataset_name yelp_weighted_query-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 16:54:19.439] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 16:54:22.081] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 16:54:22.081] [info] n_sample 490, memory_capacity 4.00GB
+[2023-06-07 16:54:22.081] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-yelp_weighted_query-150d-n_sample_490.index
+first 50 rank: 0 325 651 977 1302 1628 1954 2279 2605 2931 3256 3582 3908 4233 4559 4885 5210 5536 5862 6187 6513 6839 7164 7490 7816 8142 8467 8793 9119 9444 9770 10096 10421 10747 11073 11398 11724 12050 12375 12701 13027 13352 13678 14004 14329 14655 14981 15307 15632 15958 
+last 50 rank: 143299 143625 143951 144276 144602 144928 145254 145579 145905 146231 146556 146882 147208 147533 147859 148185 148510 148836 149162 149487 149813 150139 150464 150790 151116 151441 151767 152093 152419 152744 153070 153396 153721 154047 154373 154698 155024 155350 155675 156001 156327 156652 156978 157304 157629 157955 158281 158606 158932 159258 
+[2023-06-07 16:54:27.778] [info] use GPU
+[2023-06-07 16:54:27.778] [info] 16114 user per batch, n_batch 136
+[2023-06-07 16:54:32.305] [info] use GPU stream
+[2023-06-07 16:54:36.503] [info] preprocessed 0.0%, Mem: 17634 Mb, 3.8316 s/iter, compute sort time 1.6739s, build memory index time 2.1577s
+[2023-06-07 16:55:43.136] [info] preprocessed 22.1%, Mem: 17634 Mb, 66.6332 s/iter, compute sort time 50.4819s, build memory index time 16.1513s
+[2023-06-07 16:56:39.702] [info] preprocessed 44.1%, Mem: 17634 Mb, 56.5661 s/iter, compute sort time 50.4365s, build memory index time 6.1296s
+[2023-06-07 16:57:35.520] [info] preprocessed 66.2%, Mem: 17634 Mb, 55.8178 s/iter, compute sort time 50.3233s, build memory index time 5.4945s
+[2023-06-07 16:58:43.673] [info] preprocessed 88.2%, Mem: 17634 Mb, 68.1531 s/iter, compute sort time 50.0705s, build memory index time 18.0826s
+[2023-06-07 16:59:17.634] [info] finish preprocess and save the index
+[2023-06-07 16:59:17.634] [info] total_index_construction_time: 286.30s, total_init_time: 4.79s, total_compute_sort_time: 227.91s, total_build_memory_index_time: 53.61s, total_save_index_time: 2.27s
+[2023-06-07 16:59:18.162] [info] Retrieval method_name US, dataset_name yelp_weighted_query-150d, topk 100
+[2023-06-07 16:59:18.162] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 16:59:18.162] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 16:59:21.193] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 16:59:21.193] [info] input parameter: n_sample 490
+[2023-06-07 16:59:21.193] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-yelp_weighted_query-150d-n_sample_490.index
+first 50 rank: 0 325 651 977 1302 1628 1954 2279 2605 2931 3256 3582 3908 4233 4559 4885 5210 5536 5862 6187 6513 6839 7164 7490 7816 8142 8467 8793 9119 9444 9770 10096 10421 10747 11073 11398 11724 12050 12375 12701 13027 13352 13678 14004 14329 14655 14981 15307 15632 15958 
+last 50 rank: 143299 143625 143951 144276 144602 144928 145254 145579 145905 146231 146556 146882 147208 147533 147859 148185 148510 148836 149162 149487 149813 150139 150464 150790 151116 151441 151767 152093 152419 152744 153070 153396 153721 154047 154373 154698 155024 155350 155675 156001 156327 156652 156978 157304 157629 157955 158281 158606 158932 159258 
+[2023-06-07 16:59:23.839] [info] finish preprocess and save the index
+[2023-06-07 16:59:24.010] [info] queryID 0, query_time 0.17s, prune ip cost 2189457, refine ip cost 1276680, accu_retrieval_time 0.17s
+[2023-06-07 16:59:24.111] [info] queryID 1, query_time 0.10s, prune ip cost 2189457, refine ip cost 5745060, accu_retrieval_time 0.27s
+[2023-06-07 16:59:27.236] [info] queryID 2, query_time 3.12s, prune ip cost 2189457, refine ip cost 1437222510, accu_retrieval_time 3.40s
+[2023-06-07 16:59:29.135] [info] queryID 3, query_time 1.90s, prune ip cost 2189457, refine ip cost 571793055, accu_retrieval_time 5.30s
+[2023-06-07 16:59:29.419] [info] queryID 4, query_time 0.28s, prune ip cost 2189457, refine ip cost 6383400, accu_retrieval_time 5.58s
+[2023-06-07 16:59:29.500] [info] queryID 5, query_time 0.08s, prune ip cost 2189457, refine ip cost 2234190, accu_retrieval_time 5.66s
+[2023-06-07 16:59:29.546] [info] queryID 6, query_time 0.05s, prune ip cost 2189457, refine ip cost 0, accu_retrieval_time 5.71s
+[2023-06-07 16:59:29.655] [info] queryID 7, query_time 0.11s, prune ip cost 2189457, refine ip cost 19948125, accu_retrieval_time 5.82s
+[2023-06-07 16:59:29.766] [info] queryID 8, query_time 0.11s, prune ip cost 2189457, refine ip cost 19469370, accu_retrieval_time 5.93s
+[2023-06-07 16:59:29.845] [info] queryID 9, query_time 0.08s, prune ip cost 2189457, refine ip cost 14522235, accu_retrieval_time 6.01s
+[2023-06-07 16:59:29.955] [info] queryID 10, query_time 0.11s, prune ip cost 2189457, refine ip cost 23618580, accu_retrieval_time 6.12s
+[2023-06-07 16:59:30.030] [info] queryID 11, query_time 0.08s, prune ip cost 2189457, refine ip cost 2074605, accu_retrieval_time 6.19s
+[2023-06-07 16:59:30.103] [info] queryID 12, query_time 0.07s, prune ip cost 2189457, refine ip cost 2872530, accu_retrieval_time 6.26s
+[2023-06-07 16:59:30.342] [info] queryID 13, query_time 0.24s, prune ip cost 2189457, refine ip cost 80271255, accu_retrieval_time 6.50s
+[2023-06-07 16:59:30.690] [info] queryID 14, query_time 0.35s, prune ip cost 2189457, refine ip cost 137721855, accu_retrieval_time 6.85s
+[2023-06-07 16:59:30.775] [info] queryID 15, query_time 0.09s, prune ip cost 2189457, refine ip cost 15320160, accu_retrieval_time 6.94s
+[2023-06-07 16:59:30.858] [info] queryID 16, query_time 0.08s, prune ip cost 2189457, refine ip cost 5106720, accu_retrieval_time 7.02s
+[2023-06-07 16:59:30.937] [info] queryID 17, query_time 0.08s, prune ip cost 2189457, refine ip cost 1755435, accu_retrieval_time 7.10s
+[2023-06-07 16:59:31.048] [info] queryID 18, query_time 0.11s, prune ip cost 2189457, refine ip cost 17554350, accu_retrieval_time 7.21s
+[2023-06-07 16:59:39.322] [info] queryID 19, query_time 8.27s, prune ip cost 2189457, refine ip cost 3597365070, accu_retrieval_time 15.48s
+[2023-06-07 16:59:39.985] [info] queryID 20, query_time 0.66s, prune ip cost 2189457, refine ip cost 162617115, accu_retrieval_time 16.15s
+[2023-06-07 16:59:40.810] [info] queryID 21, query_time 0.82s, prune ip cost 2189457, refine ip cost 359225835, accu_retrieval_time 16.97s
+[2023-06-07 16:59:40.946] [info] queryID 22, query_time 0.14s, prune ip cost 2189457, refine ip cost 30799905, accu_retrieval_time 17.11s
+[2023-06-07 16:59:41.091] [info] queryID 23, query_time 0.15s, prune ip cost 2189457, refine ip cost 43885875, accu_retrieval_time 17.25s
+[2023-06-07 16:59:41.299] [info] queryID 24, query_time 0.21s, prune ip cost 2189457, refine ip cost 69100305, accu_retrieval_time 17.46s
+[2023-06-07 16:59:41.380] [info] queryID 25, query_time 0.08s, prune ip cost 2189457, refine ip cost 10692195, accu_retrieval_time 17.54s
+[2023-06-07 16:59:41.554] [info] queryID 26, query_time 0.17s, prune ip cost 2189457, refine ip cost 37821645, accu_retrieval_time 17.71s
+[2023-06-07 16:59:41.648] [info] queryID 27, query_time 0.09s, prune ip cost 2189457, refine ip cost 2393775, accu_retrieval_time 17.81s
+[2023-06-07 16:59:41.929] [info] queryID 28, query_time 0.28s, prune ip cost 2189457, refine ip cost 8298420, accu_retrieval_time 18.09s
+[2023-06-07 16:59:42.022] [info] queryID 29, query_time 0.09s, prune ip cost 2189457, refine ip cost 6383400, accu_retrieval_time 18.18s
+[2023-06-07 16:59:42.131] [info] queryID 30, query_time 0.11s, prune ip cost 2189457, refine ip cost 9734685, accu_retrieval_time 18.29s
+[2023-06-07 16:59:42.277] [info] queryID 31, query_time 0.15s, prune ip cost 2189457, refine ip cost 18831030, accu_retrieval_time 18.44s
+[2023-06-07 16:59:42.433] [info] queryID 32, query_time 0.16s, prune ip cost 2189457, refine ip cost 29363640, accu_retrieval_time 18.59s
+[2023-06-07 16:59:43.029] [info] queryID 33, query_time 0.60s, prune ip cost 2189457, refine ip cost 249590940, accu_retrieval_time 19.19s
+[2023-06-07 16:59:43.108] [info] queryID 34, query_time 0.08s, prune ip cost 2189457, refine ip cost 14841405, accu_retrieval_time 19.27s
+[2023-06-07 16:59:43.513] [info] queryID 35, query_time 0.40s, prune ip cost 2189457, refine ip cost 156872055, accu_retrieval_time 19.67s
+[2023-06-07 16:59:43.629] [info] queryID 36, query_time 0.12s, prune ip cost 2189457, refine ip cost 18033105, accu_retrieval_time 19.79s
+[2023-06-07 16:59:43.706] [info] queryID 37, query_time 0.08s, prune ip cost 2189457, refine ip cost 10532610, accu_retrieval_time 19.87s
+[2023-06-07 16:59:43.813] [info] queryID 38, query_time 0.11s, prune ip cost 2189457, refine ip cost 17713935, accu_retrieval_time 19.97s
+[2023-06-07 16:59:43.925] [info] queryID 39, query_time 0.11s, prune ip cost 2189457, refine ip cost 25693185, accu_retrieval_time 20.08s
+[2023-06-07 16:59:44.039] [info] queryID 40, query_time 0.11s, prune ip cost 2189457, refine ip cost 20905635, accu_retrieval_time 20.20s
+[2023-06-07 16:59:44.116] [info] queryID 41, query_time 0.08s, prune ip cost 2189457, refine ip cost 7340910, accu_retrieval_time 20.28s
+[2023-06-07 16:59:44.804] [info] queryID 42, query_time 0.69s, prune ip cost 2189457, refine ip cost 301136895, accu_retrieval_time 20.96s
+[2023-06-07 16:59:44.912] [info] queryID 43, query_time 0.11s, prune ip cost 2189457, refine ip cost 21703560, accu_retrieval_time 21.07s
+[2023-06-07 16:59:45.114] [info] queryID 44, query_time 0.20s, prune ip cost 2189457, refine ip cost 72770760, accu_retrieval_time 21.27s
+[2023-06-07 16:59:45.223] [info] queryID 45, query_time 0.11s, prune ip cost 2189457, refine ip cost 18352275, accu_retrieval_time 21.38s
+[2023-06-07 16:59:45.355] [info] queryID 46, query_time 0.13s, prune ip cost 2189457, refine ip cost 31757415, accu_retrieval_time 21.52s
+[2023-06-07 16:59:45.425] [info] queryID 47, query_time 0.07s, prune ip cost 2189457, refine ip cost 1595850, accu_retrieval_time 21.58s
+[2023-06-07 16:59:45.555] [info] queryID 48, query_time 0.13s, prune ip cost 2189457, refine ip cost 20426880, accu_retrieval_time 21.71s
+[2023-06-07 16:59:45.839] [info] queryID 49, query_time 0.28s, prune ip cost 2189457, refine ip cost 105006930, accu_retrieval_time 22.00s
+[2023-06-07 16:59:45.979] [info] queryID 50, query_time 0.14s, prune ip cost 2189457, refine ip cost 39736665, accu_retrieval_time 22.14s
+[2023-06-07 16:59:46.506] [info] queryID 51, query_time 0.53s, prune ip cost 2189457, refine ip cost 216078090, accu_retrieval_time 22.67s
+[2023-06-07 16:59:46.585] [info] queryID 52, query_time 0.08s, prune ip cost 2189457, refine ip cost 3670455, accu_retrieval_time 22.74s
+[2023-06-07 16:59:46.726] [info] queryID 53, query_time 0.14s, prune ip cost 2189457, refine ip cost 39257910, accu_retrieval_time 22.89s
+[2023-06-07 16:59:46.967] [info] queryID 54, query_time 0.24s, prune ip cost 2189457, refine ip cost 88410090, accu_retrieval_time 23.13s
+[2023-06-07 16:59:47.101] [info] queryID 55, query_time 0.13s, prune ip cost 2189457, refine ip cost 31438245, accu_retrieval_time 23.26s
+[2023-06-07 16:59:47.172] [info] queryID 56, query_time 0.07s, prune ip cost 2189457, refine ip cost 2712945, accu_retrieval_time 23.33s
+[2023-06-07 16:59:47.316] [info] queryID 57, query_time 0.14s, prune ip cost 2189457, refine ip cost 34629945, accu_retrieval_time 23.47s
+[2023-06-07 16:59:47.438] [info] queryID 58, query_time 0.12s, prune ip cost 2189457, refine ip cost 22501485, accu_retrieval_time 23.60s
+[2023-06-07 16:59:47.550] [info] queryID 59, query_time 0.11s, prune ip cost 2189457, refine ip cost 22341900, accu_retrieval_time 23.71s
+[2023-06-07 16:59:47.660] [info] queryID 60, query_time 0.11s, prune ip cost 2189457, refine ip cost 28565715, accu_retrieval_time 23.82s
+[2023-06-07 16:59:48.744] [info] queryID 61, query_time 1.08s, prune ip cost 2189457, refine ip cost 480829605, accu_retrieval_time 24.90s
+[2023-06-07 16:59:48.984] [info] queryID 62, query_time 0.24s, prune ip cost 2189457, refine ip cost 80909595, accu_retrieval_time 25.14s
+[2023-06-07 16:59:49.095] [info] queryID 63, query_time 0.11s, prune ip cost 2189457, refine ip cost 23778165, accu_retrieval_time 25.25s
+[2023-06-07 16:59:49.231] [info] queryID 64, query_time 0.14s, prune ip cost 2189457, refine ip cost 31597830, accu_retrieval_time 25.39s
+[2023-06-07 16:59:49.300] [info] queryID 65, query_time 0.07s, prune ip cost 2189457, refine ip cost 2393775, accu_retrieval_time 25.46s
+[2023-06-07 16:59:49.504] [info] queryID 66, query_time 0.20s, prune ip cost 2189457, refine ip cost 64312755, accu_retrieval_time 25.66s
+[2023-06-07 16:59:49.606] [info] queryID 67, query_time 0.10s, prune ip cost 2189457, refine ip cost 3191700, accu_retrieval_time 25.76s
+[2023-06-07 16:59:49.840] [info] queryID 68, query_time 0.23s, prune ip cost 2189457, refine ip cost 57131430, accu_retrieval_time 26.00s
+[2023-06-07 16:59:50.974] [info] queryID 69, query_time 1.13s, prune ip cost 2189457, refine ip cost 368322180, accu_retrieval_time 27.13s
+[2023-06-07 16:59:51.076] [info] queryID 70, query_time 0.10s, prune ip cost 2189457, refine ip cost 6064230, accu_retrieval_time 27.23s
+[2023-06-07 16:59:51.152] [info] queryID 71, query_time 0.08s, prune ip cost 2189457, refine ip cost 12766800, accu_retrieval_time 27.31s
+[2023-06-07 16:59:51.427] [info] queryID 72, query_time 0.28s, prune ip cost 2189457, refine ip cost 105485685, accu_retrieval_time 27.59s
+[2023-06-07 16:59:51.501] [info] queryID 73, query_time 0.07s, prune ip cost 2189457, refine ip cost 3830040, accu_retrieval_time 27.66s
+[2023-06-07 17:00:02.009] [info] queryID 74, query_time 10.51s, prune ip cost 2189457, refine ip cost 4758186360, accu_retrieval_time 38.17s
+[2023-06-07 17:00:05.294] [info] queryID 75, query_time 3.28s, prune ip cost 2189457, refine ip cost 1411210155, accu_retrieval_time 41.45s
+[2023-06-07 17:00:05.367] [info] queryID 76, query_time 0.07s, prune ip cost 2189457, refine ip cost 5904645, accu_retrieval_time 41.53s
+[2023-06-07 17:00:06.603] [info] queryID 77, query_time 1.24s, prune ip cost 2189457, refine ip cost 564611730, accu_retrieval_time 42.76s
+[2023-06-07 17:00:06.746] [info] queryID 78, query_time 0.14s, prune ip cost 2189457, refine ip cost 31757415, accu_retrieval_time 42.90s
+[2023-06-07 17:00:06.783] [info] queryID 79, query_time 0.04s, prune ip cost 2189457, refine ip cost 0, accu_retrieval_time 42.94s
+[2023-06-07 17:00:06.855] [info] queryID 80, query_time 0.07s, prune ip cost 2189457, refine ip cost 6702570, accu_retrieval_time 43.01s
+[2023-06-07 17:00:06.929] [info] queryID 81, query_time 0.07s, prune ip cost 2189457, refine ip cost 10692195, accu_retrieval_time 43.09s
+[2023-06-07 17:00:07.022] [info] queryID 82, query_time 0.09s, prune ip cost 2189457, refine ip cost 10053855, accu_retrieval_time 43.18s
+[2023-06-07 17:00:07.227] [info] queryID 83, query_time 0.21s, prune ip cost 2189457, refine ip cost 71015325, accu_retrieval_time 43.39s
+[2023-06-07 17:00:07.301] [info] queryID 84, query_time 0.07s, prune ip cost 2189457, refine ip cost 4947135, accu_retrieval_time 43.46s
+[2023-06-07 17:00:07.506] [info] queryID 85, query_time 0.21s, prune ip cost 2189457, refine ip cost 62876490, accu_retrieval_time 43.66s
+[2023-06-07 17:00:07.577] [info] queryID 86, query_time 0.07s, prune ip cost 2189457, refine ip cost 3351285, accu_retrieval_time 43.74s
+[2023-06-07 17:00:07.678] [info] queryID 87, query_time 0.10s, prune ip cost 2189457, refine ip cost 16437255, accu_retrieval_time 43.84s
+[2023-06-07 17:00:07.755] [info] queryID 88, query_time 0.08s, prune ip cost 2189457, refine ip cost 8458005, accu_retrieval_time 43.91s
+[2023-06-07 17:00:07.862] [info] queryID 89, query_time 0.11s, prune ip cost 2189457, refine ip cost 29842395, accu_retrieval_time 44.02s
+[2023-06-07 17:00:07.935] [info] queryID 90, query_time 0.07s, prune ip cost 2189457, refine ip cost 10053855, accu_retrieval_time 44.09s
+[2023-06-07 17:00:08.037] [info] queryID 91, query_time 0.10s, prune ip cost 2189457, refine ip cost 18192690, accu_retrieval_time 44.20s
+[2023-06-07 17:00:08.105] [info] queryID 92, query_time 0.07s, prune ip cost 2189457, refine ip cost 1436265, accu_retrieval_time 44.26s
+[2023-06-07 17:00:08.606] [info] queryID 93, query_time 0.50s, prune ip cost 2189457, refine ip cost 214163070, accu_retrieval_time 44.76s
+[2023-06-07 17:00:08.685] [info] queryID 94, query_time 0.08s, prune ip cost 2189457, refine ip cost 7181325, accu_retrieval_time 44.84s
+[2023-06-07 17:00:08.897] [info] queryID 95, query_time 0.21s, prune ip cost 2189457, refine ip cost 46598820, accu_retrieval_time 45.05s
+[2023-06-07 17:00:14.736] [info] queryID 96, query_time 5.84s, prune ip cost 2189457, refine ip cost 2728265160, accu_retrieval_time 50.89s
+[2023-06-07 17:00:14.922] [info] queryID 97, query_time 0.19s, prune ip cost 2189457, refine ip cost 6383400, accu_retrieval_time 51.08s
+[2023-06-07 17:00:15.059] [info] queryID 98, query_time 0.14s, prune ip cost 2189457, refine ip cost 41332515, accu_retrieval_time 51.22s
+[2023-06-07 17:00:15.132] [info] queryID 99, query_time 0.07s, prune ip cost 2189457, refine ip cost 3989625, accu_retrieval_time 51.29s
+[2023-06-07 17:00:15.132] [info] finish top-100
+[2023-06-07 17:00:15.132] [info] top100 retrieval time: total 51.290s
+	inner product 1.416s, rank bound 3.069s, prune user 0.773s, refine user 45.311s
+	total ip cost 218945700, total refine ip cost 19689278130, total refine user 123378, rank prune ratio 0.9994
+[2023-06-07 17:00:15.132] [info] build index time: total 2.645694141s
+top100 retrieval time: total 51.290s
+	inner product 1.416s, rank bound 3.069s, prune user 0.773s, refine user 45.311s
+	total ip cost 218945700, total refine ip cost 19689278130, total refine user 123378, rank prune ratio 0.9994
+[2023-06-07 17:00:15.382] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name yelp_weighted_query-150d, sample_method_name Uniform, method_name US
+[2023-06-07 17:00:15.382] [info] sample_index_name US
+[2023-06-07 17:00:15.382] [info] n_sample 122, n_data_item 159585, n_user 2189457
+[2023-06-07 17:00:15.382] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 1308 2616 3924 5232 6540 7848 9156 10464 11772 13080 14388 15696 17004 18312 19620 20929 22237 23545 24853 26161 27469 28777 30085 31393 32701 34009 35317 36625 37933 39241 40550 41858 43166 44474 45782 47090 48398 49706 51014 52322 53630 54938 56246 57554 58862 60171 61479 62787 64095 
+last 50 rank: 94180 95488 96796 98104 99412 100721 102029 103337 104645 105953 107261 108569 109877 111185 112493 113801 115109 116417 117725 119033 120342 121650 122958 124266 125574 126882 128190 129498 130806 132114 133422 134730 136038 137346 138654 139963 141271 142579 143887 145195 146503 147811 149119 150427 151735 153043 154351 155659 156967 158275 
+[2023-06-07 17:00:15.382] [info] uniform sample: max_sample_every 1309, n_sample 122
+[2023-06-07 17:00:15.829] [info] finish preprocess and save the index
+[2023-06-07 17:00:15.829] [info] FindSampleRank build index time: total 0.447421007s
+[2023-06-07 17:00:15.829] [info] FindSampleRank finish
+[2023-06-07 17:00:15.906] [info] BuildSampleIndexByComputation dataset_name yelp_weighted_query-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 17:00:15.906] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 17:00:18.553] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 17:00:18.553] [info] n_sample 122, memory_capacity 1.00GB
+[2023-06-07 17:00:18.553] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-yelp_weighted_query-150d-n_sample_122.index
+first 50 rank: 0 1308 2616 3924 5232 6540 7848 9156 10464 11772 13080 14388 15696 17004 18312 19620 20929 22237 23545 24853 26161 27469 28777 30085 31393 32701 34009 35317 36625 37933 39241 40550 41858 43166 44474 45782 47090 48398 49706 51014 52322 53630 54938 56246 57554 58862 60171 61479 62787 64095 
+last 50 rank: 94180 95488 96796 98104 99412 100721 102029 103337 104645 105953 107261 108569 109877 111185 112493 113801 115109 116417 117725 119033 120342 121650 122958 124266 125574 126882 128190 129498 130806 132114 133422 134730 136038 137346 138654 139963 141271 142579 143887 145195 146503 147811 149119 150427 151735 153043 154351 155659 156967 158275 
+[2023-06-07 17:00:22.861] [info] use GPU
+[2023-06-07 17:00:22.861] [info] 16114 user per batch, n_batch 136
+[2023-06-07 17:00:27.304] [info] use GPU stream
+[2023-06-07 17:00:31.330] [info] preprocessed 0.0%, Mem: 14409 Mb, 3.6625 s/iter, compute sort time 1.6721s, build memory index time 1.9904s
+[2023-06-07 17:01:28.507] [info] preprocessed 22.1%, Mem: 14409 Mb, 57.1775 s/iter, compute sort time 50.2908s, build memory index time 6.8867s
+[2023-06-07 17:02:21.649] [info] preprocessed 44.1%, Mem: 14409 Mb, 53.1413 s/iter, compute sort time 50.2053s, build memory index time 2.9360s
+[2023-06-07 17:03:18.460] [info] preprocessed 66.2%, Mem: 14409 Mb, 56.8107 s/iter, compute sort time 51.5973s, build memory index time 5.2134s
+[2023-06-07 17:04:17.389] [info] preprocessed 88.2%, Mem: 14409 Mb, 58.9292 s/iter, compute sort time 51.6028s, build memory index time 7.3263s
+[2023-06-07 17:04:50.439] [info] finish preprocess and save the index
+[2023-06-07 17:04:50.439] [info] total_index_construction_time: 265.17s, total_init_time: 4.70s, total_compute_sort_time: 230.92s, total_build_memory_index_time: 29.55s, total_save_index_time: 0.62s
+[2023-06-07 17:04:51.065] [info] Retrieval method_name US, dataset_name yelp_weighted_query-150d, topk 100
+[2023-06-07 17:04:51.065] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-07 17:04:51.065] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-07 17:04:54.170] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-07 17:04:54.170] [info] input parameter: n_sample 122
+[2023-06-07 17:04:54.170] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-yelp_weighted_query-150d-n_sample_122.index
+first 50 rank: 0 1308 2616 3924 5232 6540 7848 9156 10464 11772 13080 14388 15696 17004 18312 19620 20929 22237 23545 24853 26161 27469 28777 30085 31393 32701 34009 35317 36625 37933 39241 40550 41858 43166 44474 45782 47090 48398 49706 51014 52322 53630 54938 56246 57554 58862 60171 61479 62787 64095 
+last 50 rank: 94180 95488 96796 98104 99412 100721 102029 103337 104645 105953 107261 108569 109877 111185 112493 113801 115109 116417 117725 119033 120342 121650 122958 124266 125574 126882 128190 129498 130806 132114 133422 134730 136038 137346 138654 139963 141271 142579 143887 145195 146503 147811 149119 150427 151735 153043 154351 155659 156967 158275 
+[2023-06-07 17:04:54.910] [info] finish preprocess and save the index
+[2023-06-07 17:04:55.266] [info] queryID 0, query_time 0.36s, prune ip cost 2189457, refine ip cost 4468380, accu_retrieval_time 0.36s
+[2023-06-07 17:04:55.384] [info] queryID 1, query_time 0.12s, prune ip cost 2189457, refine ip cost 15798915, accu_retrieval_time 0.47s
+[2023-06-07 17:05:19.410] [info] queryID 2, query_time 24.03s, prune ip cost 2189457, refine ip cost 10028480985, accu_retrieval_time 24.50s
+[2023-06-07 17:05:27.816] [info] queryID 3, query_time 8.41s, prune ip cost 2189457, refine ip cost 3577895700, accu_retrieval_time 32.91s
+[2023-06-07 17:05:28.049] [info] queryID 4, query_time 0.23s, prune ip cost 2189457, refine ip cost 17394765, accu_retrieval_time 33.14s
+[2023-06-07 17:05:28.118] [info] queryID 5, query_time 0.07s, prune ip cost 2189457, refine ip cost 8936760, accu_retrieval_time 33.21s
+[2023-06-07 17:05:28.220] [info] queryID 6, query_time 0.10s, prune ip cost 2189457, refine ip cost 28086960, accu_retrieval_time 33.31s
+[2023-06-07 17:05:28.581] [info] queryID 7, query_time 0.36s, prune ip cost 2189457, refine ip cost 152722845, accu_retrieval_time 33.67s
+[2023-06-07 17:05:28.746] [info] queryID 8, query_time 0.16s, prune ip cost 2189457, refine ip cost 58088940, accu_retrieval_time 33.84s
+[2023-06-07 17:05:28.970] [info] queryID 9, query_time 0.22s, prune ip cost 2189457, refine ip cost 79952085, accu_retrieval_time 34.06s
+[2023-06-07 17:05:30.040] [info] queryID 10, query_time 1.07s, prune ip cost 2189457, refine ip cost 476042055, accu_retrieval_time 35.13s
+[2023-06-07 17:05:30.111] [info] queryID 11, query_time 0.07s, prune ip cost 2189457, refine ip cost 6542985, accu_retrieval_time 35.20s
+[2023-06-07 17:05:30.180] [info] queryID 12, query_time 0.07s, prune ip cost 2189457, refine ip cost 10053855, accu_retrieval_time 35.27s
+[2023-06-07 17:05:34.465] [info] queryID 13, query_time 4.29s, prune ip cost 2189457, refine ip cost 2003749260, accu_retrieval_time 39.55s
+[2023-06-07 17:05:36.285] [info] queryID 14, query_time 1.82s, prune ip cost 2189457, refine ip cost 839417100, accu_retrieval_time 41.37s
+[2023-06-07 17:05:36.384] [info] queryID 15, query_time 0.10s, prune ip cost 2189457, refine ip cost 24256920, accu_retrieval_time 41.47s
+[2023-06-07 17:05:36.454] [info] queryID 16, query_time 0.07s, prune ip cost 2189457, refine ip cost 12926385, accu_retrieval_time 41.54s
+[2023-06-07 17:05:36.522] [info] queryID 17, query_time 0.07s, prune ip cost 2189457, refine ip cost 9255930, accu_retrieval_time 41.61s
+[2023-06-07 17:05:36.928] [info] queryID 18, query_time 0.41s, prune ip cost 2189457, refine ip cost 165808815, accu_retrieval_time 42.02s
+[2023-06-07 17:06:28.989] [info] queryID 19, query_time 52.06s, prune ip cost 2189457, refine ip cost 24226439265, accu_retrieval_time 94.08s
+[2023-06-07 17:06:30.503] [info] queryID 20, query_time 1.51s, prune ip cost 2189457, refine ip cost 650308875, accu_retrieval_time 95.59s
+[2023-06-07 17:06:33.066] [info] queryID 21, query_time 2.56s, prune ip cost 2189457, refine ip cost 1183961115, accu_retrieval_time 98.16s
+[2023-06-07 17:06:33.845] [info] queryID 22, query_time 0.78s, prune ip cost 2189457, refine ip cost 347256960, accu_retrieval_time 98.93s
+[2023-06-07 17:06:41.957] [info] queryID 23, query_time 8.11s, prune ip cost 2189457, refine ip cost 3793654620, accu_retrieval_time 107.05s
+[2023-06-07 17:06:42.775] [info] queryID 24, query_time 0.82s, prune ip cost 2189457, refine ip cost 364332555, accu_retrieval_time 107.86s
+[2023-06-07 17:06:42.935] [info] queryID 25, query_time 0.16s, prune ip cost 2189457, refine ip cost 47715915, accu_retrieval_time 108.02s
+[2023-06-07 17:06:44.789] [info] queryID 26, query_time 1.85s, prune ip cost 2189457, refine ip cost 851864730, accu_retrieval_time 109.88s
+[2023-06-07 17:06:44.856] [info] queryID 27, query_time 0.07s, prune ip cost 2189457, refine ip cost 9255930, accu_retrieval_time 109.94s
+[2023-06-07 17:06:44.991] [info] queryID 28, query_time 0.14s, prune ip cost 2189457, refine ip cost 44045460, accu_retrieval_time 110.08s
+[2023-06-07 17:06:45.091] [info] queryID 29, query_time 0.10s, prune ip cost 2189457, refine ip cost 25054845, accu_retrieval_time 110.18s
+[2023-06-07 17:06:45.184] [info] queryID 30, query_time 0.09s, prune ip cost 2189457, refine ip cost 18671445, accu_retrieval_time 110.27s
+[2023-06-07 17:06:45.544] [info] queryID 31, query_time 0.36s, prune ip cost 2189457, refine ip cost 143307330, accu_retrieval_time 110.63s
+[2023-06-07 17:06:46.490] [info] queryID 32, query_time 0.95s, prune ip cost 2189457, refine ip cost 424974855, accu_retrieval_time 111.58s
+[2023-06-07 17:06:49.923] [info] queryID 33, query_time 3.43s, prune ip cost 2189457, refine ip cost 1589785770, accu_retrieval_time 115.01s
+[2023-06-07 17:06:50.121] [info] queryID 34, query_time 0.20s, prune ip cost 2189457, refine ip cost 70057815, accu_retrieval_time 115.21s
+[2023-06-07 17:06:51.747] [info] queryID 35, query_time 1.63s, prune ip cost 2189457, refine ip cost 743346930, accu_retrieval_time 116.84s
+[2023-06-07 17:06:52.042] [info] queryID 36, query_time 0.29s, prune ip cost 2189457, refine ip cost 122082525, accu_retrieval_time 117.13s
+[2023-06-07 17:06:52.166] [info] queryID 37, query_time 0.12s, prune ip cost 2189457, refine ip cost 33353265, accu_retrieval_time 117.25s
+[2023-06-07 17:06:52.554] [info] queryID 38, query_time 0.39s, prune ip cost 2189457, refine ip cost 155116620, accu_retrieval_time 117.64s
+[2023-06-07 17:06:52.916] [info] queryID 39, query_time 0.36s, prune ip cost 2189457, refine ip cost 151765335, accu_retrieval_time 118.01s
+[2023-06-07 17:06:53.309] [info] queryID 40, query_time 0.39s, prune ip cost 2189457, refine ip cost 165330060, accu_retrieval_time 118.40s
+[2023-06-07 17:06:53.409] [info] queryID 41, query_time 0.10s, prune ip cost 2189457, refine ip cost 19150200, accu_retrieval_time 118.50s
+[2023-06-07 17:07:41.191] [info] queryID 42, query_time 47.78s, prune ip cost 2189457, refine ip cost 22214391585, accu_retrieval_time 166.28s
+[2023-06-07 17:07:41.573] [info] queryID 43, query_time 0.38s, prune ip cost 2189457, refine ip cost 129104265, accu_retrieval_time 166.66s
+[2023-06-07 17:08:38.143] [info] queryID 44, query_time 56.57s, prune ip cost 2189457, refine ip cost 26329450395, accu_retrieval_time 223.23s
+[2023-06-07 17:08:38.580] [info] queryID 45, query_time 0.44s, prune ip cost 2189457, refine ip cost 145860690, accu_retrieval_time 223.67s
+[2023-06-07 17:08:39.133] [info] queryID 46, query_time 0.55s, prune ip cost 2189457, refine ip cost 242409615, accu_retrieval_time 224.22s
+[2023-06-07 17:08:39.206] [info] queryID 47, query_time 0.07s, prune ip cost 2189457, refine ip cost 5425890, accu_retrieval_time 224.29s
+[2023-06-07 17:08:39.435] [info] queryID 48, query_time 0.23s, prune ip cost 2189457, refine ip cost 89686770, accu_retrieval_time 224.52s
+[2023-06-07 17:08:41.773] [info] queryID 49, query_time 2.34s, prune ip cost 2189457, refine ip cost 1084060905, accu_retrieval_time 226.86s
+[2023-06-07 17:08:44.245] [info] queryID 50, query_time 2.47s, prune ip cost 2189457, refine ip cost 1144862790, accu_retrieval_time 229.33s
+[2023-06-07 17:08:45.968] [info] queryID 51, query_time 1.72s, prune ip cost 2189457, refine ip cost 785477370, accu_retrieval_time 231.06s
+[2023-06-07 17:08:46.062] [info] queryID 52, query_time 0.09s, prune ip cost 2189457, refine ip cost 18352275, accu_retrieval_time 231.15s
+[2023-06-07 17:08:46.709] [info] queryID 53, query_time 0.65s, prune ip cost 2189457, refine ip cost 277837485, accu_retrieval_time 231.80s
+[2023-06-07 17:08:47.660] [info] queryID 54, query_time 0.95s, prune ip cost 2189457, refine ip cost 424655685, accu_retrieval_time 232.75s
+[2023-06-07 17:08:47.889] [info] queryID 55, query_time 0.23s, prune ip cost 2189457, refine ip cost 86016315, accu_retrieval_time 232.98s
+[2023-06-07 17:08:47.957] [info] queryID 56, query_time 0.07s, prune ip cost 2189457, refine ip cost 10053855, accu_retrieval_time 233.05s
+[2023-06-07 17:08:51.701] [info] queryID 57, query_time 3.74s, prune ip cost 2189457, refine ip cost 1738040235, accu_retrieval_time 236.79s
+[2023-06-07 17:08:52.151] [info] queryID 58, query_time 0.45s, prune ip cost 2189457, refine ip cost 184480260, accu_retrieval_time 237.24s
+[2023-06-07 17:08:52.540] [info] queryID 59, query_time 0.39s, prune ip cost 2189457, refine ip cost 153999525, accu_retrieval_time 237.63s
+[2023-06-07 17:08:57.415] [info] queryID 60, query_time 4.87s, prune ip cost 2189457, refine ip cost 2267862435, accu_retrieval_time 242.50s
+[2023-06-07 17:09:03.566] [info] queryID 61, query_time 6.15s, prune ip cost 2189457, refine ip cost 2869976640, accu_retrieval_time 248.65s
+[2023-06-07 17:09:04.953] [info] queryID 62, query_time 1.39s, prune ip cost 2189457, refine ip cost 617115195, accu_retrieval_time 250.04s
+[2023-06-07 17:09:05.469] [info] queryID 63, query_time 0.52s, prune ip cost 2189457, refine ip cost 215599335, accu_retrieval_time 250.56s
+[2023-06-07 17:09:06.026] [info] queryID 64, query_time 0.56s, prune ip cost 2189457, refine ip cost 241292520, accu_retrieval_time 251.11s
+[2023-06-07 17:09:06.095] [info] queryID 65, query_time 0.07s, prune ip cost 2189457, refine ip cost 8298420, accu_retrieval_time 251.18s
+[2023-06-07 17:09:10.406] [info] queryID 66, query_time 4.31s, prune ip cost 2189457, refine ip cost 2000078805, accu_retrieval_time 255.49s
+[2023-06-07 17:09:10.518] [info] queryID 67, query_time 0.11s, prune ip cost 2189457, refine ip cost 11330535, accu_retrieval_time 255.61s
+[2023-06-07 17:09:30.091] [info] queryID 68, query_time 19.57s, prune ip cost 2189457, refine ip cost 8878511475, accu_retrieval_time 275.18s
+[2023-06-07 17:09:33.545] [info] queryID 69, query_time 3.45s, prune ip cost 2189457, refine ip cost 1608297630, accu_retrieval_time 278.63s
+[2023-06-07 17:09:33.679] [info] queryID 70, query_time 0.13s, prune ip cost 2189457, refine ip cost 34629945, accu_retrieval_time 278.77s
+[2023-06-07 17:09:33.779] [info] queryID 71, query_time 0.10s, prune ip cost 2189457, refine ip cost 21543975, accu_retrieval_time 278.87s
+[2023-06-07 17:09:34.791] [info] queryID 72, query_time 1.01s, prune ip cost 2189457, refine ip cost 449550945, accu_retrieval_time 279.88s
+[2023-06-07 17:09:34.858] [info] queryID 73, query_time 0.07s, prune ip cost 2189457, refine ip cost 14043480, accu_retrieval_time 279.95s
+[2023-06-07 17:10:16.548] [info] queryID 74, query_time 41.69s, prune ip cost 2189457, refine ip cost 19601506380, accu_retrieval_time 321.64s
+[2023-06-07 17:11:13.353] [info] queryID 75, query_time 56.81s, prune ip cost 2189457, refine ip cost 26668887690, accu_retrieval_time 378.44s
+[2023-06-07 17:11:13.456] [info] queryID 76, query_time 0.10s, prune ip cost 2189457, refine ip cost 29523225, accu_retrieval_time 378.54s
+[2023-06-07 17:11:59.588] [info] queryID 77, query_time 46.13s, prune ip cost 2189457, refine ip cost 21653769480, accu_retrieval_time 424.68s
+[2023-06-07 17:12:00.677] [info] queryID 78, query_time 1.09s, prune ip cost 2189457, refine ip cost 145381935, accu_retrieval_time 425.76s
+[2023-06-07 17:12:00.749] [info] queryID 79, query_time 0.07s, prune ip cost 2189457, refine ip cost 8138835, accu_retrieval_time 425.84s
+[2023-06-07 17:12:00.844] [info] queryID 80, query_time 0.09s, prune ip cost 2189457, refine ip cost 16756425, accu_retrieval_time 425.93s
+[2023-06-07 17:12:01.012] [info] queryID 81, query_time 0.17s, prune ip cost 2189457, refine ip cost 52343880, accu_retrieval_time 426.10s
+[2023-06-07 17:12:01.140] [info] queryID 82, query_time 0.13s, prune ip cost 2189457, refine ip cost 32076585, accu_retrieval_time 426.23s
+[2023-06-07 17:12:01.926] [info] queryID 83, query_time 0.79s, prune ip cost 2189457, refine ip cost 343267335, accu_retrieval_time 427.01s
+[2023-06-07 17:12:02.053] [info] queryID 84, query_time 0.13s, prune ip cost 2189457, refine ip cost 31597830, accu_retrieval_time 427.14s
+[2023-06-07 17:12:03.776] [info] queryID 85, query_time 1.72s, prune ip cost 2189457, refine ip cost 782126085, accu_retrieval_time 428.86s
+[2023-06-07 17:12:03.847] [info] queryID 86, query_time 0.07s, prune ip cost 2189457, refine ip cost 10692195, accu_retrieval_time 428.93s
+[2023-06-07 17:12:04.111] [info] queryID 87, query_time 0.26s, prune ip cost 2189457, refine ip cost 103889835, accu_retrieval_time 429.20s
+[2023-06-07 17:12:04.213] [info] queryID 88, query_time 0.10s, prune ip cost 2189457, refine ip cost 22182315, accu_retrieval_time 429.30s
+[2023-06-07 17:12:05.160] [info] queryID 89, query_time 0.95s, prune ip cost 2189457, refine ip cost 428006970, accu_retrieval_time 430.25s
+[2023-06-07 17:12:05.293] [info] queryID 90, query_time 0.13s, prune ip cost 2189457, refine ip cost 38300400, accu_retrieval_time 430.38s
+[2023-06-07 17:12:05.681] [info] queryID 91, query_time 0.39s, prune ip cost 2189457, refine ip cost 153839940, accu_retrieval_time 430.77s
+[2023-06-07 17:12:05.752] [info] queryID 92, query_time 0.07s, prune ip cost 2189457, refine ip cost 6223815, accu_retrieval_time 430.84s
+[2023-06-07 17:12:08.800] [info] queryID 93, query_time 3.05s, prune ip cost 2189457, refine ip cost 1404667170, accu_retrieval_time 433.89s
+[2023-06-07 17:12:08.936] [info] queryID 94, query_time 0.14s, prune ip cost 2189457, refine ip cost 34470360, accu_retrieval_time 434.02s
+[2023-06-07 17:12:09.557] [info] queryID 95, query_time 0.62s, prune ip cost 2189457, refine ip cost 271134915, accu_retrieval_time 434.64s
+[2023-06-07 17:13:08.897] [info] queryID 96, query_time 59.34s, prune ip cost 2189457, refine ip cost 27873754440, accu_retrieval_time 493.98s
+[2023-06-07 17:13:09.010] [info] queryID 97, query_time 0.11s, prune ip cost 2189457, refine ip cost 20586465, accu_retrieval_time 494.10s
+[2023-06-07 17:13:09.371] [info] queryID 98, query_time 0.36s, prune ip cost 2189457, refine ip cost 146020275, accu_retrieval_time 494.46s
+[2023-06-07 17:13:09.467] [info] queryID 99, query_time 0.10s, prune ip cost 2189457, refine ip cost 15958500, accu_retrieval_time 494.55s
+[2023-06-07 17:13:09.467] [info] finish top-100
+[2023-06-07 17:13:09.467] [info] top100 retrieval time: total 494.554s
+	inner product 1.414s, rank bound 1.597s, prune user 0.708s, refine user 489.931s
+	total ip cost 218945700, total refine ip cost 226898112585, total refine user 1421801, rank prune ratio 0.9935
+[2023-06-07 17:13:09.467] [info] build index time: total 0.74006508s
+top100 retrieval time: total 494.554s
+	inner product 1.414s, rank bound 1.597s, prune user 0.708s, refine user 489.931s
+	total ip cost 218945700, total refine ip cost 226898112585, total refine user 1421801, rank prune ratio 0.9935

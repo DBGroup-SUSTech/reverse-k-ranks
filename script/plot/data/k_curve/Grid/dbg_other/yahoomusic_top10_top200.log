@@ -1,0 +1,213 @@
+nohup: ignoring input
+[2023-06-05 13:08:08.173] [info] Retrieval method_name GridIndex, dataset_name yahoomusic_big-150d, topk 10
+[2023-06-05 13:08:08.173] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-05 13:08:08.173] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-05 13:08:12.121] [info] n_data_item 135736, n_query_item 1000, n_user 1823179, vec_dim 150
+[2023-06-05 13:08:12.121] [info] input parameter: stop_time 21600s
+[2023-06-05 13:08:12.164] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-05 13:08:13.882] [info] finish preprocess and save the index
+[2023-06-05 13:31:35.279] [info] finish queryID 0, current_total_retrieval_time 1401.40s, single_query_retrieval_time 1401.40s, prune_ratio 1.00, ip_cost 13794495, appr_ip_cost 1554889150
+[2023-06-05 13:42:26.696] [info] finish queryID 1, current_total_retrieval_time 2052.81s, single_query_retrieval_time 651.42s, prune_ratio 1.00, ip_cost 9337034, appr_ip_cost 732530281
+[2023-06-05 13:47:00.750] [info] finish queryID 2, current_total_retrieval_time 2326.87s, single_query_retrieval_time 274.05s, prune_ratio 1.00, ip_cost 9585112, appr_ip_cost 305121598
+[2023-06-05 14:08:28.340] [info] finish queryID 3, current_total_retrieval_time 3614.46s, single_query_retrieval_time 1287.59s, prune_ratio 1.00, ip_cost 25256432, appr_ip_cost 1449058349
+[2023-06-05 14:28:08.819] [info] finish queryID 4, current_total_retrieval_time 4794.94s, single_query_retrieval_time 1180.48s, prune_ratio 1.00, ip_cost 34475410, appr_ip_cost 1298395359
+[2023-06-05 14:40:54.412] [info] finish queryID 5, current_total_retrieval_time 5560.53s, single_query_retrieval_time 765.59s, prune_ratio 1.00, ip_cost 5341704, appr_ip_cost 857999856
+[2023-06-05 15:00:07.539] [info] finish queryID 6, current_total_retrieval_time 6713.66s, single_query_retrieval_time 1153.13s, prune_ratio 1.00, ip_cost 15584258, appr_ip_cost 1272551362
+[2023-06-05 15:08:27.776] [info] finish queryID 7, current_total_retrieval_time 7213.89s, single_query_retrieval_time 500.24s, prune_ratio 1.00, ip_cost 4643254, appr_ip_cost 557093806
+[2023-06-05 15:12:55.412] [info] finish queryID 8, current_total_retrieval_time 7481.53s, single_query_retrieval_time 267.64s, prune_ratio 1.00, ip_cost 5146417, appr_ip_cost 301604654
+[2023-06-05 15:30:09.541] [info] finish queryID 9, current_total_retrieval_time 8515.66s, single_query_retrieval_time 1034.13s, prune_ratio 1.00, ip_cost 12273454, appr_ip_cost 1159862881
+[2023-06-05 15:44:54.162] [info] finish queryID 10, current_total_retrieval_time 9400.28s, single_query_retrieval_time 884.62s, prune_ratio 1.00, ip_cost 6209749, appr_ip_cost 981982426
+[2023-06-05 15:47:57.720] [info] finish queryID 11, current_total_retrieval_time 9583.84s, single_query_retrieval_time 183.56s, prune_ratio 1.00, ip_cost 7801747, appr_ip_cost 202360935
+[2023-06-05 15:53:30.045] [info] finish queryID 12, current_total_retrieval_time 9916.16s, single_query_retrieval_time 332.33s, prune_ratio 1.00, ip_cost 5383927, appr_ip_cost 372315992
+[2023-06-05 15:59:16.646] [info] finish queryID 13, current_total_retrieval_time 10262.76s, single_query_retrieval_time 346.60s, prune_ratio 1.00, ip_cost 7743161, appr_ip_cost 383763199
+[2023-06-05 16:11:20.706] [info] finish queryID 14, current_total_retrieval_time 10986.82s, single_query_retrieval_time 724.06s, prune_ratio 1.00, ip_cost 3572718, appr_ip_cost 813251639
+[2023-06-05 16:39:06.088] [info] finish queryID 15, current_total_retrieval_time 12652.21s, single_query_retrieval_time 1665.38s, prune_ratio 1.00, ip_cost 19915208, appr_ip_cost 1860092001
+[2023-06-05 16:42:27.959] [info] finish queryID 16, current_total_retrieval_time 12854.08s, single_query_retrieval_time 201.87s, prune_ratio 1.00, ip_cost 6807049, appr_ip_cost 225075664
+[2023-06-05 16:45:25.246] [info] finish queryID 17, current_total_retrieval_time 13031.36s, single_query_retrieval_time 177.29s, prune_ratio 1.00, ip_cost 6088241, appr_ip_cost 200657855
+[2023-06-05 17:03:43.134] [info] finish queryID 18, current_total_retrieval_time 14129.25s, single_query_retrieval_time 1097.89s, prune_ratio 1.00, ip_cost 13143104, appr_ip_cost 1227120786
+[2023-06-05 17:21:16.210] [info] finish queryID 19, current_total_retrieval_time 15182.33s, single_query_retrieval_time 1053.08s, prune_ratio 1.00, ip_cost 23111054, appr_ip_cost 1173549441
+[2023-06-05 17:25:02.844] [info] finish queryID 20, current_total_retrieval_time 15408.96s, single_query_retrieval_time 226.63s, prune_ratio 1.00, ip_cost 10692928, appr_ip_cost 250031340
+[2023-06-05 17:58:09.435] [info] finish queryID 21, current_total_retrieval_time 17395.55s, single_query_retrieval_time 1986.59s, prune_ratio 1.00, ip_cost 100487497, appr_ip_cost 2223157158
+[2023-06-05 18:01:41.637] [info] finish queryID 22, current_total_retrieval_time 17607.75s, single_query_retrieval_time 212.20s, prune_ratio 1.00, ip_cost 6925838, appr_ip_cost 235466582
+[2023-06-05 18:12:33.526] [info] finish queryID 23, current_total_retrieval_time 18259.64s, single_query_retrieval_time 651.89s, prune_ratio 1.00, ip_cost 14800120, appr_ip_cost 726536745
+[2023-06-05 18:17:12.773] [info] finish queryID 24, current_total_retrieval_time 18538.89s, single_query_retrieval_time 279.25s, prune_ratio 1.00, ip_cost 5596293, appr_ip_cost 311655557
+[2023-06-05 18:23:37.075] [info] finish queryID 25, current_total_retrieval_time 18923.19s, single_query_retrieval_time 384.30s, prune_ratio 1.00, ip_cost 5713798, appr_ip_cost 429575126
+[2023-06-05 18:47:10.915] [info] finish queryID 26, current_total_retrieval_time 20337.03s, single_query_retrieval_time 1413.84s, prune_ratio 1.00, ip_cost 19313447, appr_ip_cost 1596584543
+[2023-06-05 18:51:32.724] [info] finish queryID 27, current_total_retrieval_time 20598.84s, single_query_retrieval_time 261.81s, prune_ratio 1.00, ip_cost 5469383, appr_ip_cost 287991814
+[2023-06-05 18:55:59.243] [info] finish queryID 28, current_total_retrieval_time 20865.36s, single_query_retrieval_time 266.52s, prune_ratio 1.00, ip_cost 7471456, appr_ip_cost 301359374
+[2023-06-05 19:12:42.432] [info] finish queryID 29, current_total_retrieval_time 21868.55s, single_query_retrieval_time 1003.19s, prune_ratio 1.00, ip_cost 20760204, appr_ip_cost 1108197803
+[2023-06-05 19:12:42.432] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-05 19:12:42.432] [info] finish top-10
+[2023-06-05 19:12:42.432] [info] top10 retrieval time: total 21868.550s, n_proc_query 30.00
+	accumulate query inner product time 7.627s, accumulate refinement time 21868.547s
+	early prune ratio 0.9998, total IP cost 432444492, total appr IP cost 24399833276
+	maximum ip cost -49057657350, proportion 0.000
+[2023-06-05 19:12:42.432] [info] build index time: total 1.761197522s
+top10 retrieval time: total 21868.550s, n_proc_query 30.00
+	accumulate query inner product time 7.627s, accumulate refinement time 21868.547s
+	early prune ratio 0.9998, total IP cost 432444492, total appr IP cost 24399833276
+	maximum ip cost -49057657350, proportion 0.000
+[2023-06-05 19:12:42.771] [info] Retrieval method_name GridIndex, dataset_name yahoomusic_big-150d, topk 50
+[2023-06-05 19:12:42.771] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-05 19:12:42.771] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-05 19:12:46.737] [info] n_data_item 135736, n_query_item 1000, n_user 1823179, vec_dim 150
+[2023-06-05 19:12:46.737] [info] input parameter: stop_time 21600s
+[2023-06-05 19:12:46.780] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-05 19:12:48.513] [info] finish preprocess and save the index
+[2023-06-05 19:46:57.386] [info] finish queryID 0, current_total_retrieval_time 2048.87s, single_query_retrieval_time 2048.87s, prune_ratio 1.00, ip_cost 35474337, appr_ip_cost 2265254874
+[2023-06-05 20:08:36.139] [info] finish queryID 1, current_total_retrieval_time 3347.63s, single_query_retrieval_time 1298.75s, prune_ratio 1.00, ip_cost 29758386, appr_ip_cost 1441139222
+[2023-06-05 20:17:08.679] [info] finish queryID 2, current_total_retrieval_time 3860.17s, single_query_retrieval_time 512.54s, prune_ratio 1.00, ip_cost 29808448, appr_ip_cost 568486114
+[2023-06-05 20:42:47.164] [info] finish queryID 3, current_total_retrieval_time 5398.65s, single_query_retrieval_time 1538.48s, prune_ratio 1.00, ip_cost 45018749, appr_ip_cost 1719411556
+[2023-06-05 21:13:47.942] [info] finish queryID 4, current_total_retrieval_time 7259.43s, single_query_retrieval_time 1860.78s, prune_ratio 1.00, ip_cost 100944507, appr_ip_cost 2042238475
+[2023-06-05 21:31:53.499] [info] finish queryID 5, current_total_retrieval_time 8344.99s, single_query_retrieval_time 1085.56s, prune_ratio 1.00, ip_cost 11639363, appr_ip_cost 1210656984
+[2023-06-05 21:58:22.339] [info] finish queryID 6, current_total_retrieval_time 9933.83s, single_query_retrieval_time 1588.84s, prune_ratio 1.00, ip_cost 37620888, appr_ip_cost 1750908381
+[2023-06-05 22:11:15.560] [info] finish queryID 7, current_total_retrieval_time 10707.05s, single_query_retrieval_time 773.22s, prune_ratio 1.00, ip_cost 11884963, appr_ip_cost 858127275
+[2023-06-05 22:19:21.683] [info] finish queryID 8, current_total_retrieval_time 11193.17s, single_query_retrieval_time 486.12s, prune_ratio 1.00, ip_cost 12986831, appr_ip_cost 543388640
+[2023-06-05 22:52:14.994] [info] finish queryID 9, current_total_retrieval_time 13166.48s, single_query_retrieval_time 1973.31s, prune_ratio 1.00, ip_cost 45412946, appr_ip_cost 2197768920
+[2023-06-05 23:13:27.125] [info] finish queryID 10, current_total_retrieval_time 14438.61s, single_query_retrieval_time 1272.13s, prune_ratio 1.00, ip_cost 14178884, appr_ip_cost 1405900798
+[2023-06-05 23:20:22.996] [info] finish queryID 11, current_total_retrieval_time 14854.48s, single_query_retrieval_time 415.87s, prune_ratio 1.00, ip_cost 22558891, appr_ip_cost 461708675
+[2023-06-05 23:32:11.903] [info] finish queryID 12, current_total_retrieval_time 15563.39s, single_query_retrieval_time 708.91s, prune_ratio 1.00, ip_cost 14962499, appr_ip_cost 791458492
+[2023-06-05 23:41:46.621] [info] finish queryID 13, current_total_retrieval_time 16138.11s, single_query_retrieval_time 574.72s, prune_ratio 1.00, ip_cost 24763714, appr_ip_cost 634747668
+[2023-06-05 23:59:45.628] [info] finish queryID 14, current_total_retrieval_time 17217.11s, single_query_retrieval_time 1079.01s, prune_ratio 1.00, ip_cost 6813387, appr_ip_cost 1205378918
+[2023-06-06 00:40:53.880] [info] finish queryID 15, current_total_retrieval_time 19685.37s, single_query_retrieval_time 2468.25s, prune_ratio 1.00, ip_cost 62999741, appr_ip_cost 2737102110
+[2023-06-06 00:48:06.893] [info] finish queryID 16, current_total_retrieval_time 20118.38s, single_query_retrieval_time 433.01s, prune_ratio 1.00, ip_cost 20784373, appr_ip_cost 481883087
+[2023-06-06 00:52:26.465] [info] finish queryID 17, current_total_retrieval_time 20377.95s, single_query_retrieval_time 259.57s, prune_ratio 1.00, ip_cost 15896296, appr_ip_cost 291581034
+[2023-06-06 01:20:16.960] [info] finish queryID 18, current_total_retrieval_time 22048.45s, single_query_retrieval_time 1670.50s, prune_ratio 1.00, ip_cost 43724052, appr_ip_cost 1856504613
+[2023-06-06 01:20:16.960] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-06 01:20:16.960] [info] finish top-50
+[2023-06-06 01:20:16.960] [info] top50 retrieval time: total 22048.446s, n_proc_query 19.00
+	accumulate query inner product time 5.004s, accumulate refinement time 22048.444s
+	early prune ratio 0.9996, total IP cost 587231255, total appr IP cost 24463645836
+	maximum ip cost -31069849655, proportion 0.000
+[2023-06-06 01:20:16.960] [info] build index time: total 1.776303611s
+top50 retrieval time: total 22048.446s, n_proc_query 19.00
+	accumulate query inner product time 5.004s, accumulate refinement time 22048.444s
+	early prune ratio 0.9996, total IP cost 587231255, total appr IP cost 24463645836
+	maximum ip cost -31069849655, proportion 0.000
+[2023-06-06 01:20:17.312] [info] Retrieval method_name GridIndex, dataset_name yahoomusic_big-150d, topk 100
+[2023-06-06 01:20:17.313] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 01:20:17.313] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 01:20:21.330] [info] n_data_item 135736, n_query_item 1000, n_user 1823179, vec_dim 150
+[2023-06-06 01:20:21.330] [info] input parameter: stop_time 21600s
+[2023-06-06 01:20:21.373] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-06 01:20:23.114] [info] finish preprocess and save the index
+[2023-06-06 02:00:39.839] [info] finish queryID 0, current_total_retrieval_time 2416.73s, single_query_retrieval_time 2416.73s, prune_ratio 1.00, ip_cost 58026543, appr_ip_cost 2669722105
+[2023-06-06 02:29:20.810] [info] finish queryID 1, current_total_retrieval_time 4137.70s, single_query_retrieval_time 1720.97s, prune_ratio 1.00, ip_cost 53167000, appr_ip_cost 1903852397
+[2023-06-06 02:40:47.758] [info] finish queryID 2, current_total_retrieval_time 4824.64s, single_query_retrieval_time 686.95s, prune_ratio 1.00, ip_cost 51337926, appr_ip_cost 760811927
+[2023-06-06 03:09:04.277] [info] finish queryID 3, current_total_retrieval_time 6521.16s, single_query_retrieval_time 1696.52s, prune_ratio 1.00, ip_cost 61210659, appr_ip_cost 1884443621
+[2023-06-06 03:47:19.642] [info] finish queryID 4, current_total_retrieval_time 8816.53s, single_query_retrieval_time 2295.37s, prune_ratio 1.00, ip_cost 166273243, appr_ip_cost 2517068536
+[2023-06-06 04:08:42.867] [info] finish queryID 5, current_total_retrieval_time 10099.75s, single_query_retrieval_time 1283.22s, prune_ratio 1.00, ip_cost 19314555, appr_ip_cost 1427550903
+[2023-06-06 04:39:31.218] [info] finish queryID 6, current_total_retrieval_time 11948.10s, single_query_retrieval_time 1848.35s, prune_ratio 1.00, ip_cost 56796650, appr_ip_cost 2041951049
+[2023-06-06 04:55:14.221] [info] finish queryID 7, current_total_retrieval_time 12891.11s, single_query_retrieval_time 943.00s, prune_ratio 1.00, ip_cost 19325700, appr_ip_cost 1044885351
+[2023-06-06 05:06:38.204] [info] finish queryID 8, current_total_retrieval_time 13575.09s, single_query_retrieval_time 683.98s, prune_ratio 1.00, ip_cost 23595270, appr_ip_cost 761529553
+[2023-06-06 05:49:09.162] [info] finish queryID 9, current_total_retrieval_time 16126.05s, single_query_retrieval_time 2550.96s, prune_ratio 1.00, ip_cost 82775282, appr_ip_cost 2838191165
+[2023-06-06 06:14:40.518] [info] finish queryID 10, current_total_retrieval_time 17657.40s, single_query_retrieval_time 1531.36s, prune_ratio 1.00, ip_cost 24506195, appr_ip_cost 1690053415
+[2023-06-06 06:24:20.281] [info] finish queryID 11, current_total_retrieval_time 18237.17s, single_query_retrieval_time 579.76s, prune_ratio 1.00, ip_cost 39994869, appr_ip_cost 641710852
+[2023-06-06 06:40:28.432] [info] finish queryID 12, current_total_retrieval_time 19205.32s, single_query_retrieval_time 968.15s, prune_ratio 1.00, ip_cost 24661507, appr_ip_cost 1073528096
+[2023-06-06 06:52:35.157] [info] finish queryID 13, current_total_retrieval_time 19932.04s, single_query_retrieval_time 726.72s, prune_ratio 1.00, ip_cost 44526366, appr_ip_cost 801866784
+[2023-06-06 07:13:51.175] [info] finish queryID 14, current_total_retrieval_time 21208.06s, single_query_retrieval_time 1276.02s, prune_ratio 1.00, ip_cost 9983995, appr_ip_cost 1423345927
+[2023-06-06 08:02:00.514] [info] finish queryID 15, current_total_retrieval_time 24097.40s, single_query_retrieval_time 2889.34s, prune_ratio 1.00, ip_cost 103941645, appr_ip_cost 3207380081
+[2023-06-06 08:02:00.514] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-06 08:02:00.515] [info] finish top-100
+[2023-06-06 08:02:00.515] [info] top100 retrieval time: total 24097.400s, n_proc_query 16.00
+	accumulate query inner product time 4.202s, accumulate refinement time 24097.398s
+	early prune ratio 0.9993, total IP cost 839437405, total appr IP cost 26687891762
+	maximum ip cost -26164083920, proportion 0.000
+[2023-06-06 08:02:00.515] [info] build index time: total 1.783347026s
+top100 retrieval time: total 24097.400s, n_proc_query 16.00
+	accumulate query inner product time 4.202s, accumulate refinement time 24097.398s
+	early prune ratio 0.9993, total IP cost 839437405, total appr IP cost 26687891762
+	maximum ip cost -26164083920, proportion 0.000
+[2023-06-06 08:02:00.905] [info] Retrieval method_name GridIndex, dataset_name yahoomusic_big-150d, topk 150
+[2023-06-06 08:02:00.905] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 08:02:00.905] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 08:02:04.847] [info] n_data_item 135736, n_query_item 1000, n_user 1823179, vec_dim 150
+[2023-06-06 08:02:04.847] [info] input parameter: stop_time 21600s
+[2023-06-06 08:02:04.891] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-06 08:02:06.612] [info] finish preprocess and save the index
+[2023-06-06 08:46:26.020] [info] finish queryID 0, current_total_retrieval_time 2659.41s, single_query_retrieval_time 2659.41s, prune_ratio 1.00, ip_cost 75415194, appr_ip_cost 2934597780
+[2023-06-06 09:19:54.437] [info] finish queryID 1, current_total_retrieval_time 4667.82s, single_query_retrieval_time 2008.42s, prune_ratio 1.00, ip_cost 72600972, appr_ip_cost 2221163694
+[2023-06-06 09:33:39.175] [info] finish queryID 2, current_total_retrieval_time 5492.56s, single_query_retrieval_time 824.74s, prune_ratio 1.00, ip_cost 67548750, appr_ip_cost 913346480
+[2023-06-06 10:03:43.891] [info] finish queryID 3, current_total_retrieval_time 7297.28s, single_query_retrieval_time 1804.72s, prune_ratio 1.00, ip_cost 76533286, appr_ip_cost 2010764856
+[2023-06-06 10:46:52.652] [info] finish queryID 4, current_total_retrieval_time 9886.04s, single_query_retrieval_time 2588.76s, prune_ratio 1.00, ip_cost 219847289, appr_ip_cost 2852640138
+[2023-06-06 11:10:30.043] [info] finish queryID 5, current_total_retrieval_time 11303.43s, single_query_retrieval_time 1417.39s, prune_ratio 1.00, ip_cost 24697238, appr_ip_cost 1580304312
+[2023-06-06 11:44:08.858] [info] finish queryID 6, current_total_retrieval_time 13322.25s, single_query_retrieval_time 2018.82s, prune_ratio 1.00, ip_cost 73499043, appr_ip_cost 2225486815
+[2023-06-06 12:01:42.479] [info] finish queryID 7, current_total_retrieval_time 14375.87s, single_query_retrieval_time 1053.62s, prune_ratio 1.00, ip_cost 25926440, appr_ip_cost 1164036405
+[2023-06-06 12:15:41.038] [info] finish queryID 8, current_total_retrieval_time 15214.43s, single_query_retrieval_time 838.56s, prune_ratio 1.00, ip_cost 33452564, appr_ip_cost 932630989
+[2023-06-06 13:05:20.855] [info] finish queryID 9, current_total_retrieval_time 18194.24s, single_query_retrieval_time 2979.82s, prune_ratio 1.00, ip_cost 120306097, appr_ip_cost 3310369699
+[2023-06-06 13:34:01.357] [info] finish queryID 10, current_total_retrieval_time 19914.74s, single_query_retrieval_time 1720.50s, prune_ratio 1.00, ip_cost 33683344, appr_ip_cost 1903843769
+[2023-06-06 13:45:51.088] [info] finish queryID 11, current_total_retrieval_time 20624.47s, single_query_retrieval_time 709.73s, prune_ratio 1.00, ip_cost 56203564, appr_ip_cost 784573497
+[2023-06-06 14:04:50.564] [info] finish queryID 12, current_total_retrieval_time 21763.95s, single_query_retrieval_time 1139.48s, prune_ratio 1.00, ip_cost 34383634, appr_ip_cost 1268985376
+[2023-06-06 14:04:50.564] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-06 14:04:50.564] [info] finish top-150
+[2023-06-06 14:04:50.564] [info] top150 retrieval time: total 21763.951s, n_proc_query 13.00
+	accumulate query inner product time 3.463s, accumulate refinement time 21763.949s
+	early prune ratio 0.9991, total IP cost 914097415, total appr IP cost 24102743810
+	maximum ip cost -21258318185, proportion 0.000
+[2023-06-06 14:04:50.564] [info] build index time: total 1.764775695s
+top150 retrieval time: total 21763.951s, n_proc_query 13.00
+	accumulate query inner product time 3.463s, accumulate refinement time 21763.949s
+	early prune ratio 0.9991, total IP cost 914097415, total appr IP cost 24102743810
+	maximum ip cost -21258318185, proportion 0.000
+[2023-06-06 14:04:50.975] [info] Retrieval method_name GridIndex, dataset_name yahoomusic_big-150d, topk 200
+[2023-06-06 14:04:50.975] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 14:04:50.975] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 14:04:54.937] [info] n_data_item 135736, n_query_item 1000, n_user 1823179, vec_dim 150
+[2023-06-06 14:04:54.937] [info] input parameter: stop_time 21600s
+[2023-06-06 14:04:54.980] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-06 14:04:56.699] [info] finish preprocess and save the index
+[2023-06-06 14:52:39.561] [info] finish queryID 0, current_total_retrieval_time 2862.86s, single_query_retrieval_time 2862.86s, prune_ratio 1.00, ip_cost 92692175, appr_ip_cost 3155794374
+[2023-06-06 15:29:55.724] [info] finish queryID 1, current_total_retrieval_time 5099.02s, single_query_retrieval_time 2236.16s, prune_ratio 1.00, ip_cost 91338613, appr_ip_cost 2470499801
+[2023-06-06 15:45:37.497] [info] finish queryID 2, current_total_retrieval_time 6040.80s, single_query_retrieval_time 941.77s, prune_ratio 1.00, ip_cost 87058012, appr_ip_cost 1039531546
+[2023-06-06 16:17:19.697] [info] finish queryID 3, current_total_retrieval_time 7943.00s, single_query_retrieval_time 1902.20s, prune_ratio 1.00, ip_cost 90417496, appr_ip_cost 2116240147
+[2023-06-06 17:04:09.498] [info] finish queryID 4, current_total_retrieval_time 10752.80s, single_query_retrieval_time 2809.80s, prune_ratio 1.00, ip_cost 267670802, appr_ip_cost 3077356668
+[2023-06-06 17:29:34.673] [info] finish queryID 5, current_total_retrieval_time 12277.97s, single_query_retrieval_time 1525.18s, prune_ratio 1.00, ip_cost 29511451, appr_ip_cost 1697043684
+[2023-06-06 18:05:35.039] [info] finish queryID 6, current_total_retrieval_time 14438.34s, single_query_retrieval_time 2160.37s, prune_ratio 1.00, ip_cost 89111518, appr_ip_cost 2378043527
+[2023-06-06 18:24:46.692] [info] finish queryID 7, current_total_retrieval_time 15589.99s, single_query_retrieval_time 1151.65s, prune_ratio 1.00, ip_cost 32277674, appr_ip_cost 1271922440
+[2023-06-06 18:40:59.247] [info] finish queryID 8, current_total_retrieval_time 16562.55s, single_query_retrieval_time 972.56s, prune_ratio 1.00, ip_cost 44452710, appr_ip_cost 1082348760
+[2023-06-06 19:36:25.428] [info] finish queryID 9, current_total_retrieval_time 19888.73s, single_query_retrieval_time 3326.18s, prune_ratio 1.00, ip_cost 156675085, appr_ip_cost 3689779348
+[2023-06-06 20:07:32.877] [info] finish queryID 10, current_total_retrieval_time 21756.18s, single_query_retrieval_time 1867.45s, prune_ratio 1.00, ip_cost 41286170, appr_ip_cost 2055429761
+[2023-06-06 20:07:32.877] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-06 20:07:32.877] [info] finish top-200
+[2023-06-06 20:07:32.877] [info] top200 retrieval time: total 21756.177s, n_proc_query 11.00
+	accumulate query inner product time 2.888s, accumulate refinement time 21756.175s
+	early prune ratio 0.9988, total IP cost 1022491706, total appr IP cost 24033990056
+	maximum ip cost -17987807695, proportion 0.000
+[2023-06-06 20:07:32.877] [info] build index time: total 1.761946615s
+top200 retrieval time: total 21756.177s, n_proc_query 11.00
+	accumulate query inner product time 2.888s, accumulate refinement time 21756.175s
+	early prune ratio 0.9988, total IP cost 1022491706, total appr IP cost 24033990056
+	maximum ip cost -17987807695, proportion 0.000
+[2023-06-06 20:07:33.271] [info] Retrieval method_name GridIndex, dataset_name yelp-32d, topk 100
+[2023-06-06 20:07:33.271] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 20:07:33.271] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 20:07:37.668] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 32
+[2023-06-06 20:07:37.668] [info] input parameter: stop_time 21600s
+[2023-06-06 20:07:37.680] [info] GridIndex min_codeword 27, codeword 32
+[2023-06-06 20:07:38.325] [info] finish preprocess and save the index
+[2023-06-06 20:31:30.470] [info] finish queryID 0, current_total_retrieval_time 1432.14s, single_query_retrieval_time 1432.14s, prune_ratio 1.00, ip_cost 374645317, appr_ip_cost 5044343040
+[2023-06-06 20:49:50.208] [info] finish queryID 1, current_total_retrieval_time 2531.88s, single_query_retrieval_time 1099.74s, prune_ratio 1.00, ip_cost 282957619, appr_ip_cost 3829447744
+[2023-06-06 21:14:48.077] [info] finish queryID 2, current_total_retrieval_time 4029.75s, single_query_retrieval_time 1497.87s, prune_ratio 1.00, ip_cost 411940652, appr_ip_cost 5329809779
+[2023-06-06 21:55:55.214] [info] finish queryID 3, current_total_retrieval_time 6496.89s, single_query_retrieval_time 2467.14s, prune_ratio 1.00, ip_cost 362717055, appr_ip_cost 9501898828
+[2023-06-06 22:11:20.673] [info] finish queryID 4, current_total_retrieval_time 7422.35s, single_query_retrieval_time 925.46s, prune_ratio 1.00, ip_cost 249682305, appr_ip_cost 3215057549
+[2023-06-06 22:30:53.597] [info] finish queryID 5, current_total_retrieval_time 8595.27s, single_query_retrieval_time 1172.92s, prune_ratio 1.00, ip_cost 313576825, appr_ip_cost 4140579293
+[2023-06-06 23:06:40.353] [info] finish queryID 6, current_total_retrieval_time 10742.03s, single_query_retrieval_time 2146.76s, prune_ratio 1.00, ip_cost 466376419, appr_ip_cost 7753000626
+[2023-06-06 23:15:51.364] [info] finish queryID 7, current_total_retrieval_time 11293.04s, single_query_retrieval_time 551.01s, prune_ratio 1.00, ip_cost 138820118, appr_ip_cost 1930468986
+[2023-06-06 23:25:16.265] [info] finish queryID 8, current_total_retrieval_time 11857.94s, single_query_retrieval_time 564.90s, prune_ratio 1.00, ip_cost 149745110, appr_ip_cost 2163822877
+[2023-06-07 00:17:32.823] [info] finish queryID 9, current_total_retrieval_time 14994.50s, single_query_retrieval_time 3136.56s, prune_ratio 1.00, ip_cost 281234389, appr_ip_cost 11335104322
+[2023-06-07 00:24:25.585] [info] finish queryID 10, current_total_retrieval_time 15407.26s, single_query_retrieval_time 412.76s, prune_ratio 1.00, ip_cost 104115552, appr_ip_cost 1536679376
+[2023-06-07 00:48:00.849] [info] finish queryID 11, current_total_retrieval_time 16822.52s, single_query_retrieval_time 1415.26s, prune_ratio 1.00, ip_cost 312000502, appr_ip_cost 4733855221
+[2023-06-07 01:19:00.319] [info] finish queryID 12, current_total_retrieval_time 18681.99s, single_query_retrieval_time 1859.47s, prune_ratio 1.00, ip_cost 337534840, appr_ip_cost 7211560336
+[2023-06-07 02:02:04.976] [info] finish queryID 13, current_total_retrieval_time 21266.65s, single_query_retrieval_time 2584.66s, prune_ratio 1.00, ip_cost 549999199, appr_ip_cost 8746883225
+[2023-06-07 02:10:04.898] [info] finish queryID 14, current_total_retrieval_time 21746.57s, single_query_retrieval_time 479.92s, prune_ratio 1.00, ip_cost 100807813, appr_ip_cost 1801458001
+[2023-06-07 02:10:04.898] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-07 02:10:04.899] [info] finish top-100
+[2023-06-07 02:10:04.899] [info] top100 retrieval time: total 21746.573s, n_proc_query 15.00
+	accumulate query inner product time 0.738s, accumulate refinement time 21746.571s
+	early prune ratio 0.9994, total IP cost 4436153715, total appr IP cost 78273969203
+	maximum ip cost 22715007390, proportion 0.195
+[2023-06-07 02:10:04.899] [info] build index time: total 0.656954239s
+top100 retrieval time: total 21746.573s, n_proc_query 15.00
+	accumulate query inner product time 0.738s, accumulate refinement time 21746.571s
+	early prune ratio 0.9994, total IP cost 4436153715, total appr IP cost 78273969203
+	maximum ip cost 22715007390, proportion 0.195

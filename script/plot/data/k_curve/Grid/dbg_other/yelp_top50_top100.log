@@ -1,0 +1,64 @@
+nohup: ignoring input
+[2023-06-05 21:09:27.012] [info] Retrieval method_name GridIndex, dataset_name yelp-150d, topk 50
+[2023-06-05 21:09:27.012] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-05 21:09:27.012] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-05 21:09:33.080] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-05 21:09:33.080] [info] input parameter: stop_time 14400s
+[2023-06-05 21:09:33.136] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-05 21:09:35.686] [info] finish preprocess and save the index
+[2023-06-05 21:47:15.316] [info] finish queryID 0, current_total_retrieval_time 2259.63s, single_query_retrieval_time 2259.63s, prune_ratio 1.00, ip_cost 38628100, appr_ip_cost 2621151983
+[2023-06-05 21:57:49.585] [info] finish queryID 1, current_total_retrieval_time 2893.90s, single_query_retrieval_time 634.27s, prune_ratio 1.00, ip_cost 48958065, appr_ip_cost 686410017
+[2023-06-05 22:18:42.241] [info] finish queryID 2, current_total_retrieval_time 4146.55s, single_query_retrieval_time 1252.66s, prune_ratio 1.00, ip_cost 53034117, appr_ip_cost 1409874353
+[2023-06-05 23:05:18.559] [info] finish queryID 3, current_total_retrieval_time 6942.87s, single_query_retrieval_time 2796.32s, prune_ratio 1.00, ip_cost 89015804, appr_ip_cost 3111145263
+[2023-06-05 23:25:00.480] [info] finish queryID 4, current_total_retrieval_time 8124.79s, single_query_retrieval_time 1181.92s, prune_ratio 1.00, ip_cost 50423561, appr_ip_cost 1318032873
+[2023-06-05 23:40:06.728] [info] finish queryID 5, current_total_retrieval_time 9031.04s, single_query_retrieval_time 906.25s, prune_ratio 1.00, ip_cost 43471460, appr_ip_cost 1022086075
+[2023-06-06 00:08:20.734] [info] finish queryID 6, current_total_retrieval_time 10725.05s, single_query_retrieval_time 1694.01s, prune_ratio 1.00, ip_cost 69312467, appr_ip_cost 1810453944
+[2023-06-06 00:46:50.673] [info] finish queryID 7, current_total_retrieval_time 13034.99s, single_query_retrieval_time 2309.94s, prune_ratio 1.00, ip_cost 52419645, appr_ip_cost 2654293577
+[2023-06-06 02:03:01.290] [info] finish queryID 8, current_total_retrieval_time 17605.60s, single_query_retrieval_time 4570.62s, prune_ratio 1.00, ip_cost 135110091, appr_ip_cost 4989720170
+[2023-06-06 02:03:01.290] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-06 02:03:01.290] [info] finish top-50
+[2023-06-06 02:03:01.290] [info] top50 retrieval time: total 17605.604s, n_proc_query 9.00
+	accumulate query inner product time 5.759s, accumulate refinement time 17605.603s
+	early prune ratio 0.9996, total IP cost 580373310, total appr IP cost 19623168255
+	maximum ip cost 13629004434, proportion 0.043
+[2023-06-06 02:03:01.290] [info] build index time: total 2.606052397s
+top50 retrieval time: total 17605.604s, n_proc_query 9.00
+	accumulate query inner product time 5.759s, accumulate refinement time 17605.603s
+	early prune ratio 0.9996, total IP cost 580373310, total appr IP cost 19623168255
+	maximum ip cost 13629004434, proportion 0.043
+[2023-06-06 02:03:02.467] [info] Retrieval method_name GridIndex, dataset_name yelp-150d, topk 100
+[2023-06-06 02:03:02.467] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 02:03:02.467] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 02:03:08.581] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-06 02:03:08.581] [info] input parameter: stop_time 14400s
+[2023-06-06 02:03:08.637] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-06 02:03:11.209] [info] finish preprocess and save the index
+[2023-06-06 02:52:39.030] [info] finish queryID 0, current_total_retrieval_time 2967.82s, single_query_retrieval_time 2967.82s, prune_ratio 1.00, ip_cost 66745351, appr_ip_cost 3419130865
+[2023-06-06 03:09:14.168] [info] finish queryID 1, current_total_retrieval_time 3962.96s, single_query_retrieval_time 995.14s, prune_ratio 1.00, ip_cost 88555005, appr_ip_cost 1069902543
+[2023-06-06 03:39:00.076] [info] finish queryID 2, current_total_retrieval_time 5748.87s, single_query_retrieval_time 1785.91s, prune_ratio 1.00, ip_cost 96828708, appr_ip_cost 1999093821
+[2023-06-06 04:36:55.747] [info] finish queryID 3, current_total_retrieval_time 9224.54s, single_query_retrieval_time 3475.67s, prune_ratio 1.00, ip_cost 158553259, appr_ip_cost 3820365354
+[2023-06-06 05:02:52.512] [info] finish queryID 4, current_total_retrieval_time 10781.30s, single_query_retrieval_time 1556.76s, prune_ratio 1.00, ip_cost 89077023, appr_ip_cost 1725525171
+[2023-06-06 05:24:14.802] [info] finish queryID 5, current_total_retrieval_time 12063.59s, single_query_retrieval_time 1282.29s, prune_ratio 1.00, ip_cost 79866090, appr_ip_cost 1423413205
+[2023-06-06 06:00:35.921] [info] finish queryID 6, current_total_retrieval_time 14244.71s, single_query_retrieval_time 2181.12s, prune_ratio 1.00, ip_cost 123995723, appr_ip_cost 2334817304
+[2023-06-06 06:52:24.187] [info] finish queryID 7, current_total_retrieval_time 17352.98s, single_query_retrieval_time 3108.27s, prune_ratio 1.00, ip_cost 101866853, appr_ip_cost 3537475838
+[2023-06-06 06:52:24.187] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-06 06:52:24.187] [info] finish top-100
+[2023-06-06 06:52:24.187] [info] top100 retrieval time: total 17352.977s, n_proc_query 8.00
+	accumulate query inner product time 5.225s, accumulate refinement time 17352.976s
+	early prune ratio 0.9994, total IP cost 805488012, total appr IP cost 19329724101
+	maximum ip cost 12114670608, proportion 0.066
+[2023-06-06 06:52:24.187] [info] build index time: total 2.628055263s
+top100 retrieval time: total 17352.977s, n_proc_query 8.00
+	accumulate query inner product time 5.225s, accumulate refinement time 17352.976s
+	early prune ratio 0.9994, total IP cost 805488012, total appr IP cost 19329724101
+	maximum ip cost 12114670608, proportion 0.066
+[2023-06-06 06:52:25.449] [info] Retrieval method_name GridIndex, dataset_name yelp-150d, topk 150
+[2023-06-06 06:52:25.449] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 06:52:25.449] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 06:52:31.619] [info] n_data_item 159585, n_query_item 1000, n_user 2189457, vec_dim 150
+[2023-06-06 06:52:31.619] [info] input parameter: stop_time 14400s
+[2023-06-06 06:52:31.704] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-06 06:52:34.192] [info] finish preprocess and save the index
+[2023-06-06 07:50:55.449] [info] finish queryID 0, current_total_retrieval_time 3501.26s, single_query_retrieval_time 3501.26s, prune_ratio 1.00, ip_cost 96850216, appr_ip_cost 4000829257
+[2023-06-06 08:13:04.208] [info] finish queryID 1, current_total_retrieval_time 4830.01s, single_query_retrieval_time 1328.76s, prune_ratio 1.00, ip_cost 130198636, appr_ip_cost 1428678284
+[2023-06-06 08:49:45.375] [info] finish queryID 2, current_total_retrieval_time 7031.18s, single_query_retrieval_time 2201.17s, prune_ratio 1.00, ip_cost 136123671, appr_ip_cost 2449624410

@@ -1,0 +1,46 @@
+nohup: ignoring input
+[2023-06-05 21:07:43.935] [info] Retrieval method_name GridIndex, dataset_name movielens-1b-150d, topk 10
+[2023-06-05 21:07:43.935] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-05 21:07:43.935] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-05 21:07:54.538] [info] n_data_item 272038, n_query_item 1000, n_user 2197225, vec_dim 150
+[2023-06-05 21:07:54.538] [info] input parameter: stop_time 14400s
+[2023-06-05 21:07:54.593] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-05 21:07:58.151] [info] finish preprocess and save the index
+[2023-06-06 02:09:23.449] [info] finish queryID 0, current_total_retrieval_time 18085.30s, single_query_retrieval_time 18085.30s, prune_ratio 1.00, ip_cost 118748530, appr_ip_cost 25107247784
+[2023-06-06 02:09:23.449] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-06 02:09:23.450] [info] finish top-10
+[2023-06-06 02:09:23.450] [info] top10 retrieval time: total 18085.298s, n_proc_query 1.00
+	accumulate query inner product time 0.404s, accumulate refinement time 18085.298s
+	early prune ratio 0.9999, total IP cost 118748530, total appr IP cost 25107247784
+	maximum ip cost 730437631, proportion 0.163
+[2023-06-06 02:09:23.450] [info] build index time: total 3.612673481s
+top10 retrieval time: total 18085.298s, n_proc_query 1.00
+	accumulate query inner product time 0.404s, accumulate refinement time 18085.298s
+	early prune ratio 0.9999, total IP cost 118748530, total appr IP cost 25107247784
+	maximum ip cost 730437631, proportion 0.163
+[2023-06-06 02:09:24.945] [info] Retrieval method_name GridIndex, dataset_name movielens-1b-150d, topk 50
+[2023-06-06 02:09:24.945] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 02:09:24.945] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 02:09:33.500] [info] n_data_item 272038, n_query_item 1000, n_user 2197225, vec_dim 150
+[2023-06-06 02:09:33.500] [info] input parameter: stop_time 14400s
+[2023-06-06 02:09:33.559] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-06 02:09:36.977] [info] finish preprocess and save the index
+[2023-06-06 07:11:29.473] [info] finish queryID 0, current_total_retrieval_time 18112.50s, single_query_retrieval_time 18112.50s, prune_ratio 1.00, ip_cost 501555291, appr_ip_cost 25067787421
+[2023-06-06 07:11:29.473] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-06 07:11:29.474] [info] finish top-50
+[2023-06-06 07:11:29.474] [info] top50 retrieval time: total 18112.495s, n_proc_query 1.00
+	accumulate query inner product time 0.489s, accumulate refinement time 18112.495s
+	early prune ratio 0.9997, total IP cost 501555291, total appr IP cost 25067787421
+	maximum ip cost 730437631, proportion 0.687
+[2023-06-06 07:11:29.474] [info] build index time: total 3.476345005s
+top50 retrieval time: total 18112.495s, n_proc_query 1.00
+	accumulate query inner product time 0.489s, accumulate refinement time 18112.495s
+	early prune ratio 0.9997, total IP cost 501555291, total appr IP cost 25067787421
+	maximum ip cost 730437631, proportion 0.687
+[2023-06-06 07:11:31.027] [info] Retrieval method_name GridIndex, dataset_name movielens-1b-150d, topk 100
+[2023-06-06 07:11:31.027] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 07:11:31.027] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 07:11:39.332] [info] n_data_item 272038, n_query_item 1000, n_user 2197225, vec_dim 150
+[2023-06-06 07:11:39.333] [info] input parameter: stop_time 14400s
+[2023-06-06 07:11:39.391] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-06 07:11:42.890] [info] finish preprocess and save the index

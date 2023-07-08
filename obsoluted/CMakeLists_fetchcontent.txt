@@ -1,0 +1,92 @@
+cmake_minimum_required(VERSION 3.14)
+project(Reverse-kRanks)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS_Release} -O3")
+
+include(FetchContent)
+
+FetchContent_Declare(
+        spdlog
+        URL https://github.com/gabime/spdlog/archive/refs/tags/v1.9.2.tar.gz
+)
+
+FetchContent_Declare(
+        openblas
+        URL https://github.com/xianyi/OpenBLAS/archive/refs/tags/v0.3.19.zip
+)
+
+FetchContent_Declare(
+        armadillo
+        URL http://sourceforge.net/projects/arma/files/armadillo-10.8.2.tar.xz
+)
+
+FetchContent_MakeAvailable(
+        spdlog
+)
+
+set(BUILD_STATIC_LIBS ON)
+set(BUILD_WITHOUT_LAPACK OFF)
+
+FetchContent_MakeAvailable(
+        openblas
+)
+
+set(OpenBLAS_LIBRARY ${openblas_BINARY_DIR}/lib/libopenblas.a)
+set(BUILD_SHARED_LIBS OFF CACHE BOOL "")
+set(DETECT_HDF5 OFF CACHE BOOL "")
+set(OPENBLAS_PROVIDES_LAPACK ON CACHE BOOL "")
+set(ALLOW_FLEXIBLAS_LINUX OFF CACHE BOOL "")
+set(ALLOW_OPENBLAS_MACOS ON CACHE BOOL "")
+
+FetchContent_MakeAvailable(
+        armadillo
+)
+
+add_dependencies(armadillo openblas_static)
+
+find_package(OpenMP)
+
+#target_include_directories(TestArmadilloOpenMP PRIVATE ${armadillo_SOURCE_DIR}/include)
+#target_include_directories(TestArmadillo PRIVATE ${armadillo_SOURCE_DIR}/include)
+#
+#target_link_libraries(TestArmadilloOpenMP PRIVATE armadillo openblas_static pthread gfortran OpenMP::OpenMP_CXX)
+#target_link_libraries(TestArmadillo PRIVATE armadillo openblas_static pthread gfortran)
+
+include_directories(src/include)
+
+SET(APPS
+        bfon
+        bfmi
+        bfdi
+        rkbkt
+        itvvec
+        )
+SET(APPS_EXAMPLE
+        OnlineBruteForce
+        MemoryIndexBruteForce
+        DiskIndexBruteForce
+        RankBucket
+        IntervalVector
+        )
+
+
+LIST(LENGTH APPS ll)
+message(STATUS "length is ${ll}")
+FOREACH (i RANGE 1 ${ll})
+    MATH(EXPR temp "${i} - 1")
+    #    message(STATUS "current is ${temp}")
+    LIST(GET APPS ${temp} app)
+    LIST(GET APPS_EXAMPLE ${temp} app_example)
+    #    message(STATUS "current is ${app} ${app_example}")
+    add_executable(${app} src/apps/${app_example}.cpp)
+
+    target_include_directories(${app} PRIVATE ${armadillo_SOURCE_DIR}/include)
+    target_link_libraries(${app} PRIVATE armadillo openblas_static pthread gfortran OpenMP::OpenMP_CXX spdlog::spdlog)
+    #    target_link_libraries(${app} ${MLPACK_LIBRARY})
+ENDFOREACH (i)
+
+add_executable(t1 test.cpp)
+target_link_libraries(t1 PRIVATE armadillo)

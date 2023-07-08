@@ -1,0 +1,91 @@
+nohup: ignoring input
+[2023-06-01 15:05:30.412] [info] Retrieval method_name RtreeItemOnly, dataset_name amazon-home-kitchen-150d, topk 10
+[2023-06-01 15:05:30.412] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-01 15:05:30.412] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-01 15:05:37.694] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-01 15:05:37.694] [info] input parameter: stop_time 28800s
+409243 entries created
+409243 entries created
+[2023-06-01 19:32:45.817] [info] finish preprocess and save the index
+[2023-06-01 21:22:20.055] [info] finish queryID 0, single_query_retrieval_time 6574.24s, ip_cost 3575947809, n_proc_query 1.00
+[2023-06-01 22:42:25.907] [info] finish queryID 1, single_query_retrieval_time 4805.85s, ip_cost 2528897416, n_proc_query 2.00
+[2023-06-02 04:10:35.564] [info] finish queryID 2, single_query_retrieval_time 19689.66s, ip_cost 10230934238, n_proc_query 3.00
+[2023-06-02 04:10:35.564] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-02 04:10:35.564] [info] finish top-10
+[2023-06-02 04:10:35.564] [info] top10 retrieval time: total 31069.746s, n_proc_query 3.000
+	total single query retrieval time 31069.746s, total ip cost 16335779463
+[2023-06-02 04:10:35.564] [info] build index time: total 16028.12356739s
+top10 retrieval time: total 31069.746s, n_proc_query 3.000
+	total single query retrieval time 31069.746s, total ip cost 16335779463
+[2023-06-02 04:10:41.045] [info] Retrieval method_name RtreeItemOnly, dataset_name amazon-home-kitchen-150d, topk 50
+[2023-06-02 04:10:41.045] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-02 04:10:41.045] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-02 04:10:48.266] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-02 04:10:48.266] [info] input parameter: stop_time 28800s
+409243 entries created
+409243 entries created
+[2023-06-02 08:33:04.562] [info] finish preprocess and save the index
+[2023-06-02 11:18:17.277] [info] finish queryID 0, single_query_retrieval_time 9912.71s, ip_cost 5401887423, n_proc_query 1.00
+[2023-06-02 12:45:29.307] [info] finish queryID 1, single_query_retrieval_time 5232.03s, ip_cost 2799052136, n_proc_query 2.00
+[2023-06-02 18:43:20.672] [info] finish queryID 2, single_query_retrieval_time 21471.37s, ip_cost 11051925225, n_proc_query 3.00
+[2023-06-02 18:43:20.672] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-02 18:43:20.672] [info] finish top-50
+[2023-06-02 18:43:20.672] [info] top50 retrieval time: total 36616.110s, n_proc_query 3.000
+	total single query retrieval time 36616.110s, total ip cost 19252864784
+[2023-06-02 18:43:20.672] [info] build index time: total 15736.296408051s
+top50 retrieval time: total 36616.110s, n_proc_query 3.000
+	total single query retrieval time 36616.110s, total ip cost 19252864784
+[2023-06-02 18:43:26.264] [info] Retrieval method_name RtreeItemOnly, dataset_name amazon-home-kitchen-150d, topk 100
+[2023-06-02 18:43:26.264] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-02 18:43:26.264] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-02 18:43:33.586] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-02 18:43:33.586] [info] input parameter: stop_time 28800s
+409243 entries created
+409243 entries created
+[2023-06-02 21:10:15.425] [info] finish preprocess and save the index
+[2023-06-03 00:37:28.143] [info] finish queryID 0, single_query_retrieval_time 12432.72s, ip_cost 6780915652, n_proc_query 1.00
+[2023-06-03 02:11:41.007] [info] finish queryID 1, single_query_retrieval_time 5652.86s, ip_cost 2976889826, n_proc_query 2.00
+[2023-06-03 08:25:34.090] [info] finish queryID 2, single_query_retrieval_time 22433.08s, ip_cost 11582070819, n_proc_query 3.00
+[2023-06-03 08:25:34.090] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-03 08:25:34.090] [info] finish top-100
+[2023-06-03 08:25:34.090] [info] top100 retrieval time: total 40518.664s, n_proc_query 3.000
+	total single query retrieval time 40518.664s, total ip cost 21339876297
+[2023-06-03 08:25:34.090] [info] build index time: total 8801.8391848s
+top100 retrieval time: total 40518.664s, n_proc_query 3.000
+	total single query retrieval time 40518.664s, total ip cost 21339876297
+[2023-06-03 08:25:39.985] [info] Retrieval method_name RtreeItemOnly, dataset_name amazon-home-kitchen-150d, topk 150
+[2023-06-03 08:25:39.985] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-03 08:25:39.985] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-03 08:25:47.160] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-03 08:25:47.160] [info] input parameter: stop_time 28800s
+409243 entries created
+409243 entries created
+[2023-06-03 11:05:21.739] [info] finish preprocess and save the index
+[2023-06-03 15:04:08.730] [info] finish queryID 0, single_query_retrieval_time 14326.99s, ip_cost 7712374832, n_proc_query 1.00
+[2023-06-03 16:38:37.637] [info] finish queryID 1, single_query_retrieval_time 5668.91s, ip_cost 3070417991, n_proc_query 2.00
+[2023-06-03 23:08:59.245] [info] finish queryID 2, single_query_retrieval_time 23421.61s, ip_cost 11989419023, n_proc_query 3.00
+[2023-06-03 23:08:59.245] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-03 23:08:59.245] [info] finish top-150
+[2023-06-03 23:08:59.245] [info] top150 retrieval time: total 43417.506s, n_proc_query 3.000
+	total single query retrieval time 43417.505s, total ip cost 22772211846
+[2023-06-03 23:08:59.245] [info] build index time: total 9574.578866063s
+top150 retrieval time: total 43417.506s, n_proc_query 3.000
+	total single query retrieval time 43417.505s, total ip cost 22772211846
+[2023-06-03 23:09:04.597] [info] Retrieval method_name RtreeItemOnly, dataset_name amazon-home-kitchen-150d, topk 200
+[2023-06-03 23:09:04.597] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-03 23:09:04.597] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-03 23:09:11.917] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-03 23:09:11.917] [info] input parameter: stop_time 28800s
+409243 entries created
+409243 entries created
+[2023-06-04 03:27:07.427] [info] finish preprocess and save the index
+[2023-06-04 07:46:26.409] [info] finish queryID 0, single_query_retrieval_time 15558.98s, ip_cost 8400205603, n_proc_query 1.00
+[2023-06-04 09:25:13.609] [info] finish queryID 1, single_query_retrieval_time 5927.20s, ip_cost 3201370621, n_proc_query 2.00
+[2023-06-04 16:04:35.483] [info] finish queryID 2, single_query_retrieval_time 23961.87s, ip_cost 12238150948, n_proc_query 3.00
+[2023-06-04 16:04:35.483] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-04 16:04:35.483] [info] finish top-200
+[2023-06-04 16:04:35.483] [info] top200 retrieval time: total 45448.056s, n_proc_query 3.000
+	total single query retrieval time 45448.056s, total ip cost 23839727172
+[2023-06-04 16:04:35.483] [info] build index time: total 15475.509463321s
+top200 retrieval time: total 45448.056s, n_proc_query 3.000
+	total single query retrieval time 45448.056s, total ip cost 23839727172

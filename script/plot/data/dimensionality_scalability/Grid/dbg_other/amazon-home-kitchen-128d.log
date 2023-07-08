@@ -1,0 +1,39 @@
+[2023-05-19 23:26:28.138] [info] Retrieval method_name GridIndex, dataset_name amazon-home-kitchen-128d, topk 100
+[2023-05-19 23:26:28.138] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-05-19 23:26:28.138] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-05-19 23:26:33.327] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 128
+[2023-05-19 23:26:33.327] [info] input parameter: stop_time 21600s
+[2023-05-19 23:26:33.429] [info] GridIndex min_codeword 39, codeword 64
+[2023-05-19 23:26:35.416] [info] finish preprocess and save the index
+[2023-05-20 01:44:21.951] [info] queryID 0, userID 1000000, query_ip_cost 41090452, query_appr_ip_cost 13794011785, time_used 8266.19s
+[2023-05-20 02:54:13.490] [info] queryID 0, userID 2000000, query_ip_cost 41197246, query_appr_ip_cost 20550150990, time_used 12457.73s
+[2023-05-20 03:21:36.250] [info] finish queryID 0, current_total_retrieval_time 14100.83s, single_query_retrieval_time 14100.83s, prune_ratio 1.00, ip_cost 41206893, appr_ip_cost 23160725514
+[2023-05-20 04:14:47.381] [info] queryID 504, userID 1000000, query_ip_cost 71264068, query_appr_ip_cost 26854804782, time_used 17291.58s
+[2023-05-20 04:56:36.498] [info] queryID 1, userID 1000000, query_ip_cost 53412796, query_appr_ip_cost 9394801004, time_used 5699.46s
+[2023-05-20 05:21:53.522] [info] queryID 1, userID 2000000, query_ip_cost 53499518, query_appr_ip_cost 11804409227, time_used 7216.48s
+[2023-05-20 05:26:35.423] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:35.677] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:35.769] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:36.548] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:36.607] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:36.844] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:37.984] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:38.004] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:38.553] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:39.543] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:40.404] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:41.939] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:42.243] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:42.791] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:43.435] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:46.278] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 05:26:46.279] [info] finish top-100
+[2023-05-20 05:26:46.279] [info] top100 retrieval time: total 21610.861s, n_proc_query 3.08
+	accumulate query inner product time 6.802s, accumulate refinement time 345654.564s
+	early prune ratio 0.9981, total IP cost 4608171518, total appr IP cost 580478788588
+	maximum ip cost 4207496377, proportion 1.095
+[2023-05-20 05:26:46.279] [info] build index time: total 2.089539619s
+top100 retrieval time: total 21610.861s, n_proc_query 3.08
+	accumulate query inner product time 6.802s, accumulate refinement time 345654.564s
+	early prune ratio 0.9981, total IP cost 4608171518, total appr IP cost 580478788588
+	maximum ip cost 4207496377, proportion 1.095

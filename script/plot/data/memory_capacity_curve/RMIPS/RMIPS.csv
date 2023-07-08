@@ -1,0 +1,11 @@
+Dataset,memory_capacity,retrieval
+Amazon,16,2040308.61
+Amazon,32,2030267.92
+Amazon,64,2022305.52
+Amazon,128,1945048.43
+Amazon,256,1832783.48
+Yelp,16,763894.89
+Yelp,32,653680.85
+Yelp,64,520112.73
+Yelp,128,397752.60
+Yelp,256,286600.68

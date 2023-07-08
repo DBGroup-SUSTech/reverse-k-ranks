@@ -1,0 +1,31 @@
+nohup: ignoring input
+[2023-06-05 13:08:45.545] [info] Retrieval method_name GridIndex, dataset_name amazon-home-kitchen-150d, topk 10
+[2023-06-05 13:08:45.545] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-05 13:08:45.545] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-05 13:08:52.961] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-05 13:08:52.961] [info] input parameter: stop_time 21600s
+[2023-06-05 13:08:53.025] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-05 13:08:56.072] [info] finish preprocess and save the index
+[2023-06-05 14:14:56.647] [info] finish queryID 0, current_total_retrieval_time 3960.57s, single_query_retrieval_time 3960.57s, prune_ratio 1.00, ip_cost 60407143, appr_ip_cost 5081412006
+[2023-06-05 15:04:58.706] [info] finish queryID 1, current_total_retrieval_time 6962.63s, single_query_retrieval_time 3002.06s, prune_ratio 1.00, ip_cost 11022421, appr_ip_cost 4063675264
+[2023-06-05 22:57:25.667] [info] finish queryID 2, current_total_retrieval_time 35309.59s, single_query_retrieval_time 28346.96s, prune_ratio 1.00, ip_cost 127681373, appr_ip_cost 35763558501
+[2023-06-05 22:57:25.667] [info] total retrieval time larger than stop time, retrieval exit
+[2023-06-05 22:57:25.667] [info] finish top-10
+[2023-06-05 22:57:25.667] [info] top10 retrieval time: total 35309.594s, n_proc_query 3.00
+	accumulate query inner product time 1.956s, accumulate refinement time 35309.593s
+	early prune ratio 0.9999, total IP cost 199110937, total appr IP cost 44908645771
+	maximum ip cost 4092417288, proportion 0.049
+[2023-06-05 22:57:25.667] [info] build index time: total 3.110842644s
+top10 retrieval time: total 35309.594s, n_proc_query 3.00
+	accumulate query inner product time 1.956s, accumulate refinement time 35309.593s
+	early prune ratio 0.9999, total IP cost 199110937, total appr IP cost 44908645771
+	maximum ip cost 4092417288, proportion 0.049
+[2023-06-05 22:57:27.085] [info] Retrieval method_name GridIndex, dataset_name amazon-home-kitchen-150d, topk 50
+[2023-06-05 22:57:27.086] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-05 22:57:27.086] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-05 22:57:34.431] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-05 22:57:34.432] [info] input parameter: stop_time 21600s
+[2023-06-05 22:57:34.607] [info] GridIndex min_codeword 41, codeword 64
+[2023-06-05 22:57:37.725] [info] finish preprocess and save the index
+[2023-06-06 00:49:38.411] [info] finish queryID 0, current_total_retrieval_time 6720.69s, single_query_retrieval_time 6720.69s, prune_ratio 1.00, ip_cost 233737837, appr_ip_cost 8573877214
+[2023-06-06 01:50:04.259] [info] finish queryID 1, current_total_retrieval_time 10346.53s, single_query_retrieval_time 3625.85s, prune_ratio 1.00, ip_cost 27417753, appr_ip_cost 4902349400

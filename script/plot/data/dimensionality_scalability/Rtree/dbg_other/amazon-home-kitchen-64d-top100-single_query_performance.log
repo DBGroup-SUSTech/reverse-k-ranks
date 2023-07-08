@@ -1,0 +1,200 @@
+[2023-05-20 05:26:51.988] [info] Retrieval method_name RtreeItemOnly, dataset_name amazon-home-kitchen-64d, topk 100
+[2023-05-20 05:26:51.988] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-05-20 05:26:51.988] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-05-20 05:26:56.601] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 64
+[2023-05-20 05:26:56.601] [info] input parameter: stop_time 21600s
+409243 entries created
+3000 entries inserted, progress 0.733061%, batch time 8.83874s, passed time 8.83874s, predicted finish time 1205.33s
+6000 entries inserted, progress 1.46612%, batch time 11.3739s, passed time 20.2126s, predicted finish time 1378.42s
+9000 entries inserted, progress 2.19918%, batch time 11.4766s, passed time 31.6892s, predicted finish time 1440.79s
+12000 entries inserted, progress 2.93224%, batch time 12.0105s, passed time 43.6998s, predicted finish time 1490.19s
+15000 entries inserted, progress 3.6653%, batch time 13.2779s, passed time 56.9777s, predicted finish time 1554.41s
+18000 entries inserted, progress 4.39836%, batch time 12.6015s, passed time 69.5792s, predicted finish time 1581.85s
+21000 entries inserted, progress 5.13143%, batch time 12.5518s, passed time 82.131s, predicted finish time 1600.47s
+24000 entries inserted, progress 5.86449%, batch time 14.9286s, passed time 97.0596s, predicted finish time 1654.97s
+27000 entries inserted, progress 6.59755%, batch time 15.6403s, passed time 112.7s, predicted finish time 1708.15s
+30000 entries inserted, progress 7.33061%, batch time 15.2061s, passed time 127.906s, predicted finish time 1744.76s
+33000 entries inserted, progress 8.06367%, batch time 14.473s, passed time 142.379s, predicted finish time 1765.63s
+36000 entries inserted, progress 8.79673%, batch time 13.9545s, passed time 156.333s, predicted finish time 1777.13s
+39000 entries inserted, progress 9.52979%, batch time 14.5477s, passed time 170.881s, predicted finish time 1793.08s
+42000 entries inserted, progress 10.2629%, batch time 17.1688s, passed time 188.05s, predicted finish time 1832.29s
+45000 entries inserted, progress 10.9959%, batch time 19.2179s, passed time 207.268s, predicted finish time 1884.91s
+48000 entries inserted, progress 11.729%, batch time 19.7376s, passed time 227.005s, predicted finish time 1935.38s
+51000 entries inserted, progress 12.462%, batch time 19.677s, passed time 246.682s, predicted finish time 1979.43s
+54000 entries inserted, progress 13.1951%, batch time 19.625s, passed time 266.307s, predicted finish time 2018.19s
+57000 entries inserted, progress 13.9282%, batch time 20.2969s, passed time 286.604s, predicted finish time 2057.7s
+60000 entries inserted, progress 14.6612%, batch time 20.0376s, passed time 306.642s, predicted finish time 2091.48s
+63000 entries inserted, progress 15.3943%, batch time 20.0154s, passed time 326.657s, predicted finish time 2121.91s
+66000 entries inserted, progress 16.1273%, batch time 18.5652s, passed time 345.223s, predicted finish time 2140.57s
+69000 entries inserted, progress 16.8604%, batch time 18.5754s, passed time 363.798s, predicted finish time 2157.68s
+72000 entries inserted, progress 17.5935%, batch time 18.7868s, passed time 382.585s, predicted finish time 2174.55s
+75000 entries inserted, progress 18.3265%, batch time 19.0129s, passed time 401.598s, predicted finish time 2191.32s
+78000 entries inserted, progress 19.0596%, batch time 19.8496s, passed time 421.447s, predicted finish time 2211.18s
+81000 entries inserted, progress 19.7926%, batch time 24.9268s, passed time 446.374s, predicted finish time 2255.22s
+84000 entries inserted, progress 20.5257%, batch time 25.6105s, passed time 471.985s, predicted finish time 2299.45s
+87000 entries inserted, progress 21.2588%, batch time 25.4511s, passed time 497.436s, predicted finish time 2339.88s
+90000 entries inserted, progress 21.9918%, batch time 25.3737s, passed time 522.809s, predicted finish time 2377.26s
+93000 entries inserted, progress 22.7249%, batch time 24.6628s, passed time 547.472s, predicted finish time 2409.11s
+96000 entries inserted, progress 23.4579%, batch time 26.7899s, passed time 574.262s, predicted finish time 2448.02s
+99000 entries inserted, progress 24.191%, batch time 26.6693s, passed time 600.931s, predicted finish time 2484.09s
+102000 entries inserted, progress 24.9241%, batch time 26.986s, passed time 627.917s, predicted finish time 2519.3s
+105000 entries inserted, progress 25.6571%, batch time 27.0275s, passed time 654.945s, predicted finish time 2552.66s
+108000 entries inserted, progress 26.3902%, batch time 26.9117s, passed time 681.857s, predicted finish time 2583.73s
+111000 entries inserted, progress 27.1232%, batch time 26.6824s, passed time 708.539s, predicted finish time 2612.27s
+114000 entries inserted, progress 27.8563%, batch time 27.0589s, passed time 735.598s, predicted finish time 2640.66s
+117000 entries inserted, progress 28.5894%, batch time 27.1856s, passed time 762.784s, predicted finish time 2668.04s
+120000 entries inserted, progress 29.3224%, batch time 27.2521s, passed time 790.036s, predicted finish time 2694.28s
+123000 entries inserted, progress 30.0555%, batch time 25.7311s, passed time 815.767s, predicted finish time 2714.18s
+126000 entries inserted, progress 30.7886%, batch time 25.7878s, passed time 841.555s, predicted finish time 2733.31s
+129000 entries inserted, progress 31.5216%, batch time 27.8709s, passed time 869.426s, predicted finish time 2758.17s
+132000 entries inserted, progress 32.2547%, batch time 29.0666s, passed time 898.492s, predicted finish time 2785.6s
+135000 entries inserted, progress 32.9877%, batch time 29.2062s, passed time 927.698s, predicted finish time 2812.23s
+138000 entries inserted, progress 33.7208%, batch time 29.0997s, passed time 956.798s, predicted finish time 2837.39s
+141000 entries inserted, progress 34.4539%, batch time 28.3408s, passed time 985.139s, predicted finish time 2859.28s
+144000 entries inserted, progress 35.1869%, batch time 28.4339s, passed time 1013.57s, predicted finish time 2880.52s
+147000 entries inserted, progress 35.92%, batch time 28.6483s, passed time 1042.22s, predicted finish time 2901.49s
+150000 entries inserted, progress 36.653%, batch time 28.9099s, passed time 1071.13s, predicted finish time 2922.33s
+153000 entries inserted, progress 37.3861%, batch time 28.6016s, passed time 1099.73s, predicted finish time 2941.54s
+156000 entries inserted, progress 38.1192%, batch time 28.6838s, passed time 1128.42s, predicted finish time 2960.22s
+159000 entries inserted, progress 38.8522%, batch time 28.2525s, passed time 1156.67s, predicted finish time 2977.08s
+162000 entries inserted, progress 39.5853%, batch time 28.6841s, passed time 1185.35s, predicted finish time 2994.41s
+165000 entries inserted, progress 40.3183%, batch time 29.2122s, passed time 1214.57s, predicted finish time 3012.42s
+168000 entries inserted, progress 41.0514%, batch time 28.9349s, passed time 1243.5s, predicted finish time 3029.11s
+171000 entries inserted, progress 41.7845%, batch time 28.7383s, passed time 1272.24s, predicted finish time 3044.75s
+174000 entries inserted, progress 42.5175%, batch time 29.0075s, passed time 1301.25s, predicted finish time 3060.48s
+177000 entries inserted, progress 43.2506%, batch time 28.7895s, passed time 1330.04s, predicted finish time 3075.17s
+180000 entries inserted, progress 43.9836%, batch time 28.7904s, passed time 1358.83s, predicted finish time 3089.37s
+183000 entries inserted, progress 44.7167%, batch time 28.9016s, passed time 1387.73s, predicted finish time 3103.36s
+186000 entries inserted, progress 45.4498%, batch time 28.5833s, passed time 1416.31s, predicted finish time 3116.19s
+189000 entries inserted, progress 46.1828%, batch time 27.892s, passed time 1444.2s, predicted finish time 3127.13s
+192000 entries inserted, progress 46.9159%, batch time 27.9878s, passed time 1472.19s, predicted finish time 3137.92s
+195000 entries inserted, progress 47.649%, batch time 27.4735s, passed time 1499.66s, predicted finish time 3147.3s
+198000 entries inserted, progress 48.382%, batch time 27.5051s, passed time 1527.17s, predicted finish time 3156.47s
+201000 entries inserted, progress 49.1151%, batch time 27.8781s, passed time 1555.05s, predicted finish time 3166.11s
+204000 entries inserted, progress 49.8481%, batch time 28.1652s, passed time 1583.21s, predicted finish time 3176.06s
+207000 entries inserted, progress 50.5812%, batch time 28.2947s, passed time 1611.51s, predicted finish time 3185.97s
+210000 entries inserted, progress 51.3143%, batch time 27.9125s, passed time 1639.42s, predicted finish time 3194.85s
+213000 entries inserted, progress 52.0473%, batch time 27.6903s, passed time 1667.11s, predicted finish time 3203.05s
+216000 entries inserted, progress 52.7804%, batch time 28.3875s, passed time 1695.5s, predicted finish time 3212.35s
+219000 entries inserted, progress 53.5134%, batch time 28.2891s, passed time 1723.79s, predicted finish time 3221.21s
+222000 entries inserted, progress 54.2465%, batch time 28.3707s, passed time 1752.16s, predicted finish time 3229.98s
+225000 entries inserted, progress 54.9796%, batch time 28.1226s, passed time 1780.28s, predicted finish time 3238.06s
+228000 entries inserted, progress 55.7126%, batch time 28.0192s, passed time 1808.3s, predicted finish time 3245.75s
+231000 entries inserted, progress 56.4457%, batch time 27.0202s, passed time 1835.32s, predicted finish time 3251.46s
+234000 entries inserted, progress 57.1787%, batch time 26.8457s, passed time 1862.17s, predicted finish time 3256.73s
+237000 entries inserted, progress 57.9118%, batch time 26.9305s, passed time 1889.1s, predicted finish time 3262.01s
+240000 entries inserted, progress 58.6449%, batch time 26.7291s, passed time 1915.82s, predicted finish time 3266.81s
+243000 entries inserted, progress 59.3779%, batch time 26.9587s, passed time 1942.78s, predicted finish time 3271.88s
+246000 entries inserted, progress 60.111%, batch time 27.5945s, passed time 1970.38s, predicted finish time 3277.89s
+249000 entries inserted, progress 60.844%, batch time 27.4623s, passed time 1997.84s, predicted finish time 3283.53s
+252000 entries inserted, progress 61.5771%, batch time 27.0891s, passed time 2024.93s, predicted finish time 3288.43s
+255000 entries inserted, progress 62.3102%, batch time 27.641s, passed time 2052.57s, predicted finish time 3294.1s
+258000 entries inserted, progress 63.0432%, batch time 28.1037s, passed time 2080.67s, predicted finish time 3300.38s
+261000 entries inserted, progress 63.7763%, batch time 27.8899s, passed time 2108.56s, predicted finish time 3306.17s
+264000 entries inserted, progress 64.5094%, batch time 27.8192s, passed time 2136.38s, predicted finish time 3311.73s
+267000 entries inserted, progress 65.2424%, batch time 27.9305s, passed time 2164.31s, predicted finish time 3317.33s
+270000 entries inserted, progress 65.9755%, batch time 27.6308s, passed time 2191.94s, predicted finish time 3322.35s
+273000 entries inserted, progress 66.7085%, batch time 26.8966s, passed time 2218.84s, predicted finish time 3326.16s
+276000 entries inserted, progress 67.4416%, batch time 26.9111s, passed time 2245.75s, predicted finish time 3329.91s
+279000 entries inserted, progress 68.1747%, batch time 27.2221s, passed time 2272.97s, predicted finish time 3334.03s
+282000 entries inserted, progress 68.9077%, batch time 27.6852s, passed time 2300.66s, predicted finish time 3338.74s
+285000 entries inserted, progress 69.6408%, batch time 28.0115s, passed time 2328.67s, predicted finish time 3343.82s
+288000 entries inserted, progress 70.3738%, batch time 28.5125s, passed time 2357.18s, predicted finish time 3349.5s
+291000 entries inserted, progress 71.1069%, batch time 28.2929s, passed time 2385.48s, predicted finish time 3354.76s
+294000 entries inserted, progress 71.84%, batch time 28.3661s, passed time 2413.84s, predicted finish time 3360.02s
+297000 entries inserted, progress 72.573%, batch time 27.2953s, passed time 2441.14s, predicted finish time 3363.69s
+300000 entries inserted, progress 73.3061%, batch time 27.7201s, passed time 2468.86s, predicted finish time 3367.86s
+303000 entries inserted, progress 74.0391%, batch time 27.1687s, passed time 2496.03s, predicted finish time 3371.21s
+306000 entries inserted, progress 74.7722%, batch time 27.5498s, passed time 2523.58s, predicted finish time 3375.01s
+309000 entries inserted, progress 75.5053%, batch time 27.286s, passed time 2550.86s, predicted finish time 3378.38s
+312000 entries inserted, progress 76.2383%, batch time 27.3055s, passed time 2578.17s, predicted finish time 3381.71s
+315000 entries inserted, progress 76.9714%, batch time 27.2495s, passed time 2605.42s, predicted finish time 3384.91s
+318000 entries inserted, progress 77.7044%, batch time 27.7639s, passed time 2633.18s, predicted finish time 3388.7s
+321000 entries inserted, progress 78.4375%, batch time 27.6745s, passed time 2660.86s, predicted finish time 3392.32s
+324000 entries inserted, progress 79.1706%, batch time 27.2163s, passed time 2688.07s, predicted finish time 3395.28s
+327000 entries inserted, progress 79.9036%, batch time 27.493s, passed time 2715.57s, predicted finish time 3398.54s
+330000 entries inserted, progress 80.6367%, batch time 27.2607s, passed time 2742.83s, predicted finish time 3401.45s
+333000 entries inserted, progress 81.3697%, batch time 27.3895s, passed time 2770.22s, predicted finish time 3404.47s
+336000 entries inserted, progress 82.1028%, batch time 27.3125s, passed time 2797.53s, predicted finish time 3407.34s
+339000 entries inserted, progress 82.8359%, batch time 27.6439s, passed time 2825.17s, predicted finish time 3410.56s
+342000 entries inserted, progress 83.5689%, batch time 27.613s, passed time 2852.78s, predicted finish time 3413.68s
+345000 entries inserted, progress 84.302%, batch time 27.568s, passed time 2880.35s, predicted finish time 3416.7s
+348000 entries inserted, progress 85.0351%, batch time 27.3601s, passed time 2907.71s, predicted finish time 3419.42s
+351000 entries inserted, progress 85.7681%, batch time 26.956s, passed time 2934.67s, predicted finish time 3421.62s
+354000 entries inserted, progress 86.5012%, batch time 26.9644s, passed time 2961.63s, predicted finish time 3423.8s
+357000 entries inserted, progress 87.2342%, batch time 26.9403s, passed time 2988.57s, predicted finish time 3425.91s
+360000 entries inserted, progress 87.9673%, batch time 27.2407s, passed time 3015.81s, predicted finish time 3428.33s
+363000 entries inserted, progress 88.7004%, batch time 26.1717s, passed time 3041.99s, predicted finish time 3429.5s
+366000 entries inserted, progress 89.4334%, batch time 25.558s, passed time 3067.54s, predicted finish time 3429.97s
+369000 entries inserted, progress 90.1665%, batch time 25.2218s, passed time 3092.77s, predicted finish time 3430.05s
+372000 entries inserted, progress 90.8995%, batch time 24.667s, passed time 3117.43s, predicted finish time 3429.53s
+375000 entries inserted, progress 91.6326%, batch time 24.8935s, passed time 3142.33s, predicted finish time 3429.26s
+378000 entries inserted, progress 92.3657%, batch time 24.9909s, passed time 3167.32s, predicted finish time 3429.1s
+381000 entries inserted, progress 93.0987%, batch time 25.1708s, passed time 3192.49s, predicted finish time 3429.13s
+384000 entries inserted, progress 93.8318%, batch time 25.0772s, passed time 3217.57s, predicted finish time 3429.07s
+387000 entries inserted, progress 94.5648%, batch time 25.3908s, passed time 3242.96s, predicted finish time 3429.34s
+390000 entries inserted, progress 95.2979%, batch time 25.2764s, passed time 3268.23s, predicted finish time 3429.48s
+393000 entries inserted, progress 96.031%, batch time 25.4968s, passed time 3293.73s, predicted finish time 3429.85s
+396000 entries inserted, progress 96.764%, batch time 24.8631s, passed time 3318.59s, predicted finish time 3429.56s
+399000 entries inserted, progress 97.4971%, batch time 24.9795s, passed time 3343.57s, predicted finish time 3429.4s
+402000 entries inserted, progress 98.2301%, batch time 25.1789s, passed time 3368.75s, predicted finish time 3429.44s
+405000 entries inserted, progress 98.9632%, batch time 24.9414s, passed time 3393.69s, predicted finish time 3429.24s
+408000 entries inserted, progress 99.6963%, batch time 25.2468s, passed time 3418.94s, predicted finish time 3429.35s
+409243 entries created
+[2023-05-20 06:24:12.349] [info] finish preprocess and save the index
+[2023-05-20 12:24:12.350] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.350] [info] finish queryID 63, single_query_retrieval_time 21600.00s, ip_cost 19951770277, n_proc_query 0.10
+[2023-05-20 12:24:12.350] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.357] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.357] [info] finish queryID 628, single_query_retrieval_time 21600.01s, ip_cost 23602070153, n_proc_query 0.03
+[2023-05-20 12:24:12.357] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.361] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.361] [info] finish queryID 938, single_query_retrieval_time 21600.01s, ip_cost 20278000603, n_proc_query 0.06
+[2023-05-20 12:24:12.361] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.364] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.364] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.364] [info] finish queryID 752, single_query_retrieval_time 21600.02s, ip_cost 19152169957, n_proc_query 0.11
+[2023-05-20 12:24:12.364] [info] finish queryID 189, single_query_retrieval_time 21600.02s, ip_cost 20172361373, n_proc_query 0.10
+[2023-05-20 12:24:12.364] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.364] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.367] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.367] [info] finish queryID 0, single_query_retrieval_time 21600.02s, ip_cost 23398568374, n_proc_query 0.03
+[2023-05-20 12:24:12.367] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.370] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.370] [info] finish queryID 252, single_query_retrieval_time 21600.02s, ip_cost 17607159458, n_proc_query 0.13
+[2023-05-20 12:24:12.370] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.372] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.372] [info] finish queryID 126, single_query_retrieval_time 21600.02s, ip_cost 17621528920, n_proc_query 0.14
+[2023-05-20 12:24:12.372] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.385] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.385] [info] finish queryID 504, single_query_retrieval_time 21600.04s, ip_cost 22126101998, n_proc_query 0.04
+[2023-05-20 12:24:12.385] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.388] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.388] [info] finish queryID 814, single_query_retrieval_time 21600.04s, ip_cost 23678281264, n_proc_query 0.03
+[2023-05-20 12:24:12.388] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.390] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.390] [info] finish queryID 315, single_query_retrieval_time 21600.04s, ip_cost 13168462277, n_proc_query 0.21
+[2023-05-20 12:24:12.390] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.395] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.395] [info] finish queryID 876, single_query_retrieval_time 21600.05s, ip_cost 20387092307, n_proc_query 0.07
+[2023-05-20 12:24:12.395] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.404] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.404] [info] finish queryID 690, single_query_retrieval_time 21600.06s, ip_cost 18928713009, n_proc_query 0.12
+[2023-05-20 12:24:12.404] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.416] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.416] [info] finish queryID 378, single_query_retrieval_time 21600.07s, ip_cost 21983527658, n_proc_query 0.04
+[2023-05-20 12:24:12.416] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.474] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.474] [info] finish queryID 441, single_query_retrieval_time 21600.12s, ip_cost 20654266822, n_proc_query 0.04
+[2023-05-20 12:24:12.474] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.496] [info] total retrieval time larger than stop time inside Rtree method, retrieval exit
+[2023-05-20 12:24:12.496] [info] finish queryID 566, single_query_retrieval_time 21600.15s, ip_cost 25297901658, n_proc_query 0.03
+[2023-05-20 12:24:12.496] [info] total retrieval time larger than stop time, retrieval exit
+[2023-05-20 12:24:12.496] [info] finish top-100
+[2023-05-20 12:24:12.496] [info] top100 retrieval time: total 21600.147s, n_proc_query 1.289
+	total single query retrieval time 345600.668s, total ip cost 328007976108
+	maximum ip cost 1758277916.37, proportion 186.551
+[2023-05-20 12:24:12.496] [info] build index time: total 3435.747957406s
+top100 retrieval time: total 21600.147s, n_proc_query 1.289
+	total single query retrieval time 345600.668s, total ip cost 328007976108
+	maximum ip cost 1758277916.37, proportion 186.551

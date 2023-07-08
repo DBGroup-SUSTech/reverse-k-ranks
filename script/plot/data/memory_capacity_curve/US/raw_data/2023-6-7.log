@@ -1,0 +1,465 @@
+[2023-06-06 16:43:44.543] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name amazon-home-kitchen-150d, sample_method_name Uniform, method_name US
+[2023-06-06 16:43:44.543] [info] sample_index_name US
+[2023-06-06 16:43:44.543] [info] n_sample 27360, n_data_item 409243, n_user 2511610
+[2023-06-06 16:43:44.543] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 14 29 44 59 74 89 104 119 134 149 164 179 194 209 224 239 254 269 284 299 314 329 344 358 373 388 403 418 433 448 463 478 493 508 523 538 553 568 583 598 613 628 643 658 673 688 703 717 732 
+last 50 rank: 408494 408509 408524 408538 408553 408568 408583 408598 408613 408628 408643 408658 408673 408688 408703 408718 408733 408748 408763 408778 408793 408808 408823 408838 408853 408868 408883 408897 408912 408927 408942 408957 408972 408987 409002 409017 409032 409047 409062 409077 409092 409107 409122 409137 409152 409167 409182 409197 409212 409227 
+[2023-06-06 16:43:44.545] [info] uniform sample: max_sample_every 15, n_sample 27360
+[2023-06-06 16:45:40.222] [info] finish preprocess and save the index
+[2023-06-06 16:45:40.222] [info] FindSampleRank build index time: total 115.678326778s
+[2023-06-06 16:45:40.225] [info] FindSampleRank finish
+[2023-06-06 16:45:47.616] [info] BuildSampleIndexByComputation dataset_name amazon-home-kitchen-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 16:45:47.616] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 16:45:51.507] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 16:45:51.507] [info] n_sample 27360, memory_capacity 255.99GB
+[2023-06-06 16:45:51.507] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-amazon-home-kitchen-150d-n_sample_27360.index
+first 50 rank: 0 14 29 44 59 74 89 104 119 134 149 164 179 194 209 224 239 254 269 284 299 314 329 344 358 373 388 403 418 433 448 463 478 493 508 523 538 553 568 583 598 613 628 643 658 673 688 703 717 732 
+last 50 rank: 408494 408509 408524 408538 408553 408568 408583 408598 408613 408628 408643 408658 408673 408688 408703 408718 408733 408748 408763 408778 408793 408808 408823 408838 408853 408868 408883 408897 408912 408927 408942 408957 408972 408987 409002 409017 409032 409047 409062 409077 409092 409107 409122 409137 409152 409167 409182 409197 409212 409227 
+[2023-06-06 16:47:50.692] [info] use GPU
+[2023-06-06 16:47:50.692] [info] 6178 user per batch, n_batch 407
+[2023-06-06 16:47:55.265] [info] use GPU stream
+[2023-06-06 16:47:56.569] [info] preprocessed 0.0%, Mem: 288146 Mb, 1.1588 s/iter, compute sort time 1.0085s, build memory index time 0.1503s
+[2023-06-06 16:48:31.302] [info] preprocessed 7.4%, Mem: 288146 Mb, 34.7329 s/iter, compute sort time 30.2114s, build memory index time 4.5215s
+[2023-06-06 16:49:12.679] [info] preprocessed 14.7%, Mem: 288146 Mb, 41.3766 s/iter, compute sort time 30.2760s, build memory index time 11.1006s
+[2023-06-06 16:49:53.749] [info] preprocessed 22.1%, Mem: 288146 Mb, 41.0702 s/iter, compute sort time 30.4755s, build memory index time 10.5947s
+[2023-06-06 16:50:33.253] [info] preprocessed 29.5%, Mem: 288146 Mb, 39.5040 s/iter, compute sort time 30.4154s, build memory index time 9.0886s
+[2023-06-06 16:51:15.940] [info] preprocessed 36.9%, Mem: 288146 Mb, 42.6873 s/iter, compute sort time 30.5426s, build memory index time 12.1447s
+[2023-06-06 16:51:53.845] [info] preprocessed 44.2%, Mem: 288146 Mb, 37.9048 s/iter, compute sort time 30.4795s, build memory index time 7.4253s
+[2023-06-06 16:52:29.060] [info] preprocessed 51.6%, Mem: 288146 Mb, 35.2149 s/iter, compute sort time 30.5130s, build memory index time 4.7019s
+[2023-06-06 16:53:04.306] [info] preprocessed 59.0%, Mem: 288146 Mb, 35.2454 s/iter, compute sort time 30.5190s, build memory index time 4.7264s
+[2023-06-06 16:53:39.575] [info] preprocessed 66.3%, Mem: 288146 Mb, 35.2687 s/iter, compute sort time 30.4302s, build memory index time 4.8385s
+[2023-06-06 16:54:17.092] [info] preprocessed 73.7%, Mem: 288146 Mb, 37.5171 s/iter, compute sort time 30.4885s, build memory index time 7.0286s
+[2023-06-06 16:54:54.167] [info] preprocessed 81.1%, Mem: 288146 Mb, 37.0744 s/iter, compute sort time 30.5025s, build memory index time 6.5720s
+[2023-06-06 16:55:30.495] [info] preprocessed 88.5%, Mem: 288146 Mb, 36.3285 s/iter, compute sort time 30.5022s, build memory index time 5.8264s
+[2023-06-06 16:56:06.692] [info] preprocessed 95.8%, Mem: 288146 Mb, 36.1971 s/iter, compute sort time 30.5660s, build memory index time 5.6311s
+[2023-06-06 17:03:59.673] [info] finish preprocess and save the index
+[2023-06-06 17:03:59.677] [info] total_index_construction_time: 514.20s, total_init_time: 4.72s, total_compute_sort_time: 412.74s, total_build_memory_index_time: 96.74s, total_save_index_time: 445.34s
+[2023-06-06 17:04:03.556] [info] Retrieval method_name US, dataset_name amazon-home-kitchen-150d, topk 100
+[2023-06-06 17:04:03.556] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 17:04:03.556] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 17:05:20.582] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 17:05:20.582] [info] input parameter: n_sample 27360
+[2023-06-06 17:05:20.583] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-amazon-home-kitchen-150d-n_sample_27360.index
+first 50 rank: 0 14 29 44 59 74 89 104 119 134 149 164 179 194 209 224 239 254 269 284 299 314 329 344 358 373 388 403 418 433 448 463 478 493 508 523 538 553 568 583 598 613 628 643 658 673 688 703 717 732 
+last 50 rank: 408494 408509 408524 408538 408553 408568 408583 408598 408613 408628 408643 408658 408673 408688 408703 408718 408733 408748 408763 408778 408793 408808 408823 408838 408853 408868 408883 408897 408912 408927 408942 408957 408972 408987 409002 409017 409032 409047 409062 409077 409092 409107 409122 409137 409152 409167 409182 409197 409212 409227 
+[2023-06-06 17:16:02.045] [info] finish preprocess and save the index
+[2023-06-06 17:18:26.292] [info] finish top-100
+[2023-06-06 17:18:26.292] [info] top100 retrieval time: total 144.246s
+	inner product 16.719s, rank bound 79.067s, prune user 8.617s, refine user 33.893s
+	total ip cost 2511610000, total refine ip cost 3902541248, total refine user 9536, rank prune ratio 1.0000
+[2023-06-06 17:18:26.292] [info] build index time: total 641.462206635s
+top100 retrieval time: total 144.246s
+	inner product 16.719s, rank bound 79.067s, prune user 8.617s, refine user 33.893s
+	total ip cost 2511610000, total refine ip cost 3902541248, total refine user 9536, rank prune ratio 1.0000
+[2023-06-06 17:18:34.310] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name amazon-home-kitchen-150d, sample_method_name Uniform, method_name US
+[2023-06-06 17:18:34.310] [info] sample_index_name US
+[2023-06-06 17:18:34.310] [info] n_sample 6840, n_data_item 409243, n_user 2511610
+[2023-06-06 17:18:34.310] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 59 119 179 239 299 358 418 478 538 598 658 717 777 837 897 957 1017 1076 1136 1196 1256 1316 1376 1435 1495 1555 1615 1675 1735 1794 1854 1914 1974 2034 2094 2153 2213 2273 2333 2393 2453 2512 2572 2632 2692 2752 2812 2871 2931 
+last 50 rank: 406250 406310 406370 406429 406489 406549 406609 406669 406729 406788 406848 406908 406968 407028 407088 407147 407207 407267 407327 407387 407447 407506 407566 407626 407686 407746 407806 407865 407925 407985 408045 408105 408165 408224 408284 408344 408404 408464 408524 408583 408643 408703 408763 408823 408883 408942 409002 409062 409122 409182 
+[2023-06-06 17:18:34.310] [info] uniform sample: max_sample_every 60, n_sample 6840
+[2023-06-06 17:19:01.612] [info] finish preprocess and save the index
+[2023-06-06 17:19:01.612] [info] FindSampleRank build index time: total 27.302124071s
+[2023-06-06 17:19:01.613] [info] FindSampleRank finish
+[2023-06-06 17:19:03.539] [info] BuildSampleIndexByComputation dataset_name amazon-home-kitchen-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 17:19:03.539] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 17:19:06.759] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 17:19:06.759] [info] n_sample 6840, memory_capacity 64.00GB
+[2023-06-06 17:19:06.759] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-amazon-home-kitchen-150d-n_sample_6840.index
+first 50 rank: 0 59 119 179 239 299 358 418 478 538 598 658 717 777 837 897 957 1017 1076 1136 1196 1256 1316 1376 1435 1495 1555 1615 1675 1735 1794 1854 1914 1974 2034 2094 2153 2213 2273 2333 2393 2453 2512 2572 2632 2692 2752 2812 2871 2931 
+last 50 rank: 406250 406310 406370 406429 406489 406549 406609 406669 406729 406788 406848 406908 406968 407028 407088 407147 407207 407267 407327 407387 407447 407506 407566 407626 407686 407746 407806 407865 407925 407985 408045 408105 408165 408224 408284 408344 408404 408464 408524 408583 408643 408703 408763 408823 408883 408942 409002 409062 409122 409182 
+[2023-06-06 17:19:38.319] [info] use GPU
+[2023-06-06 17:19:38.319] [info] 6178 user per batch, n_batch 407
+[2023-06-06 17:19:42.652] [info] use GPU stream
+[2023-06-06 17:19:43.863] [info] preprocessed 0.0%, Mem: 81992 Mb, 1.0828 s/iter, compute sort time 1.0081s, build memory index time 0.0747s
+[2023-06-06 17:20:47.284] [info] preprocessed 7.4%, Mem: 81992 Mb, 63.4213 s/iter, compute sort time 30.7956s, build memory index time 32.6256s
+[2023-06-06 17:21:58.289] [info] preprocessed 14.7%, Mem: 81992 Mb, 71.0041 s/iter, compute sort time 30.7484s, build memory index time 40.2556s
+[2023-06-06 17:23:05.185] [info] preprocessed 22.1%, Mem: 81992 Mb, 66.8963 s/iter, compute sort time 30.7954s, build memory index time 36.1009s
+[2023-06-06 17:24:05.482] [info] preprocessed 29.5%, Mem: 81992 Mb, 60.2967 s/iter, compute sort time 30.8358s, build memory index time 29.4608s
+[2023-06-06 17:25:04.174] [info] preprocessed 36.9%, Mem: 81992 Mb, 58.6920 s/iter, compute sort time 30.7776s, build memory index time 27.9143s
+[2023-06-06 17:25:57.663] [info] preprocessed 44.2%, Mem: 81992 Mb, 53.4885 s/iter, compute sort time 30.7425s, build memory index time 22.7460s
+[2023-06-06 17:26:50.992] [info] preprocessed 51.6%, Mem: 81992 Mb, 53.3291 s/iter, compute sort time 30.7620s, build memory index time 22.5671s
+[2023-06-06 17:27:43.559] [info] preprocessed 59.0%, Mem: 81992 Mb, 52.5668 s/iter, compute sort time 30.7910s, build memory index time 21.7758s
+[2023-06-06 17:28:38.280] [info] preprocessed 66.3%, Mem: 81992 Mb, 54.7210 s/iter, compute sort time 30.7852s, build memory index time 23.9357s
+[2023-06-06 17:29:36.418] [info] preprocessed 73.7%, Mem: 81992 Mb, 58.1378 s/iter, compute sort time 30.7922s, build memory index time 27.3455s
+[2023-06-06 17:30:29.725] [info] preprocessed 81.1%, Mem: 81992 Mb, 53.3072 s/iter, compute sort time 30.7539s, build memory index time 22.5532s
+[2023-06-06 17:31:22.868] [info] preprocessed 88.5%, Mem: 81992 Mb, 53.1425 s/iter, compute sort time 30.7422s, build memory index time 22.4003s
+[2023-06-06 17:32:10.588] [info] preprocessed 95.8%, Mem: 81992 Mb, 47.7200 s/iter, compute sort time 30.6909s, build memory index time 17.0291s
+[2023-06-06 17:33:15.976] [info] finish preprocess and save the index
+[2023-06-06 17:33:15.976] [info] total_index_construction_time: 777.92s, total_init_time: 4.92s, total_compute_sort_time: 416.95s, total_build_memory_index_time: 356.04s, total_save_index_time: 36.77s
+[2023-06-06 17:33:16.898] [info] Retrieval method_name US, dataset_name amazon-home-kitchen-150d, topk 100
+[2023-06-06 17:33:16.898] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 17:33:16.898] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 17:33:20.595] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 17:33:20.595] [info] input parameter: n_sample 6840
+[2023-06-06 17:33:20.595] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-amazon-home-kitchen-150d-n_sample_6840.index
+first 50 rank: 0 59 119 179 239 299 358 418 478 538 598 658 717 777 837 897 957 1017 1076 1136 1196 1256 1316 1376 1435 1495 1555 1615 1675 1735 1794 1854 1914 1974 2034 2094 2153 2213 2273 2333 2393 2453 2512 2572 2632 2692 2752 2812 2871 2931 
+last 50 rank: 406250 406310 406370 406429 406489 406549 406609 406669 406729 406788 406848 406908 406968 407028 407088 407147 407207 407267 407327 407387 407447 407506 407566 407626 407686 407746 407806 407865 407925 407985 408045 408105 408165 408224 408284 408344 408404 408464 408524 408583 408643 408703 408763 408823 408883 408942 409002 409062 409122 409182 
+[2023-06-06 17:34:06.725] [info] finish preprocess and save the index
+[2023-06-06 17:37:50.258] [info] finish top-100
+[2023-06-06 17:37:50.258] [info] top100 retrieval time: total 223.532s
+	inner product 12.953s, rank bound 53.434s, prune user 9.560s, refine user 140.483s
+	total ip cost 2511610000, total refine ip cost 46422479705, total refine user 113435, rank prune ratio 1.0000
+[2023-06-06 17:37:50.258] [info] build index time: total 46.12954142s
+top100 retrieval time: total 223.532s
+	inner product 12.953s, rank bound 53.434s, prune user 9.560s, refine user 140.483s
+	total ip cost 2511610000, total refine ip cost 46422479705, total refine user 113435, rank prune ratio 1.0000
+[2023-06-06 17:37:52.909] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name amazon-home-kitchen-150d, sample_method_name Uniform, method_name US
+[2023-06-06 17:37:52.909] [info] sample_index_name US
+[2023-06-06 17:37:52.909] [info] n_sample 1710, n_data_item 409243, n_user 2511610
+[2023-06-06 17:37:52.909] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 239 478 717 957 1196 1435 1675 1914 2153 2393 2632 2871 3111 3350 3589 3829 4068 4307 4547 4786 5025 5265 5504 5743 5983 6222 6461 6701 6940 7179 7419 7658 7897 8136 8376 8615 8854 9094 9333 9572 9812 10051 10290 10530 10769 11008 11248 11487 11726 
+last 50 rank: 397275 397515 397754 397993 398233 398472 398711 398951 399190 399429 399669 399908 400147 400387 400626 400865 401105 401344 401583 401822 402062 402301 402540 402780 403019 403258 403498 403737 403976 404216 404455 404694 404934 405173 405412 405652 405891 406130 406370 406609 406848 407088 407327 407566 407806 408045 408284 408524 408763 409002 
+[2023-06-06 17:37:52.910] [info] uniform sample: max_sample_every 240, n_sample 1710
+[2023-06-06 17:37:59.852] [info] finish preprocess and save the index
+[2023-06-06 17:37:59.852] [info] FindSampleRank build index time: total 6.942718094s
+[2023-06-06 17:37:59.853] [info] FindSampleRank finish
+[2023-06-06 17:38:00.387] [info] BuildSampleIndexByComputation dataset_name amazon-home-kitchen-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 17:38:00.387] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 17:38:03.580] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 17:38:03.580] [info] n_sample 1710, memory_capacity 16.00GB
+[2023-06-06 17:38:03.580] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-amazon-home-kitchen-150d-n_sample_1710.index
+first 50 rank: 0 239 478 717 957 1196 1435 1675 1914 2153 2393 2632 2871 3111 3350 3589 3829 4068 4307 4547 4786 5025 5265 5504 5743 5983 6222 6461 6701 6940 7179 7419 7658 7897 8136 8376 8615 8854 9094 9333 9572 9812 10051 10290 10530 10769 11008 11248 11487 11726 
+last 50 rank: 397275 397515 397754 397993 398233 398472 398711 398951 399190 399429 399669 399908 400147 400387 400626 400865 401105 401344 401583 401822 402062 402301 402540 402780 403019 403258 403498 403737 403976 404216 404455 404694 404934 405173 405412 405652 405891 406130 406370 406609 406848 407088 407327 407566 407806 408045 408284 408524 408763 409002 
+[2023-06-06 17:38:14.601] [info] use GPU
+[2023-06-06 17:38:14.601] [info] 6178 user per batch, n_batch 407
+[2023-06-06 17:38:19.014] [info] use GPU stream
+[2023-06-06 17:38:20.188] [info] preprocessed 0.0%, Mem: 30451 Mb, 1.0408 s/iter, compute sort time 1.0058s, build memory index time 0.0350s
+[2023-06-06 17:39:05.093] [info] preprocessed 7.4%, Mem: 30451 Mb, 44.9048 s/iter, compute sort time 30.2474s, build memory index time 14.6573s
+[2023-06-06 17:39:42.818] [info] preprocessed 14.7%, Mem: 30451 Mb, 37.7252 s/iter, compute sort time 30.3890s, build memory index time 7.3361s
+[2023-06-06 17:40:23.650] [info] preprocessed 22.1%, Mem: 30451 Mb, 40.8313 s/iter, compute sort time 30.4196s, build memory index time 10.4116s
+[2023-06-06 17:41:08.125] [info] preprocessed 29.5%, Mem: 30451 Mb, 44.4758 s/iter, compute sort time 30.4362s, build memory index time 14.0395s
+[2023-06-06 17:41:48.750] [info] preprocessed 36.9%, Mem: 30451 Mb, 40.6245 s/iter, compute sort time 30.3700s, build memory index time 10.2545s
+[2023-06-06 17:42:26.976] [info] preprocessed 44.2%, Mem: 30451 Mb, 38.2257 s/iter, compute sort time 30.3647s, build memory index time 7.8609s
+[2023-06-06 17:43:07.166] [info] preprocessed 51.6%, Mem: 30451 Mb, 40.1905 s/iter, compute sort time 30.3951s, build memory index time 9.7954s
+[2023-06-06 17:43:49.984] [info] preprocessed 59.0%, Mem: 30451 Mb, 42.8171 s/iter, compute sort time 30.4175s, build memory index time 12.3994s
+[2023-06-06 17:44:29.209] [info] preprocessed 66.3%, Mem: 30451 Mb, 39.2250 s/iter, compute sort time 30.3771s, build memory index time 8.8478s
+[2023-06-06 17:45:08.544] [info] preprocessed 73.7%, Mem: 30451 Mb, 39.3348 s/iter, compute sort time 30.3495s, build memory index time 8.9852s
+[2023-06-06 17:45:50.254] [info] preprocessed 81.1%, Mem: 30451 Mb, 41.7107 s/iter, compute sort time 30.4014s, build memory index time 11.3093s
+[2023-06-06 17:46:34.715] [info] preprocessed 88.5%, Mem: 30451 Mb, 44.4606 s/iter, compute sort time 30.3983s, build memory index time 14.0622s
+[2023-06-06 17:47:14.847] [info] preprocessed 95.8%, Mem: 30451 Mb, 40.1322 s/iter, compute sort time 30.3844s, build memory index time 9.7478s
+[2023-06-06 17:47:47.138] [info] finish preprocess and save the index
+[2023-06-06 17:47:47.138] [info] total_index_construction_time: 561.80s, total_init_time: 4.71s, total_compute_sort_time: 411.68s, total_build_memory_index_time: 145.41s, total_save_index_time: 8.87s
+[2023-06-06 17:47:47.703] [info] Retrieval method_name US, dataset_name amazon-home-kitchen-150d, topk 100
+[2023-06-06 17:47:47.703] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 17:47:47.703] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 17:47:51.624] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 17:47:51.624] [info] input parameter: n_sample 1710
+[2023-06-06 17:47:51.624] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-amazon-home-kitchen-150d-n_sample_1710.index
+first 50 rank: 0 239 478 717 957 1196 1435 1675 1914 2153 2393 2632 2871 3111 3350 3589 3829 4068 4307 4547 4786 5025 5265 5504 5743 5983 6222 6461 6701 6940 7179 7419 7658 7897 8136 8376 8615 8854 9094 9333 9572 9812 10051 10290 10530 10769 11008 11248 11487 11726 
+last 50 rank: 397275 397515 397754 397993 398233 398472 398711 398951 399190 399429 399669 399908 400147 400387 400626 400865 401105 401344 401583 401822 402062 402301 402540 402780 403019 403258 403498 403737 403976 404216 404455 404694 404934 405173 405412 405652 405891 406130 406370 406609 406848 407088 407327 407566 407806 408045 408284 408524 408763 409002 
+[2023-06-06 17:48:08.958] [info] finish preprocess and save the index
+[2023-06-06 18:20:17.865] [info] finish top-100
+[2023-06-06 18:20:17.865] [info] top100 retrieval time: total 1928.906s
+	inner product 12.036s, rank bound 32.480s, prune user 8.636s, refine user 1867.601s
+	total ip cost 2511610000, total refine ip cost 846468399368, total refine user 2068376, rank prune ratio 0.9992
+[2023-06-06 18:20:17.865] [info] build index time: total 17.334154752s
+top100 retrieval time: total 1928.906s
+	inner product 12.036s, rank bound 32.480s, prune user 8.636s, refine user 1867.601s
+	total ip cost 2511610000, total refine ip cost 846468399368, total refine user 2068376, rank prune ratio 0.9992
+[2023-06-06 18:20:18.665] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name amazon-home-kitchen-150d, sample_method_name Uniform, method_name US
+[2023-06-06 18:20:18.665] [info] sample_index_name US
+[2023-06-06 18:20:18.665] [info] n_sample 427, n_data_item 409243, n_user 2511610
+[2023-06-06 18:20:18.665] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 958 1916 2875 3833 4792 5750 6708 7667 8625 9584 10542 11500 12459 13417 14376 15334 16293 17251 18209 19168 20126 21085 22043 23001 23960 24918 25877 26835 27793 28752 29710 30669 31627 32586 33544 34502 35461 36419 37378 38336 39294 40253 41211 42170 43128 44086 45045 46003 46962 
+last 50 rank: 361321 362279 363238 364196 365155 366113 367071 368030 368988 369947 370905 371863 372822 373780 374739 375697 376655 377614 378572 379531 380489 381448 382406 383364 384323 385281 386240 387198 388156 389115 390073 391032 391990 392948 393907 394865 395824 396782 397741 398699 399657 400616 401574 402533 403491 404449 405408 406366 407325 408283 
+[2023-06-06 18:20:18.665] [info] uniform sample: max_sample_every 959, n_sample 427
+[2023-06-06 18:20:20.415] [info] finish preprocess and save the index
+[2023-06-06 18:20:20.415] [info] FindSampleRank build index time: total 1.750549416s
+[2023-06-06 18:20:20.415] [info] FindSampleRank finish
+[2023-06-06 18:20:20.602] [info] BuildSampleIndexByComputation dataset_name amazon-home-kitchen-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 18:20:20.602] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 18:20:23.781] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 18:20:23.781] [info] n_sample 427, memory_capacity 4.00GB
+[2023-06-06 18:20:23.781] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-amazon-home-kitchen-150d-n_sample_427.index
+first 50 rank: 0 958 1916 2875 3833 4792 5750 6708 7667 8625 9584 10542 11500 12459 13417 14376 15334 16293 17251 18209 19168 20126 21085 22043 23001 23960 24918 25877 26835 27793 28752 29710 30669 31627 32586 33544 34502 35461 36419 37378 38336 39294 40253 41211 42170 43128 44086 45045 46003 46962 
+last 50 rank: 361321 362279 363238 364196 365155 366113 367071 368030 368988 369947 370905 371863 372822 373780 374739 375697 376655 377614 378572 379531 380489 381448 382406 383364 384323 385281 386240 387198 388156 389115 390073 391032 391990 392948 393907 394865 395824 396782 397741 398699 399657 400616 401574 402533 403491 404449 405408 406366 407325 408283 
+[2023-06-06 18:20:29.378] [info] use GPU
+[2023-06-06 18:20:29.379] [info] 6178 user per batch, n_batch 407
+[2023-06-06 18:20:33.815] [info] use GPU stream
+[2023-06-06 18:20:35.028] [info] preprocessed 0.0%, Mem: 17562 Mb, 1.0840 s/iter, compute sort time 0.9942s, build memory index time 0.0899s
+[2023-06-06 18:21:17.954] [info] preprocessed 7.4%, Mem: 17562 Mb, 42.9260 s/iter, compute sort time 30.2729s, build memory index time 12.6531s
+[2023-06-06 18:21:53.693] [info] preprocessed 14.7%, Mem: 17562 Mb, 35.7389 s/iter, compute sort time 30.4315s, build memory index time 5.3074s
+[2023-06-06 18:22:31.317] [info] preprocessed 22.1%, Mem: 17562 Mb, 37.6239 s/iter, compute sort time 30.4554s, build memory index time 7.1685s
+[2023-06-06 18:23:14.021] [info] preprocessed 29.5%, Mem: 17562 Mb, 42.7031 s/iter, compute sort time 30.4097s, build memory index time 12.2934s
+[2023-06-06 18:23:53.031] [info] preprocessed 36.9%, Mem: 17562 Mb, 39.0103 s/iter, compute sort time 30.3004s, build memory index time 8.7100s
+[2023-06-06 18:24:30.962] [info] preprocessed 44.2%, Mem: 17562 Mb, 37.9313 s/iter, compute sort time 30.2472s, build memory index time 7.6840s
+[2023-06-06 18:25:08.148] [info] preprocessed 51.6%, Mem: 17562 Mb, 37.1857 s/iter, compute sort time 30.3512s, build memory index time 6.8345s
+[2023-06-06 18:25:45.835] [info] preprocessed 59.0%, Mem: 17562 Mb, 37.6866 s/iter, compute sort time 30.2425s, build memory index time 7.4441s
+[2023-06-06 18:26:22.585] [info] preprocessed 66.3%, Mem: 17562 Mb, 36.7503 s/iter, compute sort time 30.2852s, build memory index time 6.4650s
+[2023-06-06 18:27:00.242] [info] preprocessed 73.7%, Mem: 17562 Mb, 37.6563 s/iter, compute sort time 30.0725s, build memory index time 7.5837s
+[2023-06-06 18:27:38.706] [info] preprocessed 81.1%, Mem: 17562 Mb, 38.4641 s/iter, compute sort time 30.0729s, build memory index time 8.3912s
+[2023-06-06 18:28:15.578] [info] preprocessed 88.5%, Mem: 17562 Mb, 36.8715 s/iter, compute sort time 30.1321s, build memory index time 6.7394s
+[2023-06-06 18:28:53.739] [info] preprocessed 95.8%, Mem: 17562 Mb, 38.1612 s/iter, compute sort time 30.1966s, build memory index time 7.9646s
+[2023-06-06 18:29:16.792] [info] finish preprocess and save the index
+[2023-06-06 18:29:16.792] [info] total_index_construction_time: 523.65s, total_init_time: 4.47s, total_compute_sort_time: 410.14s, total_build_memory_index_time: 109.04s, total_save_index_time: 2.43s
+[2023-06-06 18:29:17.353] [info] Retrieval method_name US, dataset_name amazon-home-kitchen-150d, topk 100
+[2023-06-06 18:29:17.353] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 18:29:17.353] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 18:29:21.065] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 18:29:21.065] [info] input parameter: n_sample 427
+[2023-06-06 18:29:21.065] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-amazon-home-kitchen-150d-n_sample_427.index
+first 50 rank: 0 958 1916 2875 3833 4792 5750 6708 7667 8625 9584 10542 11500 12459 13417 14376 15334 16293 17251 18209 19168 20126 21085 22043 23001 23960 24918 25877 26835 27793 28752 29710 30669 31627 32586 33544 34502 35461 36419 37378 38336 39294 40253 41211 42170 43128 44086 45045 46003 46962 
+last 50 rank: 361321 362279 363238 364196 365155 366113 367071 368030 368988 369947 370905 371863 372822 373780 374739 375697 376655 377614 378572 379531 380489 381448 382406 383364 384323 385281 386240 387198 388156 389115 390073 391032 391990 392948 393907 394865 395824 396782 397741 398699 399657 400616 401574 402533 403491 404449 405408 406366 407325 408283 
+[2023-06-06 18:29:24.046] [info] finish preprocess and save the index
+[2023-06-06 18:29:24.594] [info] queryID 0, query_time 0.55s, prune ip cost 2511610, refine ip cost 7366374, accu_retrieval_time 0.55s
+[2023-06-06 18:29:25.219] [info] queryID 1, query_time 0.63s, prune ip cost 2511610, refine ip cost 175565247, accu_retrieval_time 1.17s
+[2023-06-06 18:29:25.467] [info] queryID 2, query_time 0.25s, prune ip cost 2511610, refine ip cost 59340235, accu_retrieval_time 1.42s
+[2023-06-06 18:30:27.852] [info] queryID 3, query_time 62.38s, prune ip cost 2511610, refine ip cost 26633943683, accu_retrieval_time 63.81s
+[2023-06-06 18:30:28.217] [info] queryID 4, query_time 0.37s, prune ip cost 2511610, refine ip cost 10640318, accu_retrieval_time 64.17s
+[2023-06-06 18:30:28.367] [info] queryID 5, query_time 0.15s, prune ip cost 2511610, refine ip cost 11049561, accu_retrieval_time 64.32s
+[2023-06-06 18:30:28.518] [info] queryID 6, query_time 0.15s, prune ip cost 2511610, refine ip cost 15960477, accu_retrieval_time 64.47s
+[2023-06-06 18:30:28.667] [info] queryID 7, query_time 0.15s, prune ip cost 2511610, refine ip cost 36013384, accu_retrieval_time 64.62s
+[2023-06-06 18:30:28.894] [info] queryID 8, query_time 0.23s, prune ip cost 2511610, refine ip cost 60977207, accu_retrieval_time 64.85s
+[2023-06-06 18:30:29.057] [info] queryID 9, query_time 0.16s, prune ip cost 2511610, refine ip cost 2864701, accu_retrieval_time 65.01s
+[2023-06-06 18:30:29.220] [info] queryID 10, query_time 0.16s, prune ip cost 2511610, refine ip cost 2046215, accu_retrieval_time 65.17s
+[2023-06-06 18:30:29.383] [info] queryID 11, query_time 0.16s, prune ip cost 2511610, refine ip cost 30693225, accu_retrieval_time 65.34s
+[2023-06-06 18:30:29.527] [info] queryID 12, query_time 0.14s, prune ip cost 2511610, refine ip cost 11049561, accu_retrieval_time 65.48s
+[2023-06-06 18:30:29.737] [info] queryID 13, query_time 0.21s, prune ip cost 2511610, refine ip cost 51564618, accu_retrieval_time 65.69s
+[2023-06-06 18:30:29.887] [info] queryID 14, query_time 0.15s, prune ip cost 2511610, refine ip cost 16778963, accu_retrieval_time 65.84s
+[2023-06-06 18:30:35.327] [info] queryID 15, query_time 5.44s, prune ip cost 2511610, refine ip cost 2487788197, accu_retrieval_time 71.28s
+[2023-06-06 18:30:35.782] [info] queryID 16, query_time 0.46s, prune ip cost 2511610, refine ip cost 168198873, accu_retrieval_time 71.74s
+[2023-06-06 18:30:35.836] [info] queryID 17, query_time 0.05s, prune ip cost 2511610, refine ip cost 0, accu_retrieval_time 71.79s
+[2023-06-06 18:30:37.146] [info] queryID 18, query_time 1.31s, prune ip cost 2511610, refine ip cost 566392312, accu_retrieval_time 73.10s
+[2023-06-06 18:30:37.293] [info] queryID 19, query_time 0.15s, prune ip cost 2511610, refine ip cost 23736094, accu_retrieval_time 73.25s
+[2023-06-06 18:30:37.499] [info] queryID 20, query_time 0.21s, prune ip cost 2511610, refine ip cost 50336889, accu_retrieval_time 73.45s
+[2023-06-06 18:30:37.647] [info] queryID 21, query_time 0.15s, prune ip cost 2511610, refine ip cost 34376412, accu_retrieval_time 73.60s
+[2023-06-06 18:30:37.789] [info] queryID 22, query_time 0.14s, prune ip cost 2511610, refine ip cost 2864701, accu_retrieval_time 73.74s
+[2023-06-06 18:30:37.920] [info] queryID 23, query_time 0.13s, prune ip cost 2511610, refine ip cost 10231075, accu_retrieval_time 73.87s
+[2023-06-06 18:30:38.065] [info] queryID 24, query_time 0.15s, prune ip cost 2511610, refine ip cost 38059599, accu_retrieval_time 74.02s
+[2023-06-06 18:30:38.293] [info] queryID 25, query_time 0.23s, prune ip cost 2511610, refine ip cost 66706609, accu_retrieval_time 74.25s
+[2023-06-06 18:30:38.438] [info] queryID 26, query_time 0.14s, prune ip cost 2511610, refine ip cost 15141991, accu_retrieval_time 74.39s
+[2023-06-06 18:30:38.493] [info] queryID 27, query_time 0.06s, prune ip cost 2511610, refine ip cost 0, accu_retrieval_time 74.45s
+[2023-06-06 18:30:38.549] [info] queryID 28, query_time 0.06s, prune ip cost 2511610, refine ip cost 0, accu_retrieval_time 74.50s
+[2023-06-06 18:30:38.672] [info] queryID 29, query_time 0.12s, prune ip cost 2511610, refine ip cost 12277290, accu_retrieval_time 74.63s
+[2023-06-06 18:30:38.821] [info] queryID 30, query_time 0.15s, prune ip cost 2511610, refine ip cost 23736094, accu_retrieval_time 74.77s
+[2023-06-06 18:30:39.028] [info] queryID 31, query_time 0.21s, prune ip cost 2511610, refine ip cost 42152029, accu_retrieval_time 74.98s
+[2023-06-06 18:30:39.171] [info] queryID 32, query_time 0.14s, prune ip cost 2511610, refine ip cost 34785655, accu_retrieval_time 75.12s
+[2023-06-06 18:30:39.322] [info] queryID 33, query_time 0.15s, prune ip cost 2511610, refine ip cost 22917608, accu_retrieval_time 75.27s
+[2023-06-06 18:30:39.484] [info] queryID 34, query_time 0.16s, prune ip cost 2511610, refine ip cost 28647010, accu_retrieval_time 75.44s
+[2023-06-06 18:30:39.713] [info] queryID 35, query_time 0.23s, prune ip cost 2511610, refine ip cost 40105814, accu_retrieval_time 75.67s
+[2023-06-06 18:30:39.963] [info] queryID 36, query_time 0.25s, prune ip cost 2511610, refine ip cost 43789001, accu_retrieval_time 75.92s
+[2023-06-06 18:30:40.129] [info] queryID 37, query_time 0.17s, prune ip cost 2511610, refine ip cost 24963823, accu_retrieval_time 76.08s
+[2023-06-06 18:30:40.290] [info] queryID 38, query_time 0.16s, prune ip cost 2511610, refine ip cost 7366374, accu_retrieval_time 76.24s
+[2023-06-06 18:30:40.607] [info] queryID 39, query_time 0.32s, prune ip cost 2511610, refine ip cost 81439357, accu_retrieval_time 76.56s
+[2023-06-06 18:34:04.414] [info] queryID 40, query_time 203.81s, prune ip cost 2511610, refine ip cost 93128974052, accu_retrieval_time 280.37s
+[2023-06-06 18:34:04.815] [info] queryID 41, query_time 0.40s, prune ip cost 2511610, refine ip cost 6957131, accu_retrieval_time 280.77s
+[2023-06-06 18:34:04.938] [info] queryID 42, query_time 0.12s, prune ip cost 2511610, refine ip cost 6957131, accu_retrieval_time 280.89s
+[2023-06-06 18:34:05.060] [info] queryID 43, query_time 0.12s, prune ip cost 2511610, refine ip cost 4092430, accu_retrieval_time 281.01s
+[2023-06-06 18:34:05.182] [info] queryID 44, query_time 0.12s, prune ip cost 2511610, refine ip cost 4092430, accu_retrieval_time 281.13s
+[2023-06-06 18:34:05.299] [info] queryID 45, query_time 0.12s, prune ip cost 2511610, refine ip cost 11049561, accu_retrieval_time 281.25s
+[2023-06-06 18:34:05.455] [info] queryID 46, query_time 0.16s, prune ip cost 2511610, refine ip cost 12277290, accu_retrieval_time 281.41s
+[2023-06-06 18:34:05.615] [info] queryID 47, query_time 0.16s, prune ip cost 2511610, refine ip cost 16369720, accu_retrieval_time 281.57s
+[2023-06-06 18:34:05.765] [info] queryID 48, query_time 0.15s, prune ip cost 2511610, refine ip cost 28647010, accu_retrieval_time 281.72s
+[2023-06-06 18:34:06.066] [info] queryID 49, query_time 0.30s, prune ip cost 2511610, refine ip cost 93307404, accu_retrieval_time 282.02s
+[2023-06-06 18:34:06.286] [info] queryID 50, query_time 0.22s, prune ip cost 2511610, refine ip cost 74482226, accu_retrieval_time 282.24s
+[2023-06-06 18:34:06.596] [info] queryID 51, query_time 0.31s, prune ip cost 2511610, refine ip cost 116634255, accu_retrieval_time 282.55s
+[2023-06-06 18:34:06.817] [info] queryID 52, query_time 0.22s, prune ip cost 2511610, refine ip cost 54429319, accu_retrieval_time 282.77s
+[2023-06-06 18:34:06.957] [info] queryID 53, query_time 0.14s, prune ip cost 2511610, refine ip cost 16369720, accu_retrieval_time 282.91s
+[2023-06-06 18:34:07.239] [info] queryID 54, query_time 0.28s, prune ip cost 2511610, refine ip cost 80211628, accu_retrieval_time 283.19s
+[2023-06-06 18:34:07.378] [info] queryID 55, query_time 0.14s, prune ip cost 2511610, refine ip cost 8184860, accu_retrieval_time 283.33s
+[2023-06-06 18:34:07.499] [info] queryID 56, query_time 0.12s, prune ip cost 2511610, refine ip cost 2455458, accu_retrieval_time 283.45s
+[2023-06-06 18:34:07.638] [info] queryID 57, query_time 0.14s, prune ip cost 2511610, refine ip cost 7775617, accu_retrieval_time 283.59s
+[2023-06-06 18:34:07.776] [info] queryID 58, query_time 0.14s, prune ip cost 2511610, refine ip cost 29056253, accu_retrieval_time 283.73s
+[2023-06-06 18:39:06.156] [info] queryID 59, query_time 298.38s, prune ip cost 2511610, refine ip cost 138559857968, accu_retrieval_time 582.11s
+[2023-06-06 18:39:06.630] [info] queryID 60, query_time 0.47s, prune ip cost 2511610, refine ip cost 75709955, accu_retrieval_time 582.58s
+[2023-06-06 18:39:32.121] [info] queryID 61, query_time 25.49s, prune ip cost 2511610, refine ip cost 11300017716, accu_retrieval_time 608.07s
+[2023-06-06 18:39:32.239] [info] queryID 62, query_time 0.12s, prune ip cost 2511610, refine ip cost 8184860, accu_retrieval_time 608.19s
+[2023-06-06 18:39:32.375] [info] queryID 63, query_time 0.14s, prune ip cost 2511610, refine ip cost 9003346, accu_retrieval_time 608.33s
+[2023-06-06 18:44:43.375] [info] queryID 64, query_time 311.00s, prune ip cost 2511610, refine ip cost 144522119235, accu_retrieval_time 919.33s
+[2023-06-06 18:44:43.707] [info] queryID 65, query_time 0.33s, prune ip cost 2511610, refine ip cost 27828524, accu_retrieval_time 919.66s
+[2023-06-06 18:44:43.819] [info] queryID 66, query_time 0.11s, prune ip cost 2511610, refine ip cost 4092430, accu_retrieval_time 919.77s
+[2023-06-06 18:44:43.954] [info] queryID 67, query_time 0.13s, prune ip cost 2511610, refine ip cost 16369720, accu_retrieval_time 919.91s
+[2023-06-06 18:44:44.094] [info] queryID 68, query_time 0.14s, prune ip cost 2511610, refine ip cost 39287328, accu_retrieval_time 920.05s
+[2023-06-06 18:44:44.236] [info] queryID 69, query_time 0.14s, prune ip cost 2511610, refine ip cost 22917608, accu_retrieval_time 920.19s
+[2023-06-06 18:44:44.377] [info] queryID 70, query_time 0.14s, prune ip cost 2511610, refine ip cost 8594103, accu_retrieval_time 920.33s
+[2023-06-06 18:44:44.420] [info] queryID 71, query_time 0.04s, prune ip cost 2511610, refine ip cost 0, accu_retrieval_time 920.37s
+[2023-06-06 18:44:44.553] [info] queryID 72, query_time 0.13s, prune ip cost 2511610, refine ip cost 17597449, accu_retrieval_time 920.50s
+[2023-06-06 18:44:44.666] [info] queryID 73, query_time 0.11s, prune ip cost 2511610, refine ip cost 9412589, accu_retrieval_time 920.62s
+[2023-06-06 18:44:44.778] [info] queryID 74, query_time 0.11s, prune ip cost 2511610, refine ip cost 7775617, accu_retrieval_time 920.73s
+[2023-06-06 18:44:44.912] [info] queryID 75, query_time 0.13s, prune ip cost 2511610, refine ip cost 11049561, accu_retrieval_time 920.86s
+[2023-06-06 18:44:45.044] [info] queryID 76, query_time 0.13s, prune ip cost 2511610, refine ip cost 9412589, accu_retrieval_time 921.00s
+[2023-06-06 18:44:45.196] [info] queryID 77, query_time 0.15s, prune ip cost 2511610, refine ip cost 15551234, accu_retrieval_time 921.15s
+[2023-06-06 18:44:45.348] [info] queryID 78, query_time 0.15s, prune ip cost 2511610, refine ip cost 4092430, accu_retrieval_time 921.30s
+[2023-06-06 18:44:45.560] [info] queryID 79, query_time 0.21s, prune ip cost 2511610, refine ip cost 54429319, accu_retrieval_time 921.51s
+[2023-06-06 18:44:45.935] [info] queryID 80, query_time 0.37s, prune ip cost 2511610, refine ip cost 130139274, accu_retrieval_time 921.89s
+[2023-06-06 18:44:46.090] [info] queryID 81, query_time 0.16s, prune ip cost 2511610, refine ip cost 5729402, accu_retrieval_time 922.04s
+[2023-06-06 18:44:46.228] [info] queryID 82, query_time 0.14s, prune ip cost 2511610, refine ip cost 7775617, accu_retrieval_time 922.18s
+[2023-06-06 18:44:46.443] [info] queryID 83, query_time 0.22s, prune ip cost 2511610, refine ip cost 65888123, accu_retrieval_time 922.39s
+[2023-06-06 18:46:53.630] [info] queryID 84, query_time 127.19s, prune ip cost 2511610, refine ip cost 58281523359, accu_retrieval_time 1049.58s
+[2023-06-06 18:46:53.959] [info] queryID 85, query_time 0.33s, prune ip cost 2511610, refine ip cost 15551234, accu_retrieval_time 1049.91s
+[2023-06-06 18:46:54.089] [info] queryID 86, query_time 0.13s, prune ip cost 2511610, refine ip cost 22917608, accu_retrieval_time 1050.04s
+[2023-06-06 18:46:54.224] [info] queryID 87, query_time 0.13s, prune ip cost 2511610, refine ip cost 22508365, accu_retrieval_time 1050.17s
+[2023-06-06 18:46:54.520] [info] queryID 88, query_time 0.30s, prune ip cost 2511610, refine ip cost 95353619, accu_retrieval_time 1050.47s
+[2023-06-06 18:46:54.639] [info] queryID 89, query_time 0.12s, prune ip cost 2511610, refine ip cost 6547888, accu_retrieval_time 1050.59s
+[2023-06-06 18:46:54.852] [info] queryID 90, query_time 0.21s, prune ip cost 2511610, refine ip cost 47472188, accu_retrieval_time 1050.80s
+[2023-06-06 18:46:54.968] [info] queryID 91, query_time 0.12s, prune ip cost 2511610, refine ip cost 13914262, accu_retrieval_time 1050.92s
+[2023-06-06 18:47:18.481] [info] queryID 92, query_time 23.51s, prune ip cost 2511610, refine ip cost 10718074170, accu_retrieval_time 1074.43s
+[2023-06-06 18:47:19.017] [info] queryID 93, query_time 0.54s, prune ip cost 2511610, refine ip cost 204212257, accu_retrieval_time 1074.97s
+[2023-06-06 18:47:19.150] [info] queryID 94, query_time 0.13s, prune ip cost 2511610, refine ip cost 18415935, accu_retrieval_time 1075.10s
+[2023-06-06 18:47:19.195] [info] queryID 95, query_time 0.05s, prune ip cost 2511610, refine ip cost 0, accu_retrieval_time 1075.15s
+[2023-06-06 18:47:21.976] [info] queryID 96, query_time 2.78s, prune ip cost 2511610, refine ip cost 1248191150, accu_retrieval_time 1077.93s
+[2023-06-06 18:48:09.440] [info] queryID 97, query_time 47.46s, prune ip cost 2511610, refine ip cost 21847437555, accu_retrieval_time 1125.39s
+[2023-06-06 18:48:09.633] [info] queryID 98, query_time 0.19s, prune ip cost 2511610, refine ip cost 47062945, accu_retrieval_time 1125.58s
+[2023-06-06 18:48:09.848] [info] queryID 99, query_time 0.21s, prune ip cost 2511610, refine ip cost 55657048, accu_retrieval_time 1125.80s
+[2023-06-06 18:48:09.848] [info] finish top-100
+[2023-06-06 18:48:09.848] [info] top100 retrieval time: total 1125.798s
+	inner product 1.932s, rank bound 3.244s, prune user 0.892s, refine user 1118.741s
+	total ip cost 251161000, total refine ip cost 512231865651, total refine user 1251657, rank prune ratio 0.9950
+[2023-06-06 18:48:09.848] [info] build index time: total 2.980890924s
+top100 retrieval time: total 1125.798s
+	inner product 1.932s, rank bound 3.244s, prune user 0.892s, refine user 1118.741s
+	total ip cost 251161000, total refine ip cost 512231865651, total refine user 1251657, rank prune ratio 0.9950
+[2023-06-06 18:48:10.089] [info] FindSampleRank index_dir /home/zhengbian/reverse-k-ranks/index, dataset_name amazon-home-kitchen-150d, sample_method_name Uniform, method_name US
+[2023-06-06 18:48:10.089] [info] sample_index_name US
+[2023-06-06 18:48:10.089] [info] n_sample 106, n_data_item 409243, n_user 2511610
+[2023-06-06 18:48:10.089] [info] n_sample_query 5000, sample_topk 200
+first 50 rank: 0 3860 7721 11582 15443 19303 23164 27025 30886 34746 38607 42468 46329 50190 54050 57911 61772 65633 69493 73354 77215 81076 84937 88797 92658 96519 100380 104240 108101 111962 115823 119683 123544 127405 131266 135127 138987 142848 146709 150570 154430 158291 162152 166013 169874 173734 177595 181456 185317 189177 
+last 50 rank: 216203 220064 223924 227785 231646 235507 239367 243228 247089 250950 254811 258671 262532 266393 270254 274114 277975 281836 285697 289558 293418 297279 301140 305001 308861 312722 316583 320444 324304 328165 332026 335887 339748 343608 347469 351330 355191 359051 362912 366773 370634 374495 378355 382216 386077 389938 393798 397659 401520 405381 
+[2023-06-06 18:48:10.089] [info] uniform sample: max_sample_every 3861, n_sample 106
+[2023-06-06 18:48:10.534] [info] finish preprocess and save the index
+[2023-06-06 18:48:10.534] [info] FindSampleRank build index time: total 0.445419742s
+[2023-06-06 18:48:10.547] [info] FindSampleRank finish
+[2023-06-06 18:48:10.633] [info] BuildSampleIndexByComputation dataset_name amazon-home-kitchen-150d, method_name US, dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 18:48:10.633] [info] index_name US, index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 18:48:13.840] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 18:48:13.840] [info] n_sample 106, memory_capacity 0.99GB
+[2023-06-06 18:48:13.840] [info] index path /home/zhengbian/reverse-k-ranks/index/qrs_to_sample_index/US-amazon-home-kitchen-150d-n_sample_106.index
+first 50 rank: 0 3860 7721 11582 15443 19303 23164 27025 30886 34746 38607 42468 46329 50190 54050 57911 61772 65633 69493 73354 77215 81076 84937 88797 92658 96519 100380 104240 108101 111962 115823 119683 123544 127405 131266 135127 138987 142848 146709 150570 154430 158291 162152 166013 169874 173734 177595 181456 185317 189177 
+last 50 rank: 216203 220064 223924 227785 231646 235507 239367 243228 247089 250950 254811 258671 262532 266393 270254 274114 277975 281836 285697 289558 293418 297279 301140 305001 308861 312722 316583 320444 324304 328165 332026 335887 339748 343608 347469 351330 355191 359051 362912 366773 370634 374495 378355 382216 386077 389938 393798 397659 401520 405381 
+[2023-06-06 18:48:18.296] [info] use GPU
+[2023-06-06 18:48:18.296] [info] 6178 user per batch, n_batch 407
+[2023-06-06 18:48:22.720] [info] use GPU stream
+[2023-06-06 18:48:24.405] [info] preprocessed 0.0%, Mem: 14336 Mb, 1.5529 s/iter, compute sort time 1.0064s, build memory index time 0.5465s
+[2023-06-06 18:48:56.567] [info] preprocessed 7.4%, Mem: 14336 Mb, 32.1614 s/iter, compute sort time 30.0627s, build memory index time 2.0987s
+[2023-06-06 18:49:28.892] [info] preprocessed 14.7%, Mem: 14336 Mb, 32.3249 s/iter, compute sort time 29.9581s, build memory index time 2.3667s
+[2023-06-06 18:50:00.308] [info] preprocessed 22.1%, Mem: 14336 Mb, 31.4164 s/iter, compute sort time 30.1265s, build memory index time 1.2898s
+[2023-06-06 18:50:31.674] [info] preprocessed 29.5%, Mem: 14336 Mb, 31.3659 s/iter, compute sort time 30.1879s, build memory index time 1.1780s
+[2023-06-06 18:51:03.571] [info] preprocessed 36.9%, Mem: 14336 Mb, 31.8965 s/iter, compute sort time 30.1589s, build memory index time 1.7376s
+[2023-06-06 18:51:35.339] [info] preprocessed 44.2%, Mem: 14336 Mb, 31.7677 s/iter, compute sort time 30.1797s, build memory index time 1.5879s
+[2023-06-06 18:52:06.910] [info] preprocessed 51.6%, Mem: 14336 Mb, 31.5706 s/iter, compute sort time 30.1599s, build memory index time 1.4106s
+[2023-06-06 18:52:39.114] [info] preprocessed 59.0%, Mem: 14336 Mb, 32.2043 s/iter, compute sort time 30.1545s, build memory index time 2.0498s
+[2023-06-06 18:53:11.241] [info] preprocessed 66.3%, Mem: 14336 Mb, 32.1266 s/iter, compute sort time 30.1138s, build memory index time 2.0127s
+[2023-06-06 18:53:43.704] [info] preprocessed 73.7%, Mem: 14336 Mb, 32.4634 s/iter, compute sort time 30.1589s, build memory index time 2.3045s
+[2023-06-06 18:54:15.101] [info] preprocessed 81.1%, Mem: 14336 Mb, 31.3970 s/iter, compute sort time 30.1089s, build memory index time 1.2880s
+[2023-06-06 18:54:47.402] [info] preprocessed 88.5%, Mem: 14336 Mb, 32.3005 s/iter, compute sort time 30.1253s, build memory index time 2.1751s
+[2023-06-06 18:55:19.218] [info] preprocessed 95.8%, Mem: 14336 Mb, 31.8159 s/iter, compute sort time 30.1521s, build memory index time 1.6637s
+[2023-06-06 18:55:41.468] [info] finish preprocess and save the index
+[2023-06-06 18:55:41.469] [info] total_index_construction_time: 437.88s, total_init_time: 4.65s, total_compute_sort_time: 408.26s, total_build_memory_index_time: 24.97s, total_save_index_time: 3.91s
+[2023-06-06 18:55:42.036] [info] Retrieval method_name US, dataset_name amazon-home-kitchen-150d, topk 100
+[2023-06-06 18:55:42.036] [info] dataset_dir /home/zhengbian/Dataset/ReverseMIPS
+[2023-06-06 18:55:42.036] [info] index_dir /home/zhengbian/reverse-k-ranks/index
+[2023-06-06 18:55:45.728] [info] n_data_item 409243, n_query_item 1000, n_user 2511610, vec_dim 150
+[2023-06-06 18:55:45.728] [info] input parameter: n_sample 106
+[2023-06-06 18:55:45.728] [info] index path /home/zhengbian/reverse-k-ranks/index/memory_index/US-amazon-home-kitchen-150d-n_sample_106.index
+first 50 rank: 0 3860 7721 11582 15443 19303 23164 27025 30886 34746 38607 42468 46329 50190 54050 57911 61772 65633 69493 73354 77215 81076 84937 88797 92658 96519 100380 104240 108101 111962 115823 119683 123544 127405 131266 135127 138987 142848 146709 150570 154430 158291 162152 166013 169874 173734 177595 181456 185317 189177 
+last 50 rank: 216203 220064 223924 227785 231646 235507 239367 243228 247089 250950 254811 258671 262532 266393 270254 274114 277975 281836 285697 289558 293418 297279 301140 305001 308861 312722 316583 320444 324304 328165 332026 335887 339748 343608 347469 351330 355191 359051 362912 366773 370634 374495 378355 382216 386077 389938 393798 397659 401520 405381 
+[2023-06-06 18:55:46.422] [info] finish preprocess and save the index
+[2023-06-06 18:55:48.947] [info] queryID 0, query_time 2.52s, prune ip cost 2511610, refine ip cost 33148683, accu_retrieval_time 2.52s
+[2023-06-06 18:56:13.121] [info] queryID 1, query_time 24.17s, prune ip cost 2511610, refine ip cost 6513102345, accu_retrieval_time 26.70s
+[2023-06-06 18:56:13.469] [info] queryID 2, query_time 0.35s, prune ip cost 2511610, refine ip cost 66706609, accu_retrieval_time 27.05s
+[2023-06-06 19:05:20.997] [info] queryID 3, query_time 547.53s, prune ip cost 2511610, refine ip cost 249995499139, accu_retrieval_time 574.57s
+[2023-06-06 19:05:21.332] [info] queryID 4, query_time 0.34s, prune ip cost 2511610, refine ip cost 58112506, accu_retrieval_time 574.91s
+[2023-06-06 19:05:21.483] [info] queryID 5, query_time 0.15s, prune ip cost 2511610, refine ip cost 26191552, accu_retrieval_time 575.06s
+[2023-06-06 19:05:21.918] [info] queryID 6, query_time 0.43s, prune ip cost 2511610, refine ip cost 121545171, accu_retrieval_time 575.49s
+[2023-06-06 19:05:22.327] [info] queryID 7, query_time 0.41s, prune ip cost 2511610, refine ip cost 130548517, accu_retrieval_time 575.90s
+[2023-06-06 19:05:23.047] [info] queryID 8, query_time 0.72s, prune ip cost 2511610, refine ip cost 238179426, accu_retrieval_time 576.62s
+[2023-06-06 19:05:23.207] [info] queryID 9, query_time 0.16s, prune ip cost 2511610, refine ip cost 8594103, accu_retrieval_time 576.78s
+[2023-06-06 19:05:23.356] [info] queryID 10, query_time 0.15s, prune ip cost 2511610, refine ip cost 4092430, accu_retrieval_time 576.93s
+[2023-06-06 19:05:23.710] [info] queryID 11, query_time 0.35s, prune ip cost 2511610, refine ip cost 106403180, accu_retrieval_time 577.29s
+[2023-06-06 19:05:23.935] [info] queryID 12, query_time 0.23s, prune ip cost 2511610, refine ip cost 60977207, accu_retrieval_time 577.51s
+[2023-06-06 19:05:24.480] [info] queryID 13, query_time 0.54s, prune ip cost 2511610, refine ip cost 170245088, accu_retrieval_time 578.06s
+[2023-06-06 19:05:24.742] [info] queryID 14, query_time 0.26s, prune ip cost 2511610, refine ip cost 50746132, accu_retrieval_time 578.32s
+[2023-06-06 19:29:31.997] [info] queryID 15, query_time 1447.25s, prune ip cost 2511610, refine ip cost 669377903707, accu_retrieval_time 2025.57s
+[2023-06-06 19:29:39.776] [info] queryID 16, query_time 7.78s, prune ip cost 2511610, refine ip cost 3099197239, accu_retrieval_time 2033.35s
+[2023-06-06 19:29:39.931] [info] queryID 17, query_time 0.15s, prune ip cost 2511610, refine ip cost 30693225, accu_retrieval_time 2033.51s
+[2023-06-06 19:29:46.821] [info] queryID 18, query_time 6.89s, prune ip cost 2511610, refine ip cost 2453002542, accu_retrieval_time 2040.40s
+[2023-06-06 19:29:47.207] [info] queryID 19, query_time 0.39s, prune ip cost 2511610, refine ip cost 149782938, accu_retrieval_time 2040.78s
+[2023-06-06 19:29:47.833] [info] queryID 20, query_time 0.63s, prune ip cost 2511610, refine ip cost 264780221, accu_retrieval_time 2041.41s
+[2023-06-06 19:29:49.316] [info] queryID 21, query_time 1.48s, prune ip cost 2511610, refine ip cost 306523007, accu_retrieval_time 2042.89s
+[2023-06-06 19:29:49.472] [info] queryID 22, query_time 0.16s, prune ip cost 2511610, refine ip cost 11049561, accu_retrieval_time 2043.05s
+[2023-06-06 19:29:49.696] [info] queryID 23, query_time 0.22s, prune ip cost 2511610, refine ip cost 57294020, accu_retrieval_time 2043.27s
+[2023-06-06 19:29:50.300] [info] queryID 24, query_time 0.60s, prune ip cost 2511610, refine ip cost 243908828, accu_retrieval_time 2043.88s
+[2023-06-06 19:29:51.256] [info] queryID 25, query_time 0.96s, prune ip cost 2511610, refine ip cost 404332084, accu_retrieval_time 2044.83s
+[2023-06-06 19:29:51.473] [info] queryID 26, query_time 0.22s, prune ip cost 2511610, refine ip cost 58930992, accu_retrieval_time 2045.05s
+[2023-06-06 19:29:51.624] [info] queryID 27, query_time 0.15s, prune ip cost 2511610, refine ip cost 36831870, accu_retrieval_time 2045.20s
+[2023-06-06 19:29:51.778] [info] queryID 28, query_time 0.15s, prune ip cost 2511610, refine ip cost 11868047, accu_retrieval_time 2045.35s
+[2023-06-06 19:29:52.025] [info] queryID 29, query_time 0.25s, prune ip cost 2511610, refine ip cost 60567964, accu_retrieval_time 2045.60s
+[2023-06-06 19:29:52.273] [info] queryID 30, query_time 0.25s, prune ip cost 2511610, refine ip cost 54838562, accu_retrieval_time 2045.85s
+[2023-06-06 19:29:52.884] [info] queryID 31, query_time 0.61s, prune ip cost 2511610, refine ip cost 204212257, accu_retrieval_time 2046.46s
+[2023-06-06 19:29:53.116] [info] queryID 32, query_time 0.23s, prune ip cost 2511610, refine ip cost 70799039, accu_retrieval_time 2046.69s
+[2023-06-06 19:29:53.429] [info] queryID 33, query_time 0.31s, prune ip cost 2511610, refine ip cost 96581348, accu_retrieval_time 2047.01s
+[2023-06-06 19:29:54.091] [info] queryID 34, query_time 0.66s, prune ip cost 2511610, refine ip cost 210760145, accu_retrieval_time 2047.67s
+[2023-06-06 19:29:54.718] [info] queryID 35, query_time 0.63s, prune ip cost 2511610, refine ip cost 252502931, accu_retrieval_time 2048.29s
+[2023-06-06 19:29:54.927] [info] queryID 36, query_time 0.21s, prune ip cost 2511610, refine ip cost 66706609, accu_retrieval_time 2048.50s
+[2023-06-06 19:29:55.295] [info] queryID 37, query_time 0.37s, prune ip cost 2511610, refine ip cost 121135928, accu_retrieval_time 2048.87s
+[2023-06-06 19:29:55.433] [info] queryID 38, query_time 0.14s, prune ip cost 2511610, refine ip cost 39287328, accu_retrieval_time 2049.01s
+[2023-06-06 19:29:58.304] [info] queryID 39, query_time 2.87s, prune ip cost 2511610, refine ip cost 941668143, accu_retrieval_time 2051.88s
+[2023-06-06 19:50:49.744] [info] queryID 40, query_time 1251.44s, prune ip cost 2511610, refine ip cost 581048940802, accu_retrieval_time 3303.32s
+[2023-06-06 19:50:49.985] [info] queryID 41, query_time 0.24s, prune ip cost 2511610, refine ip cost 26191552, accu_retrieval_time 3303.56s
+[2023-06-06 19:50:50.117] [info] queryID 42, query_time 0.13s, prune ip cost 2511610, refine ip cost 16778963, accu_retrieval_time 3303.69s
+[2023-06-06 19:50:50.272] [info] queryID 43, query_time 0.15s, prune ip cost 2511610, refine ip cost 16778963, accu_retrieval_time 3303.85s
+[2023-06-06 19:50:50.427] [info] queryID 44, query_time 0.16s, prune ip cost 2511610, refine ip cost 15141991, accu_retrieval_time 3304.00s
+[2023-06-06 19:50:50.631] [info] queryID 45, query_time 0.20s, prune ip cost 2511610, refine ip cost 43789001, accu_retrieval_time 3304.21s
+[2023-06-06 19:50:50.848] [info] queryID 46, query_time 0.22s, prune ip cost 2511610, refine ip cost 51564618, accu_retrieval_time 3304.42s
+[2023-06-06 19:50:51.241] [info] queryID 47, query_time 0.39s, prune ip cost 2511610, refine ip cost 142825807, accu_retrieval_time 3304.82s
+[2023-06-06 19:50:51.763] [info] queryID 48, query_time 0.52s, prune ip cost 2511610, refine ip cost 202166042, accu_retrieval_time 3305.34s
+[2023-06-06 19:50:53.995] [info] queryID 49, query_time 2.23s, prune ip cost 2511610, refine ip cost 1009602481, accu_retrieval_time 3307.57s
+[2023-06-06 19:50:56.983] [info] queryID 50, query_time 2.99s, prune ip cost 2511610, refine ip cost 1370964050, accu_retrieval_time 3310.56s
+[2023-06-06 19:54:10.492] [info] queryID 51, query_time 193.51s, prune ip cost 2511610, refine ip cost 86960045070, accu_retrieval_time 3504.07s
+[2023-06-06 19:54:11.264] [info] queryID 52, query_time 0.77s, prune ip cost 2511610, refine ip cost 315935596, accu_retrieval_time 3504.84s
+[2023-06-06 19:54:11.558] [info] queryID 53, query_time 0.29s, prune ip cost 2511610, refine ip cost 111314096, accu_retrieval_time 3505.13s
+[2023-06-06 19:54:12.514] [info] queryID 54, query_time 0.96s, prune ip cost 2511610, refine ip cost 419883318, accu_retrieval_time 3506.09s
+[2023-06-06 19:54:12.642] [info] queryID 55, query_time 0.13s, prune ip cost 2511610, refine ip cost 28237767, accu_retrieval_time 3506.22s
+[2023-06-06 19:54:12.773] [info] queryID 56, query_time 0.13s, prune ip cost 2511610, refine ip cost 11458804, accu_retrieval_time 3506.35s
+[2023-06-06 19:54:12.927] [info] queryID 57, query_time 0.15s, prune ip cost 2511610, refine ip cost 27010038, accu_retrieval_time 3506.50s
+[2023-06-06 19:54:13.574] [info] queryID 58, query_time 0.65s, prune ip cost 2511610, refine ip cost 205030743, accu_retrieval_time 3507.15s
+[2023-06-06 20:01:16.372] [info] queryID 59, query_time 422.80s, prune ip cost 2511610, refine ip cost 195569863326, accu_retrieval_time 3929.95s
+[2023-06-06 20:01:17.354] [info] queryID 60, query_time 0.98s, prune ip cost 2511610, refine ip cost 364635513, accu_retrieval_time 3930.93s
+[2023-06-06 20:14:51.016] [info] queryID 61, query_time 813.66s, prune ip cost 2511610, refine ip cost 382503471623, accu_retrieval_time 4744.59s
+[2023-06-06 20:14:51.248] [info] queryID 62, query_time 0.23s, prune ip cost 2511610, refine ip cost 27828524, accu_retrieval_time 4744.82s
+[2023-06-06 20:14:51.456] [info] queryID 63, query_time 0.21s, prune ip cost 2511610, refine ip cost 51155375, accu_retrieval_time 4745.03s
+[2023-06-06 20:32:10.902] [info] queryID 64, query_time 1039.45s, prune ip cost 2511610, refine ip cost 480484839926, accu_retrieval_time 5784.48s
+[2023-06-06 20:32:11.210] [info] queryID 65, query_time 0.31s, prune ip cost 2511610, refine ip cost 43789001, accu_retrieval_time 5784.78s
+[2023-06-06 20:32:11.337] [info] queryID 66, query_time 0.13s, prune ip cost 2511610, refine ip cost 15960477, accu_retrieval_time 5784.91s
+[2023-06-06 20:32:11.636] [info] queryID 67, query_time 0.30s, prune ip cost 2511610, refine ip cost 96172105, accu_retrieval_time 5785.21s
+[2023-06-06 20:32:11.843] [info] queryID 68, query_time 0.21s, prune ip cost 2511610, refine ip cost 58521749, accu_retrieval_time 5785.42s
+[2023-06-06 20:32:12.247] [info] queryID 69, query_time 0.40s, prune ip cost 2511610, refine ip cost 117861984, accu_retrieval_time 5785.82s
+[2023-06-06 20:32:12.395] [info] queryID 70, query_time 0.15s, prune ip cost 2511610, refine ip cost 35604141, accu_retrieval_time 5785.97s
+[2023-06-06 20:32:12.523] [info] queryID 71, query_time 0.13s, prune ip cost 2511610, refine ip cost 24145337, accu_retrieval_time 5786.10s
+[2023-06-06 20:32:12.733] [info] queryID 72, query_time 0.21s, prune ip cost 2511610, refine ip cost 59340235, accu_retrieval_time 5786.31s
+[2023-06-06 20:32:12.941] [info] queryID 73, query_time 0.21s, prune ip cost 2511610, refine ip cost 46244459, accu_retrieval_time 5786.52s
+[2023-06-06 20:32:13.069] [info] queryID 74, query_time 0.13s, prune ip cost 2511610, refine ip cost 28237767, accu_retrieval_time 5786.64s
+[2023-06-06 20:32:13.263] [info] queryID 75, query_time 0.19s, prune ip cost 2511610, refine ip cost 40924300, accu_retrieval_time 5786.84s
+[2023-06-06 20:32:13.389] [info] queryID 76, query_time 0.13s, prune ip cost 2511610, refine ip cost 34376412, accu_retrieval_time 5786.96s
+[2023-06-06 20:32:13.598] [info] queryID 77, query_time 0.21s, prune ip cost 2511610, refine ip cost 49109160, accu_retrieval_time 5787.17s
+[2023-06-06 20:32:13.730] [info] queryID 78, query_time 0.13s, prune ip cost 2511610, refine ip cost 15141991, accu_retrieval_time 5787.30s
+[2023-06-06 20:32:14.168] [info] queryID 79, query_time 0.44s, prune ip cost 2511610, refine ip cost 157967798, accu_retrieval_time 5787.74s
+[2023-06-06 20:32:15.770] [info] queryID 80, query_time 1.60s, prune ip cost 2511610, refine ip cost 713310549, accu_retrieval_time 5789.35s
+[2023-06-06 20:32:15.901] [info] queryID 81, query_time 0.13s, prune ip cost 2511610, refine ip cost 24963823, accu_retrieval_time 5789.48s
+[2023-06-06 20:32:16.069] [info] queryID 82, query_time 0.17s, prune ip cost 2511610, refine ip cost 27828524, accu_retrieval_time 5789.64s
+[2023-06-06 20:32:16.711] [info] queryID 83, query_time 0.64s, prune ip cost 2511610, refine ip cost 218535762, accu_retrieval_time 5790.29s
+[2023-06-06 20:47:08.272] [info] queryID 84, query_time 891.56s, prune ip cost 2511610, refine ip cost 413809742637, accu_retrieval_time 6681.85s
+[2023-06-06 20:47:08.567] [info] queryID 85, query_time 0.29s, prune ip cost 2511610, refine ip cost 41333543, accu_retrieval_time 6682.14s
+[2023-06-06 20:47:09.114] [info] queryID 86, query_time 0.55s, prune ip cost 2511610, refine ip cost 227948351, accu_retrieval_time 6682.69s
+[2023-06-06 20:47:09.390] [info] queryID 87, query_time 0.28s, prune ip cost 2511610, refine ip cost 81439357, accu_retrieval_time 6682.96s
+[2023-06-06 20:47:10.593] [info] queryID 88, query_time 1.20s, prune ip cost 2511610, refine ip cost 528741956, accu_retrieval_time 6684.17s
+[2023-06-06 20:47:10.722] [info] queryID 89, query_time 0.13s, prune ip cost 2511610, refine ip cost 24554580, accu_retrieval_time 6684.30s
+[2023-06-06 20:47:11.095] [info] queryID 90, query_time 0.37s, prune ip cost 2511610, refine ip cost 134640947, accu_retrieval_time 6684.67s
+[2023-06-06 20:47:11.369] [info] queryID 91, query_time 0.27s, prune ip cost 2511610, refine ip cost 85941030, accu_retrieval_time 6684.94s
+[2023-06-06 21:01:00.327] [info] queryID 92, query_time 828.96s, prune ip cost 2511610, refine ip cost 378920958401, accu_retrieval_time 7513.90s
+[2023-06-06 21:01:02.861] [info] queryID 93, query_time 2.53s, prune ip cost 2511610, refine ip cost 1101272913, accu_retrieval_time 7516.44s
+[2023-06-06 21:01:03.153] [info] queryID 94, query_time 0.29s, prune ip cost 2511610, refine ip cost 115406526, accu_retrieval_time 7516.73s
+[2023-06-06 21:01:03.776] [info] queryID 95, query_time 0.62s, prune ip cost 2511610, refine ip cost 249228987, accu_retrieval_time 7517.35s
+[2023-06-06 21:01:17.073] [info] queryID 96, query_time 13.30s, prune ip cost 2511610, refine ip cost 6014644371, accu_retrieval_time 7530.65s
+[2023-06-06 21:08:41.331] [info] queryID 97, query_time 444.26s, prune ip cost 2511610, refine ip cost 203649547875, accu_retrieval_time 7974.90s
+[2023-06-06 21:08:52.925] [info] queryID 98, query_time 11.59s, prune ip cost 2511610, refine ip cost 5385637880, accu_retrieval_time 7986.50s
+[2023-06-06 21:08:53.382] [info] queryID 99, query_time 0.46s, prune ip cost 2511610, refine ip cost 169835845, accu_retrieval_time 7986.96s
+[2023-06-06 21:08:53.382] [info] finish top-100
+[2023-06-06 21:08:53.382] [info] top100 retrieval time: total 7986.956s
+	inner product 2.122s, rank bound 2.214s, prune user 0.998s, refine user 7979.598s
+	total ip cost 251161000, total refine ip cost 3679583615385, total refine user 8991195, rank prune ratio 0.9642
+[2023-06-06 21:08:53.382] [info] build index time: total 0.694086087s
+top100 retrieval time: total 7986.956s
+	inner product 2.122s, rank bound 2.214s, prune user 0.998s, refine user 7979.598s
+	total ip cost 251161000, total refine ip cost 3679583615385, total refine user 8991195, rank prune ratio 0.9642
