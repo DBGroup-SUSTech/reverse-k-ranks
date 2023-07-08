@@ -116,7 +116,3 @@ if __name__ == '__main__':
         index_size_tb = n_data_item * n_user * 4 / 1024 / 1024 / 1024 / 1024
         print(
             f"{dataset}, data_item {data_item_l.shape}, user {user_l.shape}, query_item {query_item_l.shape}, index size {index_size_tb:.2f}TB")
-
-# data, d = ivecs_read("data/dataset/deep/gnd-50.ivecs")
-# print(data.shape)
-# print(d)
