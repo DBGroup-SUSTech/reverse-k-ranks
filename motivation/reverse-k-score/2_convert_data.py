@@ -13,19 +13,17 @@ def delete_file_if_exist(dire):
         os.system(command)
 
 
-def select_queryID_l(dataset_prefix: str, n_query_item: int):
+def select_queryID_l(dataset_prefix: str):
     df = pd.read_csv(f'/home/bianzheng/rec2-mips/intermediate-rating-csv-split/{dataset_prefix}-test.csv')
-    queryID_l = df['itemID'].to_numpy() - 1
-    assert len(df) == len(np.unique(df['itemID']))
+    queryID_l = np.sort(np.unique(df['itemID'].to_numpy() - 1))
+    assert len(df) >= len(np.unique(df['itemID']))
     return queryID_l
 
 
 if __name__ == '__main__':
-    # reverse k ranks是给定item, 需要输出user
-    n_query_item = 100
-
+    ds_l = ['lastfm']
     # ds_l = ['ml-1m']
-    ds_l = ['lastfm', 'ml-1m']
+    # ds_l = ['lastfm', 'ml-1m']
     for dataset_prefix in ds_l:
         dim = 150
         dataset = f'{dataset_prefix}-{dim}d'
@@ -45,7 +43,7 @@ if __name__ == '__main__':
         # item_idx_l = np.random.permutation(n_item)
         # query_idx_l = np.sort(item_idx_l[:n_query_item])
 
-        query_idx_l = np.array(select_queryID_l(dataset_prefix, n_query_item), dtype=np.int64)
+        query_idx_l = np.array(select_queryID_l(dataset_prefix), dtype=np.int64)
         data_idx_l = np.arange(n_item)
 
         np.savetxt('%s/query_item.txt' % output_dir, query_idx_l, fmt="%d")
