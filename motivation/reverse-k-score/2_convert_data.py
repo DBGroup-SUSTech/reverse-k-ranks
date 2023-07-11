@@ -21,8 +21,8 @@ def select_queryID_l(dataset_prefix: str):
 
 
 if __name__ == '__main__':
-    ds_l = ['lastfm']
-    # ds_l = ['ml-1m']
+    # ds_l = ['lastfm']
+    ds_l = ['ml-1m']
     # ds_l = ['lastfm', 'ml-1m']
     for dataset_prefix in ds_l:
         dim = 150

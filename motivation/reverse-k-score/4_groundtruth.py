@@ -85,8 +85,8 @@ def k_rank_ans(dataset_name: str, topk: int):
 
 if __name__ == '__main__':
     # for dataset_name in ['ml-1m', 'lastfm']:
-    for dataset_name in ['lastfm']:
-    # for dataset_name in ['ml-1m']:
+    # for dataset_name in ['lastfm']:
+    for dataset_name in ['ml-1m']:
         queryID_l = np.loadtxt(f'/home/bianzheng/Dataset/ReverseMIPS/{dataset_name}-150d/query_item.txt')
         df = pd.read_csv(f'/home/bianzheng/rec2-mips/intermediate-rating-csv-split/{dataset_name}-test.csv')
         train_df = pd.read_csv(f'/home/bianzheng/rec2-mips/intermediate-rating-csv-split/{dataset_name}-train.csv')

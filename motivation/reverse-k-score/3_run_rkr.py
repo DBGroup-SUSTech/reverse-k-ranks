@@ -252,8 +252,8 @@ def run(dataset_l, topk_l, index_dir, dataset_dir):
 if __name__ == '__main__':
     # dataset_l = [('fake-normal', 30), ('fake-uniform', 30), ('fakebig', 30)]
     # dataset_l = [('lastfm', 150), ('ml-1m', 150)]
-    dataset_l = [('lastfm', 150)]
-    # dataset_l = [('ml-1m', 150)]
+    # dataset_l = [('lastfm', 150)]
+    dataset_l = [('ml-1m', 150)]
     # dataset_l = [('fake-normal', 30)]
     topk_l = [10, 50, 100, 150, 200]
     # topk_l = [10, 20, 30]
@@ -264,8 +264,8 @@ if __name__ == '__main__':
 
     run(dataset_l=dataset_l, topk_l=topk_l, index_dir=index_dir, dataset_dir=dataset_dir)
 
-    dataset_l = ['lastfm']
-    # dataset_l = ['ml-1m']
+    # dataset_l = ['lastfm']
+    dataset_l = ['ml-1m']
     # dataset_l = ['lastfm', 'ml-1m']
     for dataset in dataset_l:
         os.system(f'rm -rf /home/bianzheng/reverse-k-ranks/result/rank/{dataset}')

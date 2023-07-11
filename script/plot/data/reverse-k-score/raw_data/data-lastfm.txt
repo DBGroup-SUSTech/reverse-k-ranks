@@ -1,0 +1,24 @@
+lastfm top10 random hit rate: 0.03698435277382646
+lastfm top10 popularity hit rate: 0.05547652916073969
+lastfm top10 k_score hit rate: 0.049786628733997154
+lastfm top10 k_rank hit rate: 0.04267425320056899
+
+lastfm top50 random hit rate: 0.1891891891891892
+lastfm top50 popularity hit rate: 0.27311522048364156
+lastfm top50 k_score hit rate: 0.21337126600284495
+lastfm top50 k_rank hit rate: 0.29871977240398295
+
+lastfm top100 random hit rate: 0.28733997155049784
+lastfm top100 popularity hit rate: 0.4480796586059744
+lastfm top100 k_score hit rate: 0.3541963015647226
+lastfm top100 k_rank hit rate: 0.5277382645803699
+
+lastfm top150 random hit rate: 0.35135135135135137
+lastfm top150 popularity hit rate: 0.5931721194879089
+lastfm top150 k_score hit rate: 0.44523470839260315
+lastfm top150 k_rank hit rate: 0.6756756756756757
+
+lastfm top200 random hit rate: 0.41109530583214793
+lastfm top200 popularity hit rate: 0.6927453769559033
+lastfm top200 k_score hit rate: 0.5135135135135135
+lastfm top200 k_rank hit rate: 0.7652916073968705
