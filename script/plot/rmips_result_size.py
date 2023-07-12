@@ -10,7 +10,7 @@ color_l = ['#3D0DFF', '#6BFF00', '#00E8E2', '#EB0225', '#FF9E03']
 marker_l = ['x', "v", "o", "D", "s"]
 markersize = 15
 
-matplotlib.rcParams.update({'font.size': 25})
+matplotlib.rcParams.update({'font.size': 20})
 
 
 def plot_figure(*, reuslt_size_l: list,
@@ -61,7 +61,7 @@ if __name__ == "__main__":
     n_bin_l = [50, 100]
     name_m = {'fig_x': 'Result Size',
               'fig_y': 'Frequency'}
-    is_test = True
+    is_test = False
     for dataset_name_fig, dataset_name_file, xlim, ylim, x_ticks, n_bin in zip(dataset_l,
                                                                                origin_dataset_l, xlim_l,
                                                                                ylim_l, x_ticks_l,

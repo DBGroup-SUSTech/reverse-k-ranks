@@ -9,7 +9,7 @@ color_l = ['#3D0DFF', '#6BFF00', '#00E8E2', '#EB0225', '#FF9E03']
 marker_l = ['D', "v", "o", "x", "s"]
 markersize = 15
 
-matplotlib.rcParams.update({'font.size': 15})
+matplotlib.rcParams.update({'font.size': 20})
 
 
 def transform_data(*, dataset: str, dim_l: list, base_dir: str):
@@ -38,7 +38,7 @@ def plot_figure(*, dataset_name: str, result_fname: str, base_dir: str,
     for method_i, key in enumerate(method_m.keys()):
         x_name = name_m['csv_x']
         y_name = key + name_m['csv_y']
-        ax.plot(df[x_name], df[y_name],
+        ax.plot(df[x_name].to_numpy(), df[y_name].to_numpy(),
                 color='#000000', linewidth=2.5, linestyle='-',
                 label=method_m[key],
                 marker=marker_l[method_i], fillstyle='none', markersize=markersize)
@@ -50,23 +50,25 @@ def plot_figure(*, dataset_name: str, result_fname: str, base_dir: str,
         ax.legend(frameon=False, loc=legend_pos[0], borderaxespad=legend_pos[1])
     else:
         ax.legend(frameon=False, loc='best', borderaxespad=-0)
-    ax.set_xticks(dim_l)
+
     if xlog:
         ax.set_xscale('log', base=2)
     ax.get_xaxis().set_major_formatter(matplotlib.ticker.ScalarFormatter())
+    ax.set_xticks(dim_l)
 
     # fig.tight_layout(rect=(0, 0.1, 1, 1))
     if test:
-        plt.savefig("{}_{}.jpg".format('DimensionSelection', result_fname), bbox_inches='tight', dpi=600)
+        plt.savefig("{}_{}.jpg".format('dimension_selection', result_fname), bbox_inches='tight', dpi=600)
     else:
-        plt.savefig("{}_{}.pdf".format('DimensionSelection', result_fname), bbox_inches='tight')
+        plt.savefig("{}_{}.pdf".format('dimension_selection', result_fname), bbox_inches='tight')
 
 
 if __name__ == "__main__":
     is_test = False
 
     dataset_name_l = ['lastfm', 'ml-1m']
-    ylim_l = [[0.19, 0.63], [0.19, 0.79]]
+    # ylim_l = [[0.19, 0.63], [0.19, 0.79]]
+    ylim_l = [[0.15, 0.63], [0.08, 0.79]]
     name_m = {'csv_x': 'dimension', 'fig_x': 'Dimensionality',
               'csv_y': '', 'fig_y': 'Hitting Ratio'}
     method_m = {'HR@200': 'HR@200', 'HR@100': 'HR@100', 'HR@50': 'HR@50'}

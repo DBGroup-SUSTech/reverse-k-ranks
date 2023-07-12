@@ -36,6 +36,7 @@ def plot_figure(*, fname: str, dataset: str, set_log: bool, ylim: list, legend_l
     ax.set_xlabel(name_m['fig_x'])
     ax.set_xlim([0, 210])
     ax.set_ylabel(name_m['fig_y'], labelpad=labelpad)
+    ax.set_xticks([10, 50, 100, 150, 200])
     if yticks:
         ax.set_yticks(yticks)
     if ylim:
@@ -49,7 +50,8 @@ def plot_figure(*, fname: str, dataset: str, set_log: bool, ylim: list, legend_l
         return itertools.chain(*[items[i::ncol] for i in range(ncol)])
 
     # ax.legend(reversed(handles), reversed(labels), frameon=False, ncol=2, loc=legend_loc[0], bbox_to_anchor=legend_loc[1])
-    ax.legend(flip(handles, 2), flip(labels, 2), frameon=False, ncol=1, loc=legend_loc[0], bbox_to_anchor=legend_loc[1])
+    ax.legend(flip(handles, 2), flip(labels, 2), frameon=False, ncol=2, loc=legend_loc[0], bbox_to_anchor=legend_loc[1],
+              handlelength=1.3, columnspacing=0.8, handletextpad=0.3)
     if test:
         plt.savefig("reverse_k_score_{}.jpg".format(dataset), bbox_inches='tight', dpi=600)
     else:
@@ -57,7 +59,7 @@ def plot_figure(*, fname: str, dataset: str, set_log: bool, ylim: list, legend_l
 
 
 if __name__ == "__main__":
-    is_test = True
+    is_test = False
 
     fname_l = [
         './data/reverse-k-score/lastfm.csv',
@@ -65,14 +67,16 @@ if __name__ == "__main__":
     ]
     dataset_l = ['1_lastfm', '2_ml_1m']
     set_log_l = [False, False]
-    ylim_l = [[-0.01, 0.17], [0, 0.07]]
-    legend_loc_l = [('upper left', (0, 1)), ('upper left', (0, 1))]
+    ylim_l = [[-0.01, 1.1], [-0.03, 0.92]]
+    # ylim_l = [None, None]
+    legend_loc_l = [('upper left', (-0.025, 1.05)), ('upper left', (-0.025, 1.05))]
     labelpad_l = [0, 0]
-    yticks_l = [[0, 0.05, 0.10, 0.15], None]
+    yticks_l = [[0, 0.25, 0.50, 0.75], None]
+    # yticks_l = [None, None]
 
-    name_m = {'csv_x': 'topk', 'fig_x': r'k',
+    name_m = {'csv_x': 'topk', 'fig_x': 'Result Size',
               'csv_y': 'Hitting Ratio', 'fig_y': 'Hitting Ratio'}
-    method_m = {'krank': 'Reverse k-Rank', 'kscore': 'Reverse k-Score'}
+    method_m = {'k_rank': 'Reverse k-Rank', 'popularity': 'UserPop', 'k_score': 'k-Score', 'random': 'Random'}
     for fname, dataset, set_log, ylim, legend_loc, labelpad, yticks in zip(fname_l, dataset_l,
                                                                            set_log_l, ylim_l, legend_loc_l,
                                                                            labelpad_l, yticks_l):
