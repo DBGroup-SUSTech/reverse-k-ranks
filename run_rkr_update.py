@@ -232,16 +232,16 @@ def run_update(dataset_l, topk_l, index_dir, dataset_dir):
 
 
 if __name__ == '__main__':
-    # dataset_l = [('fake-normal', 30), ('fake-uniform', 30), ('fakebig', 30)]
-    dataset_l = [('fake-normal', 30)]
+    dataset_l = [('fake-normal', 30), ('fake-uniform', 30), ('fakebig', 30)]
+    # dataset_l = [('fake-uniform', 30)]
     topk_l = [10, 20, 30]
     # topk_l = [20]
-    update_type_l = ['data_item', 'user']
-    # update_type_l = ['user']
+    # update_type_l = ['data_item', 'user']
+    update_type_l = ['user']
     update_operator_l = ['insert', 'delete']
-    # update_operator_l = ['delete']
+    # update_operator_l = ['insert']
     updateID_l = [0, 1, 2, 3, 4]
-    # updateID_l = [2]
+    # updateID_l = [1]
     index_dir = "/home/bianzheng/reverse-k-ranks/index"
     dataset_dir = "/home/bianzheng/Dataset/ReverseMIPS"
 

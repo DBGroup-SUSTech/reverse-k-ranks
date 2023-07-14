@@ -60,12 +60,27 @@ namespace ReverseMIPS {
 
         }
 
-        void InsertUser(const VectorMatrixUpdate &insert_user) {
-            transfer_user_.insert(insert_user);
+        void InsertUser(const VectorMatrixUpdate &original_user, const VectorMatrixUpdate &insert_user,
+                        const VectorMatrixUpdate &data_item) {
+            const int n_original_user = original_user.n_vector_;
+            const int n_insert_user = insert_user.n_vector_;
+            std::unique_ptr<float[]> new_user_ptr = std::make_unique<float[]>(
+                    (size_t) (n_original_user + n_insert_user) * vec_dim_);
+            std::memcpy(new_user_ptr.get(), original_user.getRawData(),
+                        sizeof(float) * n_original_user * vec_dim_);
+            std::memcpy(new_user_ptr.get() + (size_t) n_original_user * vec_dim_, insert_user.getRawData(),
+                        sizeof(float) * n_insert_user * vec_dim_);
+            VectorMatrixUpdate new_user;
+            new_user.init(new_user_ptr, n_original_user + n_insert_user, vec_dim_);
+            assert(vec_dim_ == original_user.vec_dim_ && vec_dim_ == insert_user.vec_dim_);
+
+            n_user_ += n_insert_user;
+            PerformSVD(new_user, data_item, SIGMA_);
         }
 
         void DeleteUser(const std::vector<int> &del_userID_l) {
             transfer_user_.remove(del_userID_l);
+            n_user_ -= del_userID_l.size();
         }
 
         void PerformSVD(const VectorMatrixUpdate &user, const VectorMatrixUpdate &data_item, const float &SIGMA) {
@@ -78,10 +93,10 @@ namespace ReverseMIPS {
             transfer_item_.init(transfer_ptr, vec_dim, vec_dim);
             assert(transfer_item_.n_vector_ == transfer_item_.vec_dim_);
 
-            std::unique_ptr<float[]> user_ptr = std::make_unique<float[]>(n_user * vec_dim);
+            std::unique_ptr<float[]> user_ptr = std::make_unique<float[]>((size_t) n_user * vec_dim);
             transfer_user_.init(user_ptr, n_user, vec_dim);
 
-            std::unique_ptr<float[]> data_item_ptr = std::make_unique<float[]>(n_data_item * vec_dim);
+            std::unique_ptr<float[]> data_item_ptr = std::make_unique<float[]>((size_t) n_data_item * vec_dim);
             transfer_data_item_.init(data_item_ptr, n_data_item, vec_dim);
 
             //Q is item, since a new query would be added

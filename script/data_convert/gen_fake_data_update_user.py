@@ -77,9 +77,9 @@ if __name__ == '__main__':
     n_user = 1000
     n_update_user = 100
 
-    # gen_data_uniform_update(n_user, n_data_item, n_query_item,
-    #                         n_update_user,
-    #                         n_dim, f"fake-uniform-{n_dim}d-update-user", basic_dir)
+    gen_data_uniform_update(n_user, n_data_item, n_query_item,
+                            n_update_user,
+                            n_dim, f"fake-uniform-{n_dim}d-update-user", basic_dir)
     # gen_data_normal_update(n_user, n_data_item, n_query_item,
     #                        n_update_user,
     #                        n_dim, f"fake-normal-{n_dim}d-update-user", basic_dir)
@@ -90,6 +90,6 @@ if __name__ == '__main__':
     n_user = 5000
     n_update_user = 1000
 
-    gen_data_independent_update(n_user, n_data_item, n_query_item,
-                                n_update_user,
-                                n_dim, f'fakebig-{n_dim}d-update-user', basic_dir)
+    # gen_data_independent_update(n_user, n_data_item, n_query_item,
+    #                             n_update_user,
+    #                             n_dim, f'fakebig-{n_dim}d-update-user', basic_dir)

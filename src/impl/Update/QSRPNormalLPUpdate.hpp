@@ -143,12 +143,12 @@ namespace ReverseMIPS::QSRPNormalLPUpdate {
                 prune_l_.assign(n_user_, false);
                 result_l_.assign(n_user_, false);
 
-                const float *old_query_vecs = query_item.getVector(queryID);
+                const float *origin_query_vecs = query_item.getVector(queryID);
                 float *query_vecs = query_vecs_ptr_.get();
-                svd_ins_.TransferQuery(old_query_vecs, vec_dim_, query_vecs);
+                svd_ins_.TransferQuery(origin_query_vecs, vec_dim_, query_vecs);
 
                 inner_product_record_.reset();
-                ip_bound_ins_.IPBound(query_vecs, old_query_vecs, svd_ins_.transfer_user_, queryIP_bound_l_, n_user_,
+                ip_bound_ins_.IPBound(query_vecs, svd_ins_.transfer_user_, queryIP_bound_l_, n_user_,
                                       queryID);
                 const double tmp_ip_bound_time = inner_product_record_.get_elapsed_time_second();
                 this->inner_product_time_ += tmp_ip_bound_time;
@@ -190,7 +190,7 @@ namespace ReverseMIPS::QSRPNormalLPUpdate {
 
                 //calculate IP
                 inner_product_record_.reset();
-                ip_bound_ins_.ComputeRemainDim(query_vecs, old_query_vecs, svd_ins_.transfer_user_, prune_l_, result_l_,
+                ip_bound_ins_.ComputeRemainDim(query_vecs, svd_ins_.transfer_user_, prune_l_, result_l_,
                                                queryIP_l_,
                                                n_user_);
                 const double tmp_inner_product_time = inner_product_record_.get_elapsed_time_second();
@@ -306,8 +306,12 @@ namespace ReverseMIPS::QSRPNormalLPUpdate {
         }
 
         void InsertUser(const VectorMatrixUpdate &insert_user) override {
-            this->svd_ins_.InsertUser(insert_user);
-            this->ip_bound_ins_.InsertUser(insert_user);
+            this->svd_ins_.InsertUser(user_, insert_user, data_item_);
+            const int check_dim = svd_ins_.check_dim_;
+
+            PartDimPartNormUpdate ip_bound_ins(n_user_ + insert_user.n_vector_, vec_dim_, check_dim);
+            ip_bound_ins.Preprocess(svd_ins_.transfer_user_);
+            this->ip_bound_ins_ = std::move(ip_bound_ins);
 
             std::vector<float> user_score_l((size_t) insert_user.n_vector_ * n_data_item_);
 #pragma omp parallel for default(none) shared(insert_user, user_score_l)

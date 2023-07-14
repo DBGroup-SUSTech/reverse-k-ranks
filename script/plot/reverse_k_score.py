@@ -59,7 +59,7 @@ def plot_figure(*, fname: str, dataset: str, set_log: bool, ylim: list, legend_l
 
 
 if __name__ == "__main__":
-    is_test = False
+    is_test = True
 
     fname_l = [
         './data/reverse-k-score/lastfm.csv',
