@@ -61,9 +61,6 @@ find_package(Armadillo)
 
 find_package(OpenMP REQUIRED)
 
-set(BUILD_TEST_MODULE OFF)
-set(BUILD_ATTRIBUTION ON)
-
 find_package(Eigen3 3.3 REQUIRED NO_MODULE)
 
 set(fexipro
@@ -103,7 +100,7 @@ add_library(rtklib SHARED ${rtk})
 target_link_libraries(rtklib PRIVATE OpenMP::OpenMP_CXX)
 set_target_properties(rtklib PROPERTIES LINKER_LANGUAGE CXX)
 
-set(USE_CUDA ON)
+set(USE_CUDA OFF)
 
 if (USE_CUDA)
 
@@ -119,14 +116,13 @@ if (USE_CUDA)
     endif ()
 
     #    find_package(CUDAToolkit)
-    #    set(CMAKE_CUDA_COMPILER /usr/local/cuda-11.7/bin/nvcc)
-    #    set(CMAKE_CUDA_ARCHITECTURES 86)
+        set(CMAKE_CUDA_COMPILER /usr/local/cuda-11.7/bin/nvcc)
+        set(CMAKE_CUDA_ARCHITECTURES 86)
 
     enable_language(CUDA)
     find_package(CUDA)
 
     #    set(Thrust_DIR /usr/include/thrust)
-    set(Thrust_DIR /mnt/c/ProgramData/Anaconda3/lib/cmake/thrust)
     find_package(Thrust REQUIRED CONFIG)
     thrust_create_target(Thrust)
 
@@ -157,19 +153,6 @@ if (USE_CUDA)
     set_property(TARGET bstb PROPERTY CXX_EXTENSIONS OFF)
     set_target_properties(bstb PROPERTIES CUDA_ARCHITECTURES "35;50;72")
     target_compile_options(bstb PRIVATE -Xcompiler=-fopenmp)
-
-    set_source_files_properties(src/app/BuildSimpferPPCacheIndex.cpp PROPERTIES LANGUAGE CUDA)
-    add_executable(bsppci src/app/BuildSimpferPPCacheIndex.cpp)
-    target_include_directories(bsppci PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS} ${CUDA_INCLUDE_DIRS})
-    target_link_libraries(bsppci PRIVATE armadillo BLAS::BLAS pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} cublas Eigen3::Eigen)
-    set_target_properties(bsppci PROPERTIES
-            POSITION_INDEPENDENT_CODE ON
-            )
-    set_property(TARGET bsppci PROPERTY CXX_STANDARD "17")
-    set_property(TARGET bsppci PROPERTY CXX_STANDARD_REQUIRED ON)
-    set_property(TARGET bsppci PROPERTY CXX_EXTENSIONS OFF)
-    set_target_properties(bsppci PROPERTIES CUDA_ARCHITECTURES "35;50;72")
-    target_compile_options(bsppci PRIVATE -Xcompiler=-fopenmp)
 
     set_source_files_properties(src/app/build-index/QueryDistributionIndexByComputation.cpp PROPERTIES LANGUAGE CUDA)
     add_executable(qdibc src/app/build-index/QueryDistributionIndexByComputation.cpp)
@@ -220,10 +203,6 @@ else () # not use cuda
     target_include_directories(bstb PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
     target_link_libraries(bstb PRIVATE armadillo pthread spdlog::spdlog OpenMP::OpenMP_CXX ${Boost_LIBRARIES})
 
-    add_executable(bsppci src/app/BuildSimpferPPCacheIndex.cpp)
-    target_include_directories(bsppci PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
-    target_link_libraries(bsppci PRIVATE armadillo pthread spdlog::spdlog OpenMP::OpenMP_CXX ${Boost_LIBRARIES} Eigen3::Eigen)
-
     add_executable(qdibc src/app/build-index/QueryDistributionIndexByComputation.cpp)
     target_include_directories(qdibc PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
     target_link_libraries(qdibc PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES})
@@ -236,10 +215,6 @@ else () # not use cuda
     target_include_directories(bri PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
     target_link_libraries(bri PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog Eigen3::Eigen ${Boost_LIBRARIES})
 
-    if (BUILD_TEST_MODULE)
-        add_subdirectory(test)
-    endif ()
-
 endif ()
 
 add_executable(qdibs src/app/build-index/QueryDistributionIndexBySample.cpp)
@@ -249,10 +224,6 @@ target_link_libraries(qdibs PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog:
 add_executable(bsvdi src/app/build-index/BuildSVDIndex.cpp)
 target_include_directories(bsvdi PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
 target_link_libraries(bsvdi PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog Eigen3::Eigen ${Boost_LIBRARIES} fexiprolib rtklib)
-
-add_executable(rtk src/app/ReverseTopk.cpp)
-target_include_directories(rtk PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
-target_link_libraries(rtk PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog Eigen3::Eigen ${Boost_LIBRARIES})
 
 add_executable(rri src/app/ReverseRankIndex.cpp)
 target_include_directories(rri PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS} src/include/LEMP)
@@ -273,25 +244,3 @@ target_link_libraries(bsibs PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog:
 add_executable(progress src/app/Progress.cpp)
 target_include_directories(progress PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
 target_link_libraries(progress PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES})
-
-add_executable(t1 test.cpp)
-target_include_directories(t1 PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
-target_link_libraries(t1 PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog Eigen3::Eigen ${Boost_LIBRARIES})
-
-if (BUILD_ATTRIBUTION)
-    add_subdirectory(attribution)
-endif ()
-
-##set_source_files_properties(src/app/BatchRunTopT.cpp PROPERTIES LANGUAGE CUDA)
-#add_executable(brtt src/app/BatchRunTopT.cpp)
-#target_include_directories(brtt PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
-##target_include_directories(brtt PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS} ${CUDA_INCLUDE_DIRS})
-#target_link_libraries(brtt PRIVATE armadillo BLAS::BLAS pthread gfortran OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} Eigen3::Eigen)
-##target_link_libraries(brtt PRIVATE armadillo BLAS::BLAS pthread gfortran OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} cublas)
-#set_target_properties(brtt PROPERTIES
-#        POSITION_INDEPENDENT_CODE ON
-#        )
-
-#set_property(TARGET brtt PROPERTY CXX_STANDARD "17")
-#set_property(TARGET brtt PROPERTY CXX_STANDARD_REQUIRED ON)
-#set_property(TARGET brtt PROPERTY CXX_EXTENSIONS OFF)

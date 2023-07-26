@@ -1,4 +1,0 @@
-every method rewrite PerformanceStatistics
-complete gpu modification :
-SSMergeIntervalIDByBitmap, SSMergeIntervalIDByInterval, SSMergeQuadraticRankBoundByBitmap
-SSMergeRankByBitmap, SSMergeRankByInterval

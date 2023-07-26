@@ -165,7 +165,7 @@ def run_update(dataset_l, topk_l, index_dir, dataset_dir):
         'MemoryBruteForceUpdate',
 
         'QSRPNormalLPUpdate',
-        # 'QSUpdate',
+        'QSUpdate',
     ]
 
     os.system('cd result/rank && rm *')
@@ -211,10 +211,12 @@ def run_update(dataset_l, topk_l, index_dir, dataset_dir):
                                          update_type, update_operator, updateID_l,
                                          topk_l, n_thread)
 
-                # run_sample_method_update(index_dir, dataset_dir,
-                #                          'QSUpdate', dataset_name, topk_l, update_type,
-                #                          n_sample, n_data_item, n_user,
-                #                          n_sample_item, sample_topk, n_thread, updateID_l)
+                run_sample_method_update(index_dir, dataset_dir,
+                                         'QSUpdate', dataset_name,
+                                         n_sample, n_sample_item, sample_topk,
+                                         n_data_item, n_user,
+                                         update_type, update_operator, updateID_l,
+                                         topk_l, n_thread)
 
                 # send_email.send('test complete')
 
@@ -232,17 +234,12 @@ def run_update(dataset_l, topk_l, index_dir, dataset_dir):
 
 
 if __name__ == '__main__':
-    dataset_l = [('fake-normal', 30), ('fake-uniform', 30), ('fakebig', 30)]
-    # dataset_l = [('fake-uniform', 30)]
+    dataset_l = [('fake-normal', 30)]
     topk_l = [10, 20, 30]
-    # topk_l = [20]
-    # update_type_l = ['data_item', 'user']
-    update_type_l = ['user']
+    update_type_l = ['data_item', 'user']
     update_operator_l = ['insert', 'delete']
-    # update_operator_l = ['insert']
     updateID_l = [0, 1, 2, 3, 4]
-    # updateID_l = [1]
-    index_dir = "/home/bianzheng/reverse-k-ranks/index"
-    dataset_dir = "/home/bianzheng/Dataset/ReverseMIPS"
+    index_dir = "/home/bianzheng/github/reverse-k-ranks/index"
+    dataset_dir = "/home/bianzheng/github/reverse-k-ranks/dataset"
 
     run_update(dataset_l=dataset_l, topk_l=topk_l, index_dir=index_dir, dataset_dir=dataset_dir)

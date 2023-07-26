@@ -1,2 +1,0 @@
-查看rank和data_itemIP的分布关系
-data_itemIP是映射到了01区间的

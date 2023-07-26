@@ -1,2 +1,0 @@
-build index time 159.137s
-n_sample: 6840

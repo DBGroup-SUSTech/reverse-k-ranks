@@ -1,1 +1,0 @@
-report build_index_time 174.086s, sample_item_time 0.002s, compute_query_rank_time 174.084s, sort_kth_rank_time 0.000s, store_index_time 0.004s

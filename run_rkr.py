@@ -210,19 +210,18 @@ def run(dataset_l, topk_l, index_dir, dataset_dir):
         'MemoryBruteForce',
         # 'DiskBruteForce',
 
-        # 'GridIndex',
-        # 'QS',
+        'GridIndex',
+        'Rtree',
+
+        'QS',
         'QSRPNormalLP',
 
-        # 'QSRPRefineComputeIPBound',
-        # 'QSRPRefineComputeAll',
-        # 'QSRPRefineLEMP',
+        'QSRPRefineComputeIPBound',
+        'QSRPRefineComputeAll',
+        'QSRPRefineLEMP',
 
-        # 'QSRPUniformLP',
-        # 'QSRPUniformCandidateNormalLP',
-        # 'Rtree',
-        # 'RtreeItemOnly',
-        # 'LinearScan',
+        'QSRPUniformLP',
+        'QSRPUniformCandidateNormalLP',
         'US',
     ]
 
@@ -245,17 +244,11 @@ def run(dataset_l, topk_l, index_dir, dataset_dir):
                 f'cd build && ./progress --index_dir {index_dir} --basic_dir {dataset_dir} --dataset_name {dataset_name} --method_name {"MemoryBruteForce"} --topk {topk}')
             # os.system(
             #     f'cd build && ./progress --index_dir {index_dir} --basic_dir {dataset_dir} --dataset_name {dataset_name} --method_name {"DiskBruteForce"} --topk {topk}')
-            # os.system(
-            #     f'cd build && ./rri --index_dir {index_dir} --dataset_dir {dataset_dir} --dataset_name {dataset_name} '
-            #     f'--topk {topk} --method_name {"GridIndex"} --stop_time 3600')
-            # os.system(
-            #     f'cd build && ./rri --index_dir {index_dir} --dataset_dir {dataset_dir} --dataset_name {dataset_name} --topk {topk} --method_name {"Rtree"} --stop_time 3600')
-            # os.system(
-            #     f'cd build && ./rri --index_dir {index_dir} --dataset_dir {dataset_dir} --dataset_name {dataset_name} '
-            #     f'--topk {topk} --method_name {"RtreeItemOnly"} --stop_time 3600')
-            # os.system(
-            #     f'cd build && ./rri --index_dir {index_dir} --dataset_dir {dataset_dir} --dataset_name {dataset_name} '
-            #     f'--topk {topk} --method_name {"LinearScan"} --stop_time 3600')
+            os.system(
+                f'cd build && ./rri --index_dir {index_dir} --dataset_dir {dataset_dir} --dataset_name {dataset_name} '
+                f'--topk {topk} --method_name {"GridIndex"} --stop_time 3600')
+            os.system(
+                f'cd build && ./rri --index_dir {index_dir} --dataset_dir {dataset_dir} --dataset_name {dataset_name} --topk {topk} --method_name {"Rtree"} --stop_time 3600')
 
         n_sample_item = 150
         sample_topk = 40
@@ -272,30 +265,30 @@ def run(dataset_l, topk_l, index_dir, dataset_dir):
                 index_dir, dataset_dir, dataset_name, 0.7
             ))
 
-        # run_sample_method(index_dir, dataset_dir,
-        #                   'QS', dataset_name, topk_l, n_sample, n_data_item, n_user,
-        #                   n_sample_item, sample_topk, n_thread)
+        run_sample_method(index_dir, dataset_dir,
+                          'QS', dataset_name, topk_l, n_sample, n_data_item, n_user,
+                          n_sample_item, sample_topk, n_thread)
         run_sample_method(index_dir, dataset_dir,
                           'QSRPNormalLP', dataset_name, topk_l, n_sample, n_data_item, n_user,
                           n_sample_item, sample_topk, n_thread)
 
-        # run_sample_method(index_dir, dataset_dir, "QSRPRefineComputeAll", dataset_name, topk_l, n_sample, n_data_item,
-        #                   n_user, n_sample_item,
-        #                   sample_topk, n_thread)
-        # run_sample_method(index_dir, dataset_dir, 'QSRPRefineComputeIPBound', dataset_name, topk_l, n_sample,
-        #                   n_data_item, n_user,
-        #                   n_sample_item,
-        #                   sample_topk, n_thread)
-        # run_sample_method(index_dir, dataset_dir,
-        #                   'QSRPRefineLEMP', dataset_name, topk_l, n_sample, n_data_item, n_user,
-        #                   n_sample_item, sample_topk, n_thread)
+        run_sample_method(index_dir, dataset_dir, "QSRPRefineComputeAll", dataset_name, topk_l, n_sample, n_data_item,
+                          n_user, n_sample_item,
+                          sample_topk, n_thread)
+        run_sample_method(index_dir, dataset_dir, 'QSRPRefineComputeIPBound', dataset_name, topk_l, n_sample,
+                          n_data_item, n_user,
+                          n_sample_item,
+                          sample_topk, n_thread)
+        run_sample_method(index_dir, dataset_dir,
+                          'QSRPRefineLEMP', dataset_name, topk_l, n_sample, n_data_item, n_user,
+                          n_sample_item, sample_topk, n_thread)
 
-        # run_sample_method(index_dir, dataset_dir,
-        #                   'QSRPUniformLP', dataset_name, topk_l, n_sample, n_data_item, n_user,
-        #                   n_sample_item, sample_topk, n_thread)
-        # run_sample_method(index_dir, dataset_dir,
-        #                   'QSRPUniformCandidateNormalLP', dataset_name, topk_l, n_sample, n_data_item, n_user,
-        #                   n_sample_item, sample_topk, n_thread)
+        run_sample_method(index_dir, dataset_dir,
+                          'QSRPUniformLP', dataset_name, topk_l, n_sample, n_data_item, n_user,
+                          n_sample_item, sample_topk, n_thread)
+        run_sample_method(index_dir, dataset_dir,
+                          'QSRPUniformCandidateNormalLP', dataset_name, topk_l, n_sample, n_data_item, n_user,
+                          n_sample_item, sample_topk, n_thread)
         run_sample_method(index_dir, dataset_dir, 'US', dataset_name, topk_l, n_sample, n_data_item, n_user,
                           n_sample_item, sample_topk, n_thread)
 
@@ -308,14 +301,10 @@ def run(dataset_l, topk_l, index_dir, dataset_dir):
 
 
 if __name__ == '__main__':
-    dataset_l = [('fake-normal', 30), ('fake-uniform', 30), ('fakebig', 30)]
-    # dataset_l = [('lastfm', 150), ('ml-1m', 150)]
-    # dataset_l = [('ml-1m', 150)]
-    # dataset_l = [('fake-normal', 30)]
-    # topk_l = [10, 50, 100, 150, 200]
+    dataset_l = [('fake-normal', 30)]
     topk_l = [10, 20, 30]
     # topk_l = [10]
-    index_dir = "/home/bianzheng/reverse-k-ranks/index"
-    dataset_dir = "/home/bianzheng/Dataset/ReverseMIPS"
+    index_dir = "/home/bianzheng/github/reverse-k-ranks/index"
+    dataset_dir = "/home/bianzheng/github/reverse-k-ranks/dataset"
 
     run(dataset_l=dataset_l, topk_l=topk_l, index_dir=index_dir, dataset_dir=dataset_dir)

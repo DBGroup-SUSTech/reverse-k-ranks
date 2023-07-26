@@ -88,21 +88,13 @@ namespace ReverseMIPS::Rtree {
             const int n_query_item = n_execute_query;
             std::vector<std::vector<UserRankElement>> query_heap_l(n_query_item, std::vector<UserRankElement>(topk));
             total_retrieval_record_.reset();
-            bool is_continue = false;
-#pragma omp parallel for default(none) reduction(+: total_single_query_retrieval_time_, total_ip_cost_, n_proc_query_) shared(is_continue, n_query_item, query_item, topk, query_heap_l, rtree_ins_, query_performance_l)
             for (int queryID = 0; queryID < n_query_item; queryID++) {
-                if (is_continue) {
-                    continue;
-                }
                 size_t ip_cost = 0;
                 TimeRecord query_record;
                 query_record.reset();
                 float *query_vecs = query_item.getVector(queryID);
                 dyy::Point q(query_vecs, vec_dim_, 0);
-                size_t n_proc_user = 0;
-                auto rkr = dyy::RTK::rkrmethod(rtree_ins_.RtreeP, rtree_ins_.RtreeW, q, topk, ip_cost,
-                                               query_record.get_elapsed_time_second(), (double) stop_time_,
-                                               n_proc_user);
+                auto rkr = dyy::RTK::rkrmethod(rtree_ins_.RtreeP, rtree_ins_.Weights, q, topk, ip_cost);
 
                 int res_i = 0;
                 while (!rkr.empty()) {
@@ -121,13 +113,8 @@ namespace ReverseMIPS::Rtree {
                 total_ip_cost_ += ip_cost;
 
 //                assert(n_proc_user == n_user_);
-                if (n_proc_user == n_user_) {
-                    n_proc_query_++;
-                } else {
-                    n_proc_query_ += 1.0 * (double) n_proc_user / n_user_;
-                }
+                n_proc_query_++;
 
-#pragma omp critical
                 query_performance_l[queryID] = SingleQueryPerformance(queryID, 0, topk, 0,
                                                                       ip_cost, 0,
                                                                       single_query_retrieval_time, 0, 0);
@@ -137,7 +124,7 @@ namespace ReverseMIPS::Rtree {
                         queryID, single_query_retrieval_time, ip_cost, n_proc_query_);
                 if (total_retrieval_record_.get_elapsed_time_second() > (double) stop_time_) {
                     spdlog::info("total retrieval time larger than stop time, retrieval exit");
-                    is_continue = true;
+                    break;
                 }
             }
             total_retrieval_time_ = total_retrieval_record_.get_elapsed_time_second();
@@ -155,14 +142,10 @@ namespace ReverseMIPS::Rtree {
 
             char buff[1024];
 
-            const double max_ip_cost = (n_data_item_ + 1) * n_user_ * n_proc_query_;
-            const double proportion = (double) total_ip_cost_ / (double) max_ip_cost;
-
             sprintf(buff,
-                    "top%d retrieval time: total %.3fs, n_proc_query %.3f\n\ttotal single query retrieval time %.3fs, total ip cost %ld\n\tmaximum ip cost %.2f, proportion %.3f",
+                    "top%d retrieval time: total %.3fs, n_proc_query %.3f\n\ttotal single query retrieval time %.3fs, total ip cost %ld",
                     topk, total_retrieval_time_, n_proc_query_,
-                    total_single_query_retrieval_time_, total_ip_cost_,
-                    max_ip_cost, proportion);
+                    total_single_query_retrieval_time_, total_ip_cost_);
             std::string str(buff);
             return str;
         }
@@ -204,14 +187,13 @@ namespace ReverseMIPS::Rtree {
             user_data[userID] = point;
         }
 
-
         data.Products = data_item_data;
         data.Weights = user_data;
 
         dyy::Data::buildTree(data.Products, data.entriesP, &data.RtreeP);
-        dyy::Data::buildTree(data.Weights, data.entriesW, &data.RtreeW);
 
-        std::unique_ptr<Index> index_ptr = std::make_unique<Index>(std::move(data), data_item, user, stop_time);
+        std::unique_ptr<Index> index_ptr = std::make_unique<Index>(std::move(data), data_item, user,
+                                                                   stop_time);
         return index_ptr;
     }
 

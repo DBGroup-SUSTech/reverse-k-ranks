@@ -1,7 +1,0 @@
-number of query item 1000
-build index time 5.144s
-Estimated memory 0.328GB, Peak memory 2.511GB, Current memory 2.249GB
-top10 retrieval time: total 14403.884s, n_proc_query 103
-	accumulate query inner product time 890.045s, accumulate refinement time 495659.734s
-	early prune ratio 0.9999, total IP cost 429957996, total appr IP cost 393031622188
-	maximum ip cost 155976384078, proportion 0.003

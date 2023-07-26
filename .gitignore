@@ -14,7 +14,6 @@ index_amazon
 /attribution/build/
 /attribution/data/
 /attribution/result/
-/dataset/
 cmake-build-debug/
 cmake-build-release/
 /attribution/*.jpg

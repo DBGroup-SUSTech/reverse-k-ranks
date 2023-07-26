@@ -1,1 +1,0 @@
-this only store the inner product bound of dimensionality

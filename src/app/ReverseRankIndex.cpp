@@ -9,16 +9,13 @@
 #include "struct/VectorMatrix.hpp"
 
 #include "GridIndex.hpp"
-#include "LinearScan.hpp"
 #include "QS.hpp"
 #include "QSRPNormalLP.hpp"
 #include "QSRPRefineCompare.hpp"
 #include "QSRPUniformCandidateNormalLP.hpp"
 #include "QSRPUniformLP.hpp"
 #include "Rtree.hpp"
-#include "RtreeItemOnly.hpp"
 #include "SimpferPP.hpp"
-#include "SimpferPPCache.hpp"
 #include "US.hpp"
 
 #include <spdlog/spdlog.h>
@@ -116,13 +113,6 @@ int main(int argc, char **argv) {
         index = GridIndex::BuildIndex(data_item, user, stop_time);
         sprintf(parameter_name, "top%d", topk);
 
-    } else if (method_name == "LinearScan") {
-        ///Online
-        const size_t stop_time = para.stop_time;
-        spdlog::info("input parameter: stop_time {}s", stop_time);
-        index = LinearScan::BuildIndex(data_item, user, stop_time);
-        sprintf(parameter_name, "top%d", topk);
-
     } else if (method_name == "QS") {
         const int n_sample = para.n_sample;
         const int n_sample_query = para.n_sample_query;
@@ -188,25 +178,12 @@ int main(int argc, char **argv) {
         index = Rtree::BuildIndex(data_item, user, stop_time);
         sprintf(parameter_name, "top%d", topk);
 
-    } else if (method_name == "RtreeItemOnly") {
-        const size_t stop_time = para.stop_time;
-        spdlog::info("input parameter: stop_time {}s", stop_time);
-        index = RtreeItemOnly::BuildIndex(data_item, user, stop_time);
-        sprintf(parameter_name, "top%d", topk);
-
     } else if (method_name == "SimpferPP") {
         const int simpfer_k_max = para.simpfer_k_max;
         const size_t stop_time = para.stop_time;
         spdlog::info("input parameter: simpfer_k_max {}, stop_time {}s",
                      simpfer_k_max, stop_time);
         index = SimpferPP::BuildIndex(data_item, user, simpfer_k_max, stop_time);
-        sprintf(parameter_name, "top%d-simpfer_k_max_%d", topk, simpfer_k_max);
-
-    } else if (method_name == "SimpferPPCache") {
-        const int simpfer_k_max = para.simpfer_k_max;
-        spdlog::info("input parameter: simpfer_k_max {}",
-                     simpfer_k_max);
-        index = SimpferPPCache::BuildIndex(data_item, user, index_dir, dataset_name, simpfer_k_max);
         sprintf(parameter_name, "top%d-simpfer_k_max_%d", topk, simpfer_k_max);
 
     } else if (method_name == "US") {

@@ -1,1 +1,0 @@
-total_index_construction_time 298.479s, total_init_time 5.318s, total_compute_sort_time 233.571s, total_build_memory_index_time 59.590s, total_save_index_time 37.487s

@@ -1,7 +1,0 @@
-method,dimensionality,n_proc_query,IP
-Rtree,2,24.544,6291312115427
-Rtree,8,14.172,1809068622279
-Rtree,32,5.433,730225130215
-Rtree,128,1.436,243633811065
-Rtree,512,,
-
