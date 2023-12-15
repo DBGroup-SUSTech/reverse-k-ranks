@@ -116,8 +116,8 @@ if (USE_CUDA)
     endif ()
 
     #    find_package(CUDAToolkit)
-        set(CMAKE_CUDA_COMPILER /usr/local/cuda-11.7/bin/nvcc)
-        set(CMAKE_CUDA_ARCHITECTURES 86)
+    set(CMAKE_CUDA_COMPILER /usr/local/cuda-11.7/bin/nvcc)
+    set(CMAKE_CUDA_ARCHITECTURES 86)
 
     enable_language(CUDA)
     find_package(CUDA)
@@ -126,28 +126,13 @@ if (USE_CUDA)
     find_package(Thrust REQUIRED CONFIG)
     thrust_create_target(Thrust)
 
-    set_source_files_properties(src/app/BuildScoreTable.cpp PROPERTIES LANGUAGE CUDA)
-    add_executable(bst src/app/BuildScoreTable.cpp)
-    #target_include_directories(bst PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
-    target_include_directories(bst PRIVATE src/include src/impl ${Boost_INCLUDE_DIRS} ${CUDA_INCLUDE_DIRS})
-    #target_link_libraries(bst PRIVATE armadillo BLAS::BLAS pthread gfortran OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} Eigen3::Eigen)
-    target_link_libraries(bst PRIVATE BLAS::BLAS pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} cublas)
-    set_target_properties(bst PROPERTIES
-            POSITION_INDEPENDENT_CODE ON
-            )
-    set_property(TARGET bst PROPERTY CXX_STANDARD "17")
-    set_property(TARGET bst PROPERTY CXX_STANDARD_REQUIRED ON)
-    set_property(TARGET bst PROPERTY CXX_EXTENSIONS OFF)
-    set_target_properties(bst PROPERTIES CUDA_ARCHITECTURES "35;50;72")
-    target_compile_options(bst PRIVATE -Xcompiler=-fopenmp)
-
     set_source_files_properties(src/app/BuildScoreTableBatch.cpp PROPERTIES LANGUAGE CUDA)
     add_executable(bstb src/app/BuildScoreTableBatch.cpp)
     target_include_directories(bstb PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS} ${CUDA_INCLUDE_DIRS})
     target_link_libraries(bstb PRIVATE armadillo BLAS::BLAS pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} cublas)
     set_target_properties(bstb PROPERTIES
             POSITION_INDEPENDENT_CODE ON
-            )
+    )
     set_property(TARGET bstb PROPERTY CXX_STANDARD "17")
     set_property(TARGET bstb PROPERTY CXX_STANDARD_REQUIRED ON)
     set_property(TARGET bstb PROPERTY CXX_EXTENSIONS OFF)
@@ -160,7 +145,7 @@ if (USE_CUDA)
     target_link_libraries(qdibc PRIVATE armadillo BLAS::BLAS pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} cublas)
     set_target_properties(qdibc PROPERTIES
             POSITION_INDEPENDENT_CODE ON
-            )
+    )
     set_property(TARGET qdibc PROPERTY CXX_STANDARD "17")
     set_property(TARGET qdibc PROPERTY CXX_STANDARD_REQUIRED ON)
     set_property(TARGET qdibc PROPERTY CXX_EXTENSIONS OFF)
@@ -173,7 +158,7 @@ if (USE_CUDA)
     target_link_libraries(bsibc PRIVATE armadillo BLAS::BLAS pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} cublas)
     set_target_properties(bsibc PROPERTIES
             POSITION_INDEPENDENT_CODE ON
-            )
+    )
     set_property(TARGET bsibc PROPERTY CXX_STANDARD "17")
     set_property(TARGET bsibc PROPERTY CXX_STANDARD_REQUIRED ON)
     set_property(TARGET bsibc PROPERTY CXX_EXTENSIONS OFF)
@@ -186,7 +171,7 @@ if (USE_CUDA)
     target_link_libraries(bri PRIVATE armadillo BLAS::BLAS pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES} cublas Eigen3::Eigen)
     set_target_properties(bri PROPERTIES
             POSITION_INDEPENDENT_CODE ON
-            )
+    )
     set_property(TARGET bri PROPERTY CXX_STANDARD "17")
     set_property(TARGET bri PROPERTY CXX_STANDARD_REQUIRED ON)
     set_property(TARGET bri PROPERTY CXX_EXTENSIONS OFF)
@@ -194,10 +179,6 @@ if (USE_CUDA)
     target_compile_options(bri PRIVATE -Xcompiler=-fopenmp)
 
 else () # not use cuda
-
-    add_executable(bst src/app/BuildScoreTable.cpp)
-    target_include_directories(bst PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
-    target_link_libraries(bst PRIVATE armadillo pthread spdlog::spdlog OpenMP::OpenMP_CXX ${Boost_LIBRARIES})
 
     add_executable(bstb src/app/BuildScoreTableBatch.cpp)
     target_include_directories(bstb PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
@@ -237,10 +218,3 @@ add_executable(fsr src/app/build-index/FindSampleRank.cpp)
 target_include_directories(fsr PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
 target_link_libraries(fsr PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES})
 
-add_executable(bsibs src/app/build-index/BuildSampleIndexBySample.cpp)
-target_include_directories(bsibs PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
-target_link_libraries(bsibs PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES})
-
-add_executable(progress src/app/Progress.cpp)
-target_include_directories(progress PRIVATE src/include src/impl ${armadillo_SOURCE_DIR}/include ${Boost_INCLUDE_DIRS})
-target_link_libraries(progress PRIVATE armadillo pthread OpenMP::OpenMP_CXX spdlog::spdlog ${Boost_LIBRARIES})

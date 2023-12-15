@@ -1,6 +1,6 @@
 # Introduction
 
-- This repository provides an implementation of QSRP.
+- This repository provides the implementation of the paper QSRP:  Efficient Reverse $k$-Ranks Query Processing on High-dimensional Embeddings.
 - This is a fast algorithm for the reverse $k$-ranks query in high dimensionality.
 
 ## Requirement
@@ -8,9 +8,14 @@
 - Linux OS (Ubuntu).
   - The others have not been tested.
 - `g++ 9.4.0` (or higher version) and `Openmp`.
-- `openblas`, `eigen3` and `armadillo`
+- `openblas`, `eigen3`, `armadillo`, `boost-1.80` and `spdlog`
+  - For Ubuntu user, please see the comments in `build-project.sh` for installation
 
-## How to build
+- CUDA (optional)
+  - You can set `USE_CUDA` as OFF in CMakeLists.txt to disable CUDA
+
+
+## How to build and run
 
 ```
 cd reverse-k-ranks/
@@ -18,12 +23,32 @@ sh build-project.sh
 cd build
 cmake -DCMAKE_BUILD_TYPE=Debug ..
 make -j 16
+# In run_rkr.py, change the `index_dir` and `dataset_dir` to your directory
+python3 run_rkr.py
 ```
 
-Then change the `index_dir` and `dataset_dir` to your directory
+The code runs the dataset included in `reverse-k-ranks/dataset/`
 
-Note that we include a testing dataset in `reverse-k-ranks/dataset/`
+## Method details
 
-Use `python3 run_rkr.py` to run the method
+In `run_rkr.py`:
 
-if you have cuda, you can turn on the option `use_cuda` in `CMakeLists.txt`
+`GridIndex`: the Grid method shown in the framework 
+
+`Rtree`: the MPA method in the paper
+
+`QS`: QSRP without regression-based pruning
+
+`QSRPNormalLP`: the QSRP method
+
+`QSRPUniformLP`: the QSRP-DT method, see Figure 17 in the paper
+
+`US`: Uniform Sample, the sampling-based baseline solution  
+
+
+
+In `run_rkr_update.py`
+
+`QSRPNormalLPUpdate` is the QSRP update method shown in the paper
+
+`QSUpdate` is the update version of QS 

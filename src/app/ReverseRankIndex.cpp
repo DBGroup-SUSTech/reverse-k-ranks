@@ -11,8 +11,6 @@
 #include "GridIndex.hpp"
 #include "QS.hpp"
 #include "QSRPNormalLP.hpp"
-#include "QSRPRefineCompare.hpp"
-#include "QSRPUniformCandidateNormalLP.hpp"
 #include "QSRPUniformLP.hpp"
 #include "Rtree.hpp"
 #include "SimpferPP.hpp"
@@ -107,7 +105,6 @@ int main(int argc, char **argv) {
     unique_ptr<BaseIndex> index;
     char parameter_name[256] = "";
     if (method_name == "GridIndex") {
-        ///Online
         const size_t stop_time = para.stop_time;
         spdlog::info("input parameter: stop_time {}s", stop_time);
         index = GridIndex::BuildIndex(data_item, user, stop_time);
@@ -137,31 +134,7 @@ int main(int argc, char **argv) {
         sprintf(parameter_name, "top%d-n_sample_%d-n_sample_query_%d-sample_topk_%d-n_thread_%d",
                 topk, n_sample, n_sample_query, sample_topk, n_thread);
 
-    } else if (method_name == "QSRPRefineComputeIPBound" || method_name == "QSRPRefineComputeAll" ||
-               method_name == "QSRPRefineLEMP") {
-        const int n_sample = para.n_sample;
-        const int n_sample_query = para.n_sample_query;
-        const int sample_topk = para.sample_topk;
-        const int n_thread = para.n_thread == -1 ? omp_get_num_procs() : para.n_thread;
-        spdlog::info("input parameter: n_sample {} n_sample_query {} sample_topk {} n_thread {}",
-                     n_sample, n_sample_query, sample_topk, n_thread);
-        index = QSRPRefineCompare::BuildIndex(data_item, user, dataset_name, method_name,
-                                              n_sample, n_sample_query, sample_topk, n_thread, index_dir);
-        sprintf(parameter_name, "top%d-n_sample_%d-n_sample_query_%d-sample_topk_%d-n_thread_%d",
-                topk, n_sample, n_sample_query, sample_topk, n_thread);
-
-    } else if (method_name == "QSRPUniformCandidateNormalLP") {
-        const int n_sample = para.n_sample;
-        const int n_sample_query = para.n_sample_query;
-        const int sample_topk = para.sample_topk;
-        spdlog::info("input parameter: n_sample {} n_sample_query {} sample_topk {}",
-                     n_sample, n_sample_query, sample_topk);
-        index = QSRPUniformCandidateNormalLP::BuildIndex(data_item, user, dataset_name,
-                                                         n_sample, n_sample_query, sample_topk, index_dir);
-        sprintf(parameter_name, "top%d-n_sample_%d-n_sample_query_%d-sample_topk_%d",
-                topk, n_sample, n_sample_query, sample_topk);
-
-    } else if (method_name == "QSRPUniformLP") {
+    }  else if (method_name == "QSRPUniformLP") {
         const int n_sample = para.n_sample;
         const int n_sample_query = para.n_sample_query;
         const int sample_topk = para.sample_topk;

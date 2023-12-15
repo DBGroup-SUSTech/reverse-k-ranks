@@ -5,8 +5,8 @@
 #ifndef REVERSE_K_RANKS_NAMETRANSLATION_HPP
 #define REVERSE_K_RANKS_NAMETRANSLATION_HPP
 
-#include "../../../../../../usr/include/c++/9/string"
-#include "../../../../../../usr/local/include/spdlog/spdlog.h"
+#include <string>
+#include <spdlog/spdlog.h>
 
 namespace ReverseMIPS {
     std::string SampleMethodName(const std::string &method_name) {

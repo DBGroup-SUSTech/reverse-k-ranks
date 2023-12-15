@@ -9,7 +9,6 @@
 #include "struct/VectorMatrixUpdate.hpp"
 #include "struct/MethodBaseUpdate.hpp"
 
-#include "Update/MemoryBruteForceUpdate.hpp"
 #include "Update/QSUpdate.hpp"
 #include "Update/QSRPNormalLPUpdate.hpp"
 
@@ -98,9 +97,9 @@ int main(int argc, char **argv) {
 
     int n_data_item, n_query_item, n_user, n_update_user, n_update_item, vec_dim;
     vector<VectorMatrixUpdate> data = readDataUpdate(dataset_dir, dataset_name, update_type,
-                                               n_user, n_data_item, n_query_item,
-                                               n_update_user, n_update_item,
-                                               vec_dim);
+                                                     n_user, n_data_item, n_query_item,
+                                                     n_update_user, n_update_item,
+                                                     vec_dim);
     VectorMatrixUpdate &user = data[0];
     VectorMatrixUpdate &data_item = data[1];
     VectorMatrixUpdate &query_item = data[2];
@@ -112,12 +111,7 @@ int main(int argc, char **argv) {
     record.reset();
     unique_ptr<BaseUpdateIndex> index;
     char parameter_name[256] = "";
-    if (method_name == "MemoryBruteForceUpdate") {
-        spdlog::info("input parameter: none");
-        index = MemoryBruteForceUpdate::BuildIndex(data_item, user);
-        sprintf(parameter_name, "top%d", topk);
-
-    } else if (method_name == "QSRPNormalLPUpdate") {
+    if (method_name == "QSRPNormalLPUpdate") {
         const int n_sample = para.n_sample;
         const int n_sample_query = para.n_sample_query;
         const int sample_topk = para.sample_topk;
