@@ -57,4 +57,5 @@ In `run_rkr_update.py`
 
 We have used LIBPMF (https://www.cs.utexas.edu/~rofuyu/libpmf/) as the matrix factorization model to generate the embedding. 
 
-You can see https://drive.google.com/drive/folders/1UloY14usLHJxSGVdoharyUUPc7nAcPdl?usp=sharing to download the dataset we use.
+To download the dataset, you can refer to https://drive.google.com/drive/folders/1UloY14usLHJxSGVdoharyUUPc7nAcPdl?usp=sharing 
+
