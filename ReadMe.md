@@ -52,3 +52,9 @@ In `run_rkr_update.py`
 `QSRPNormalLPUpdate` is the QSRP update method shown in the paper
 
 `QSUpdate` is the update version of QS 
+
+## Datasets
+
+We have used LIBPMF (https://www.cs.utexas.edu/~rofuyu/libpmf/) as the matrix factorization model to generate the embedding. 
+
+You can see https://drive.google.com/drive/folders/1UloY14usLHJxSGVdoharyUUPc7nAcPdl?usp=sharing to download the dataset we use.
