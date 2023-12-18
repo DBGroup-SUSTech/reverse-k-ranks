@@ -5,11 +5,10 @@
 
 ## Requirement
 
-- Linux OS (Ubuntu).
-  - The others have not been tested.
+- Linux OS (Ubuntu-20.04).
 - `g++ 9.4.0` (or higher version) and `Openmp`.
 - `openblas`, `eigen3`, `armadillo`, `boost-1.80` and `spdlog`
-  - For Ubuntu user, please see the comments in `build-project.sh` for installation
+  - For Ubuntu user, please see the comments in `build-project.sh` for fast installation
 
 - CUDA (optional)
   - You can set `USE_CUDA` as OFF in CMakeLists.txt to disable CUDA
